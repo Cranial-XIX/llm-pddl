@@ -1,0 +1,29 @@
+You control a set of robots that use different colors to paint patterns in floor tiles. The robots can move around the floor tiles in four directions (up, down, left and right). Robots paint with one color at a time, but can change their spray guns to any available color. However, robots can only paint the tile that is in front (up) and behind (down) them, and once a tile has been painted no robot can stand on it. 
+
+Here are the actions each robot can do
+Change the spray gun color
+Paint the tile that is up from the robot
+Paint the tile that is down from the robot
+Move up
+Move down
+Move right
+Move left
+
+You have the following restrictions on your actions:
+A robot can only paint a tile if the tile has not been painted.
+A robot can only paint a tile to the color of its spray gun.
+A robot cannot move to a tile that has been painted. 
+Now consider a planning problem. The problem description is: 
+ You have 5 rows and 3 columns of unpainted floor tiles. 
+tile_0-1 tile_0-2 tile_0-3 
+tile_1-1 tile_1-2 tile_1-3 
+tile_2-1 tile_2-2 tile_2-3 
+tile_3-1 tile_3-2 tile_3-3 
+tile_4-1 tile_4-2 tile_4-3 
+You have 2 robots. 
+Each robot can paint in color white or black. 
+robot2 is at tile_4-1. 
+robot1 is at tile_3-2. 
+Your goal is to paint the grid in the following pattern: 
+tile_1-1 is white; tile_1-2 is black; tile_1-3 is white; tile_2-1 is black; tile_2-2 is white; tile_2-3 is black; tile_3-1 is white; tile_3-2 is black; tile_3-3 is white; tile_4-1 is black; tile_4-2 is white; tile_4-3 is black. 
+Can you provide an optimal plan, in the way of a sequence of behaviors, to solve the problem?

@@ -1,0 +1,45 @@
+
+
+(define (problem barman-problem)
+  (:domain barman)
+  (:objects
+    shaker - container
+    shot1 shot2 shot3 shot4 - shotglass
+    ingredient1 ingredient2 ingredient3 - ingredient
+    )
+  (:init
+    (empty shaker)
+    (empty shot1)
+    (empty shot2)
+    (empty shot3)
+    (empty shot4)
+    (clean shaker)
+    (clean shot1)
+    (clean shot2)
+    (clean shot3)
+    (clean shot4)
+    (on-table shaker)
+    (on-table shot1)
+    (on-table shot2)
+    (on-table shot3)
+    (on-table shot4)
+    (level shaker 0)
+    (level shot1 0)
+    (level shot2 0)
+    (level shot3 0)
+    (level shot4 0)
+    (hand-empty left)
+    (hand-empty right)
+    (dispenser ingredient1)
+    (dispenser ingredient2)
+    (dispenser ingredient3)
+    )
+  (:goal (and
+    (filled shot1 ingredient2 ingredient1)
+    (filled shot2 ingredient3 ingredient2)
+    (filled shot3 ingredient1 ingredient3)
+    (filled shot4 ingredient2 ingredient1)
+    )
+  )
+  (:metric minimize (total-time))
+)

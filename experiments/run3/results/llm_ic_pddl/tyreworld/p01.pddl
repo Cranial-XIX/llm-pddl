@@ -1,0 +1,1 @@
+Open the boot, fetch the jack, pump, wrench, and intact tyre from the boot, inflate the intact tyre, put away the pump, loosen the nuts on the hub, jack up the hub, undo the nuts, remove the flat tyre, put away the flat tyre, put on the intact tyre, do up the nuts, jack down the hub, put away the jack, tighten the nuts, put away the wrench, and close the boot.

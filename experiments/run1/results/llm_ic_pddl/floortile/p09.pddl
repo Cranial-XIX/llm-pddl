@@ -1,0 +1,3 @@
+Robot2: Paint tile_5-2 black, change color to white, move right, paint tile_5-3 white, move left, move down, paint tile_4-2 white, move left, move up, paint tile_4-1 white, move down, change color to black, paint tile_4-1 black, move right, move right, paint tile_4-3 black, move down, move left, paint tile_2-2 black, change color to white, move left, paint tile_2-1 white, move right, change color to black, move down, paint tile_1-2 white.
+
+Robot1: Move left, move up, paint tile_2-1 black, move right, move right, paint tile_2-3 black, move down, move left, paint tile_1-2 black, change color to white, move up, paint tile_1-3 black, move down, move left, paint tile_0-2 black, change color to white, move right, paint tile_0-3 white.

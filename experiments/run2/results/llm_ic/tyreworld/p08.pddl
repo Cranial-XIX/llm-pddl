@@ -1,0 +1,4 @@
+
+
+A plan for the example problem is: 
+Open boot, fetch r2, r4, r6, r8, pump, inflate r2, r4, r6, r8, put away pump, fetch wrench, jack, loosen nuts1, nuts3, nuts5, nuts7, jack-up the-hub1, the-hub3, the-hub5, the-hub7, undo nuts1, nuts3, nuts5, nuts7, remove wheel w1, w3, w5, w7, put away w1, w3, w5, w7, put on wheel r1, r3, r5, r7, do-up nuts1, nuts3, nuts5, nuts7, jack-down the-hub1, the-hub3, the-hub5, the-hub7, tighten nuts1, nuts3, nuts5, nuts7, loosen nuts2, nuts4, nuts6, nuts8, jack-up the-hub2, the-hub4, the-hub6, the-hub8, undo nuts2, nuts4, nuts6, nuts8, remove wheel w2, w4, w6, w8, put away w2, w4, w6, w8, put on wheel r2, r4, r6, r8, do-up nuts2, nuts4, nuts6, nuts8, jack-down the-hub2, the-hub4, the-hub6, the-hub8, tighten nuts2, nuts4, nuts6, nuts8, put away jack, put away wrench, close boot.

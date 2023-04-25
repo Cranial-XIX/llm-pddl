@@ -1,0 +1,36 @@
+Your goal is to move all crates to a depot.
+
+There are four actions in the domain: "lift", "drop", "move", and "go-out", each with their own parameters, preconditions, and effects.
+
+"lift" action lifts a crate using a hoist from a store area to an area that is connected to it, and places the crate in a place. The preconditions for the "lift" action require that the hoist is available, the hoist is at the destination area, the crate is on the surface in the source store area, and the source store area is in the place. The effects of the "lift" action remove the crate from the source store area, make the source area clear, make the hoist unavailable, make the hoist lifting the crate, and remove the crate from the place.
+
+"drop" action drops a crate from the hoist onto a surface in a store area that is connected to the area where the hoist is currently located. The preconditions for the "drop" action require that the hoist is at the destination area, the hoist is lifting the crate, the destination store area is clear, and the destination store area is in the place. The effects of the "drop" action remove the hoist lifting the crate, make the hoist available, make the destination area occupied by the crate, and make the crate in the destination store area.
+
+"move" action moves a hoist from one store area to another connected store area. The preconditions for the "move" action require that the hoist is in the source store area, the destination store area is clear, and the source and destination areas are connected. The effects of the "move" action remove the hoist from the source area, place the hoist in the destination area, make the source area occupied, and make the destination area clear.
+
+"go-out" action moves a hoist from a store area to a transit area that is connected to it. The preconditions for the "go-out" action require that the hoist is in the source store area, and the source and destination areas are connected. The effects of the "go-out" action remove the hoist from the source area, place the hoist in the transit area, and make the source area clear.
+
+"go-in" action moves a hoist from a transit area to a store area that is connected to it. The preconditions for the "go-in" action require that the hoist is in the transit area, the source and destination areas are connected, and the destination area is clear. The effects of the "go-in" action remove the hoist from the transit area, place the hoist in the destination store area, and make the destination store area occupied. 
+Now consider a planning problem. The problem description is: 
+ You have 4 depot storeareas, 2 container storeareas, 3 hoists, 2 crates, 1 container0, 1 depot48, 1 loadarea. 
+Depot storeares are: depot48-1-1 depot48-1-2 depot48-2-1 depot48-2-2 
+Container storeares are: container-0-0 container-0-1 
+Here is a map of depot storeares: 
+
+depot48-1-1 depot48-1-2 
+depot48-2-1 depot48-2-2 
+
+According to the map, adjacent depot storeares are connected. 
+All depot storeareas are in depot48. 
+crate0 is on container-0-0. 
+crate1 is on container-0-1. 
+All crates and container storeareas are in container0. 
+All container storeareas are connected to loadarea. 
+depot48-2-1 and loadarea are connected. 
+depot48-1-1 are clear. 
+hoist0 is in depot48-2-2
+hoist1 is in depot48-2-1
+hoist2 is in depot48-1-2
+All hoists are available. 
+Your goal is to move all crates to depot48. 
+Can you provide an optimal plan, in the way of a sequence of behaviors, to solve the problem?

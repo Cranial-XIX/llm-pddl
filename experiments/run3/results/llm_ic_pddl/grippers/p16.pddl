@@ -1,0 +1,2 @@
+Robot4: Pick up ball5 from room4 with left gripper, pick up ball6 from room4 with right gripper, move to room1, drop ball5 in room1 with left gripper, pick up ball4 from room1 with left gripper, drop ball6 in room1 with right gripper, pick up ball8 from room1 with right gripper, move to room3, drop ball4 in room3 with left gripper, pick up ball1 from room3 with left gripper, move to room2, drop ball1 in room2 with left gripper, drop ball8 in room2 with right gripper.
+Robot1: Pick up ball7 from room1 with left gripper, move to room4, drop ball7 in room4 with left gripper.

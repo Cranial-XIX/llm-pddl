@@ -1,0 +1,97 @@
+I want you to solve planning problems. An example planning problem is: 
+ You have 4 rows and 3 columns of unpainted floor tiles. 
+tile_0-1 tile_0-2 tile_0-3 
+tile_1-1 tile_1-2 tile_1-3 
+tile_2-1 tile_2-2 tile_2-3 
+tile_3-1 tile_3-2 tile_3-3 
+You have 1 robot. 
+Each robot can paint in color white. 
+robot2 is at tile_2-2. 
+robot1 is at tile_0-1. 
+Your goal is to paint the grid in the following pattern: 
+tile_1-1 is white; tile_1-2 is white; tile_1-3 is white. 
+The problem PDDL file to this problem is: 
+ (define (problem p01-432)
+ (:domain floor-tile)
+ (:objects tile_0-1 tile_0-2 tile_0-3 
+           tile_1-1 tile_1-2 tile_1-3 
+           tile_2-1 tile_2-2 tile_2-3 
+           tile_3-1 tile_3-2 tile_3-3 - tile
+           robot1 - robot
+           white - color
+)
+ (:init 
+   (= (total-cost) 0)
+   (robot-at robot1 tile_0-1)
+   (robot-has robot1 white)
+   (robot-at robot2 tile_2-2)
+   (robot-has robot2 black)
+   (available-color white)
+   (available-color black)
+   (clear tile_0-2)
+   (clear tile_0-3)
+   (clear tile_1-1)
+   (clear tile_1-2)
+   (clear tile_1-3)
+   (clear tile_2-1)
+   (clear tile_2-3)
+   (clear tile_3-1)
+   (clear tile_3-2)
+   (clear tile_3-3)
+   (up tile_1-1 tile_0-1)
+   (up tile_1-2 tile_0-2)
+   (up tile_1-3 tile_0-3)
+   (up tile_2-1 tile_1-1)
+   (up tile_2-2 tile_1-2)
+   (up tile_2-3 tile_1-3)
+   (up tile_3-1 tile_2-1)
+   (up tile_3-2 tile_2-2)
+   (up tile_3-3 tile_2-3)
+   (down tile_0-1 tile_1-1)
+   (down tile_0-2 tile_1-2)
+   (down tile_0-3 tile_1-3)
+   (down tile_1-1 tile_2-1)
+   (down tile_1-2 tile_2-2)
+   (down tile_1-3 tile_2-3)
+   (down tile_2-1 tile_3-1)
+   (down tile_2-2 tile_3-2)
+   (down tile_2-3 tile_3-3)
+   (right tile_0-2 tile_0-1)
+   (right tile_0-3 tile_0-2)
+   (right tile_1-2 tile_1-1)
+   (right tile_1-3 tile_1-2)
+   (right tile_2-2 tile_2-1)
+   (right tile_2-3 tile_2-2)
+   (right tile_3-2 tile_3-1)
+   (right tile_3-3 tile_3-2)
+   (left tile_0-1 tile_0-2)
+   (left tile_0-2 tile_0-3)
+   (left tile_1-1 tile_1-2)
+   (left tile_1-2 tile_1-3)
+   (left tile_2-1 tile_2-2)
+   (left tile_2-2 tile_2-3)
+   (left tile_3-1 tile_3-2)
+   (left tile_3-2 tile_3-3)
+)
+ (:goal (and
+    (painted tile_1-1 white)
+    (painted tile_1-2 white)
+    (painted tile_1-3 white)
+))
+ (:metric minimize (total-cost))
+) 
+Now I have a new planning problem and its description is: 
+ You have 6 rows and 4 columns of unpainted floor tiles. 
+tile_0-1 tile_0-2 tile_0-3 tile_0-4 
+tile_1-1 tile_1-2 tile_1-3 tile_1-4 
+tile_2-1 tile_2-2 tile_2-3 tile_2-4 
+tile_3-1 tile_3-2 tile_3-3 tile_3-4 
+tile_4-1 tile_4-2 tile_4-3 tile_4-4 
+tile_5-1 tile_5-2 tile_5-3 tile_5-4 
+You have 2 robots. 
+Each robot can paint in color white or black. 
+robot2 is at tile_2-3. 
+robot1 is at tile_1-4. 
+Your goal is to paint the grid in the following pattern: 
+tile_1-1 is white; tile_1-2 is black; tile_1-3 is white; tile_1-4 is black; tile_2-1 is black; tile_2-2 is white; tile_2-3 is black; tile_2-4 is white; tile_3-1 is white; tile_3-2 is black; tile_3-3 is white; tile_3-4 is black; tile_4-1 is black; tile_4-2 is white; tile_4-3 is black; tile_4-4 is white; tile_5-1 is white; tile_5-2 is black; tile_5-3 is white; tile_5-4 is black. 
+Provide me with the problem PDDL file that describes the new planning problem directly without further explanations?

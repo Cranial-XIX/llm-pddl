@@ -1,0 +1,2 @@
+Robot1: Right, Paint Up (White), Paint Down (White), Left, Paint Down (Black), Left, Paint Up (White), Down, Right, Left, Paint Up (White), Down, Right, Left, Paint Up (White), Down, Right, Paint Up (Black), Left, Paint Up (White), Left, Paint Up (White).
+Robot2: Paint Up (Black), Left, Down, Paint Up (Black), Right, Left, Paint Up (Black), Down, Right, Paint Up (Black), Left, Paint Up (Black), Right, Right, Paint Up (Black).

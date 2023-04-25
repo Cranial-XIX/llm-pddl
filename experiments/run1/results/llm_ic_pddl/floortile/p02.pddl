@@ -1,0 +1,3 @@
+Robot1: Paint tile_4-2 white, move left to tile_3-1, move down to tile_2-1, paint tile_3-1 white, move right to tile_2-2, paint tile_3-3 white, move left to tile_2-2, move down to tile_1-2, move right to tile_2-3, paint tile_2-3 white, move left to tile_2-2, move down to tile_1-2, move right to tile_1-3, paint tile_1-3 white, move down to tile_0-2, move left to tile_0-1, paint tile_0-1 white, move right to tile_0-2, move right to tile_0-3, paint tile_0-3 white.
+
+Robot2: Move down to tile_3-1, paint tile_3-1 black, move right to tile_3-2, paint tile_2-2 black, move down to tile_1-2, move right to tile_1-3, paint tile_1-3 black, move left to tile_1-2, paint tile_1-2 black, move left to tile_1-1, paint tile_0-2 black, move down to tile_0-2.

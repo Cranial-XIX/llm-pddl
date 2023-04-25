@@ -1,0 +1,56 @@
+I want you to solve planning problems. An example planning problem is: 
+ You have 1 shaker with 3 levels, 3 shot glasses, 3 dispensers for 3 ingredients. 
+The shaker and shot glasses are clean, empty, and on the table. Your left and right hands are empty. 
+The first ingredient of cocktail1 is ingredient3. The second ingredient of cocktail1 is ingredient1. 
+Your goal is to make 1 cocktails. 
+shot1 contains cocktail1. 
+The problem PDDL file to this problem is: 
+ (define (problem prob)
+ (:domain barman)
+ (:objects 
+     shaker1 - shaker
+     left right - hand
+     shot1 shot2 shot3 - shot
+     ingredient1 ingredient2 ingredient3 - ingredient
+     cocktail1 - cocktail
+     dispenser1 dispenser2 dispenser3 - dispenser
+     l0 l1 l2 - level
+)
+ (:init 
+  (ontable shaker1)
+  (ontable shot1)
+  (ontable shot2)
+  (ontable shot3)
+  (dispenses dispenser1 ingredient1)
+  (dispenses dispenser2 ingredient2)
+  (dispenses dispenser3 ingredient3)
+  (clean shaker1)
+  (clean shot1)
+  (clean shot2)
+  (clean shot3)
+  (empty shaker1)
+  (empty shot1)
+  (empty shot2)
+  (empty shot3)
+  (handempty left)
+  (handempty right)
+  (shaker-empty-level shaker1 l0)
+  (shaker-level shaker1 l0)
+  (next l0 l1)
+  (next l1 l2)
+  (cocktail-part1 cocktail1 ingredient3)
+  (cocktail-part2 cocktail1 ingredient1)
+)
+ (:goal
+  (and
+     (contains shot1 cocktail1)
+))) 
+Now I have a new planning problem and its description is: 
+ You have 1 shaker with 3 levels, 4 shot glasses, 3 dispensers for 3 ingredients. 
+The shaker and shot glasses are clean, empty, and on the table. Your left and right hands are empty. 
+The first ingredient of cocktail1 is ingredient1. The second ingredient of cocktail1 is ingredient3. 
+The first ingredient of cocktail2 is ingredient2. The second ingredient of cocktail2 is ingredient3. 
+The first ingredient of cocktail3 is ingredient1. The second ingredient of cocktail3 is ingredient2. 
+Your goal is to make 3 cocktails. 
+shot1 contains cocktail1. shot2 contains cocktail3. shot3 contains cocktail2. 
+Provide me with the problem PDDL file that describes the new planning problem directly without further explanations?

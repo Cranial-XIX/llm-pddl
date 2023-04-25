@@ -1,0 +1,1 @@
+Move from pos-2-0 to pos-1-0; Place block at pos-1-1; Move up from pos-1-0 to pos-2-0; Create block at pos-2-0; Move from pos-2-0 to pos-2-1; Place block at pos-2-2; Move up from pos-2-1 to pos-3-1; Destroy block at pos-2-0.

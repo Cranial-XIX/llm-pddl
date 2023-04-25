@@ -1,0 +1,36 @@
+
+
+(define (domain transport-balls)
+  (:requirements :strips :typing)
+  (:types robot room ball - object)
+  (:predicates (at ?r - robot ?room - room)
+               (holding ?r - robot ?b - ball)
+               (free ?r - robot))
+  (:action move
+    :parameters (?r - robot ?from - room ?to - room)
+    :precondition (and (at ?r ?from) (free ?r))
+    :effect (and (at ?r ?to) (not (at ?r ?from)) (free ?r)))
+  (:action pick
+    :parameters (?r - robot ?b - ball ?room - room)
+    :precondition (and (at ?r ?room) (free ?r) (not (holding ?r ?b)))
+    :effect (and (holding ?r ?b) (not (free ?r)) (not (at ?r ?room))))
+  (:action drop
+    :parameters (?r - robot ?b - ball ?room - room)
+    :precondition (and (holding ?r ?b) (at ?r ?room))
+    :effect (and (free ?r) (not (holding ?r ?b)) (at ?r ?room))))
+
+(define (problem transport-balls)
+  (:domain transport-balls)
+  (:objects robot1 robot2 robot3 ball1 ball2 ball3 room1 room2 room3 room4 - room)
+  (:init (at robot1 room4)
+         (at robot2 room2)
+         (at robot3 room1)
+         (holding ball1 room4)
+         (holding ball2 room2)
+         (holding ball3 room3)
+         (free robot1)
+         (free robot2)
+         (free robot3))
+  (:goal (and (at ball1 room2)
+              (at ball2 room3)
+              (at ball3 room3))))

@@ -1,0 +1,1 @@
+Robot1 moves from Room2 to Room1. Robot1 picks up Ball2 with its left gripper and Ball3 with its right gripper. Robot1 moves from Room1 to Room4. Robot1 drops Ball2 with its left gripper and Ball3 with its right gripper.

@@ -1,0 +1,48 @@
+I want you to solve planning problems. An example planning problem is: 
+ You have 5 blocks. 
+b2 is on top of b5. 
+b5 is on top of b1. 
+b1 is on top of b4. 
+b3 is on top of b2. 
+b4 is on the table. 
+b3 is clear. 
+Your arm is empty. 
+Your goal is to move the blocks. 
+b4 should be on top of b3. 
+The problem PDDL file to this problem is: 
+ (define (problem BW-rand-5)
+(:domain blocksworld-4ops)
+(:objects b1 b2 b3 b4 b5 )
+(:init
+(arm-empty)
+(on b1 b4)
+(on b2 b5)
+(on b3 b2)
+(on-table b4)
+(on b5 b1)
+(clear b3)
+)
+(:goal
+(and
+(on b4 b3))
+)
+) 
+Now I have a new planning problem and its description is: 
+ You have 8 blocks. 
+b7 is on top of b5. 
+b4 is on top of b2. 
+b8 is on top of b3. 
+b3 is on top of b7. 
+b2 is on top of b1. 
+b6 is on top of b4. 
+b5 is on top of b6. 
+b1 is on the table. 
+b8 is clear. 
+Your arm is empty. 
+Your goal is to move the blocks. 
+b1 should be on top of b8. 
+b2 should be on top of b3. 
+b3 should be on top of b5. 
+b4 should be on top of b2. 
+b8 should be on top of b7. 
+Provide me with the problem PDDL file that describes the new planning problem directly without further explanations?

@@ -1,0 +1,1 @@
+Pick up b1, stack b1 on top of b3, pick up b2, stack b2 on top of b8, pick up b4, stack b4 on top of b7, pick up b5, stack b5 on top of b6, put down b5, pick up b7, stack b7 on top of b1, put down b7.

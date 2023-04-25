@@ -1,0 +1,3 @@
+[submodule "downward"]
+	path = downward
+	url = https://github.com/aibasel/downward.git

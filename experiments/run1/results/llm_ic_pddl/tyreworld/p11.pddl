@@ -1,0 +1,1 @@
+Open boot, fetch tools and intact tyres, inflate tyres, put away pump, fetch wrench and jack, loosen nuts on hub 1, jack up hub 1, undo nuts on hub 1, remove wheel 1, put away wheel 1, put on wheel 1, do up nuts on hub 1, jack down hub 1, tighten nuts on hub 1, repeat steps for hubs 2-11, put away jack, tighten nuts on hub 9, put away wrench, close boot.

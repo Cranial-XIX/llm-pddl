@@ -1,0 +1,31 @@
+
+
+(define (problem replace-tyres)
+  (:domain tyre-replacement)
+  (:objects
+    jack pump wrench boot hub nut flat-tyre intact-tyre - object
+  )
+  (:init
+    (in jack boot)
+    (in pump boot)
+    (in wrench boot)
+    (inflat intact-tyre)
+    (on flat-tyre hub)
+    (on-ground hub)
+    (tight nut hub)
+    (fastened hub)
+    (unlocked boot)
+    (closed boot)
+  )
+  (:goal
+    (and
+      (forall (?f - flat-tyre) (not (on ?f hub)))
+      (forall (?i - intact-tyre) (and (on ?i hub) (inflated ?i)))
+      (forall (?n - nut) (tight ?n hub))
+      (in jack boot)
+      (in pump boot)
+      (in wrench boot)
+      (closed boot)
+    )
+  )
+)

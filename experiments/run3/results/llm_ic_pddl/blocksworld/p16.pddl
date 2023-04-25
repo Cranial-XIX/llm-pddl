@@ -1,0 +1,1 @@
+Pick up b5, stack b5 on b3, pick up b1, stack b1 on b5, pick up b8, stack b8 on b7, pick up b10, stack b10 on b8, pick up b2, stack b2 on b10, unstack b9 from b6, stack b9 on b2, unstack b10 from b8, put down b10, unstack b9 from b10, put down b9, unstack b6 from b9, put down b6, unstack b3 from b6, put down b3, unstack b4 from b2, put down b4, unstack b5 from b4, put down b5.
