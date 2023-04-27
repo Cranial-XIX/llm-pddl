@@ -1,12 +1,12 @@
 import argparse
 import glob
 import json
-import openai
 import os
 import random
 import sys
 import time
 
+import openai
 
 FAST_DOWNWARD_ALIAS = "lama"
 

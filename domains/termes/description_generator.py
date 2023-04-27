@@ -1,7 +1,8 @@
+import glob
 import os
 import sys
 from collections import namedtuple
-import glob
+
 
 # PDDLStream https://github.com/caelan/pddlstream/blob/526b450a7d3913d3833e1413df416efa7e71ca6a/pddlstream/algorithms/downward.py
 def find_build(fd_path):
@@ -17,8 +18,8 @@ FD_PATH = os.path.join(directory, '../../downward')
 TRANSLATE_PATH = os.path.join(find_build(FD_PATH), 'bin/translate')
 sys.path.append(TRANSLATE_PATH)
 
-from pddl_parser import pddl_file
 from pddl import Atom
+from pddl_parser import pddl_file
 
 Domain = namedtuple('Domain', ['name', 'requirements', 'types', 'type_dict', 'constants',
                                'predicates', 'predicate_dict', 'functions', 'actions', 'axioms'])
