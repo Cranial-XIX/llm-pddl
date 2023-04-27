@@ -3,7 +3,7 @@ This repo contains the source code for making plans based on problems decribed b
 
 ## Dependency
 
-1. Install OpenAI GPT [API](https://platform.openai.com/docs/quickstart/build-your-application). Remember to put openai_keys under the ```data``` folder.
+1. Install OpenAI GPT [API](https://platform.openai.com/docs/quickstart/build-your-application). Remember to put openai_keys under the ```keys``` folder.
 
 2. Install [fast-downward](https://drive.google.com/file/d/16HlP14IN06asIXYAZ8RHR1P7-cEYwhA6/view)
 
