@@ -1,12 +1,12 @@
 import argparse
 import glob
 import json
-import openai
 import os
 import random
 import sys
 import time
 
+import openai
 
 FAST_DOWNWARD_ALIAS = "lama"
 
@@ -58,6 +58,8 @@ class Domain:
         # 3. p_example.sol  (the ground-truth solution in natural language to the problem)
         self.context = ("p_example.nl", "p_example.pddl", "p_example.sol")
         self.tasks = [] # should be list of tuples like (descritpion, ground_truth_pddl)
+
+        self.grab_tasks()
 
     def grab_tasks(self):
         path = f"./domains/{self.name}"
@@ -126,53 +128,25 @@ class Domain:
 
 
 class Barman(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "barman" # this should match the directory name
-        self.grab_tasks()
-
+    name = "barman" # this should match the directory name
 
 class Floortile(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "floortile" # this should match the directory name
-        self.grab_tasks()
-
+    name = "floortile" # this should match the directory name
 
 class Termes(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "termes" # this should match the directory name
-        self.grab_tasks()
-
+    name = "termes" # this should match the directory name
 
 class Tyreworld(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "tyreworld" # this should match the directory name
-        self.grab_tasks()
-
+    name = "tyreworld" # this should match the directory name
 
 class Grippers(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "grippers" # this should match the directory name
-        self.grab_tasks()
-
+    name = "grippers" # this should match the directory name
 
 class Storage(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "storage" # this should match the directory name
-        self.grab_tasks()
-
+    name = "storage" # this should match the directory name
 
 class Blocksworld(Domain):
-    def __init__(self):
-        super().__init__()
-        self.name = "blocksworld" # this should match the directory name
-        self.grab_tasks()
-
+    name = "blocksworld" # this should match the directory name
 
 ###############################################################################
 #
@@ -190,8 +164,9 @@ class Planner:
         openai_keys_file = os.path.join(os.getcwd(), "keys/openai_keys.txt")
         with open(openai_keys_file, "r") as f:
             context = f.read()
-        print(context.strip().split('\n'))
-        return context.strip().split('\n')
+        context_lines = context.strip().split('\n')
+        print(context_lines)
+        return context_lines
 
     def create_llm_prompt(self, task_nl, domain_nl):
         # Baseline 1 (LLM-as-P): directly ask the LLM for plan

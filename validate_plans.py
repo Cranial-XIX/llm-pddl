@@ -1,8 +1,9 @@
 import argparse
-import time
-import os
 import glob
+import os
 import subprocess
+import time
+
 from main import *
 
 if __name__ == "__main__":

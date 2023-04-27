@@ -1,7 +1,8 @@
+import glob
 import os
 import sys
 from collections import namedtuple
-import glob
+
 
 # PDDLStream https://github.com/caelan/pddlstream/blob/526b450a7d3913d3833e1413df416efa7e71ca6a/pddlstream/algorithms/downward.py
 def find_build(fd_path):
