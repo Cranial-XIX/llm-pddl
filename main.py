@@ -164,8 +164,9 @@ class Planner:
         openai_keys_file = os.path.join(os.getcwd(), "keys/openai_keys.txt")
         with open(openai_keys_file, "r") as f:
             context = f.read()
-        print(context.strip().split('\n'))
-        return context.strip().split('\n')
+        context_lines = context.strip().split('\n')
+        print(context_lines)
+        return context_lines
 
     def create_llm_prompt(self, task_nl, domain_nl):
         # Baseline 1 (LLM-as-P): directly ask the LLM for plan
