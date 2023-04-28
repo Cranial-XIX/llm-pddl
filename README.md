@@ -5,7 +5,7 @@ This repo contains the source code for making plans based on problems decribed b
 
 1. Install OpenAI GPT [API](https://platform.openai.com/docs/quickstart/build-your-application). Remember to put openai_keys under the ```keys``` folder.
 
-2. Install [fast-downward](https://github.com/aibasel/downward)
+2. Install [fast-downward](https://drive.google.com/file/d/16HlP14IN06asIXYAZ8RHR1P7-cEYwhA6/view). For more details on fast-downward, please check the official [github repo](https://github.com/aibasel/downward) and the fast-downward [website](https://www.fast-downward.org/).
 
 ## Running Code
 To run a for a specific task in a specific domain using a specific method:
