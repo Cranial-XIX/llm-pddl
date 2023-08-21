@@ -49,7 +49,6 @@ DOMAINS = [
 
 class Domain:
     def __init__(self):
-        self.name = "default"
         # every domain should contain the context as in "in-context learning" (ICL)
         # which are the example problem in natural language.
         # For instance, in our case, context is:
