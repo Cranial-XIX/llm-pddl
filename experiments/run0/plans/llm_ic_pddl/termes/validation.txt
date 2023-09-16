@@ -1,0 +1,2282 @@
+Type-checking move
+...action passes type checking.
+Type-checking move-up
+...action passes type checking.
+Type-checking move-down
+...action passes type checking.
+Type-checking place-block
+...action passes type checking.
+Type-checking remove-block
+...action passes type checking.
+Type-checking create-block
+...action passes type checking.
+Type-checking destroy-block
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/termes/p03.pddl
+Plan to validate:
+
+Plan size: 68
+1:
+(create-block pos-2-0)
+ 
+2:
+(move pos-2-0 pos-3-0 n0)
+ 
+3:
+(place-block pos-3-0 pos-3-1 n0 n1)
+ 
+4:
+(move pos-3-0 pos-2-0 n0)
+ 
+5:
+(create-block pos-2-0)
+ 
+6:
+(place-block pos-2-0 pos-2-1 n0 n1)
+ 
+7:
+(create-block pos-2-0)
+ 
+8:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+9:
+(place-block pos-2-1 pos-3-1 n1 n2)
+ 
+10:
+(move-down pos-2-1 n1 pos-2-0 n0)
+ 
+11:
+(create-block pos-2-0)
+ 
+12:
+(move pos-2-0 pos-1-0 n0)
+ 
+13:
+(place-block pos-1-0 pos-1-1 n0 n1)
+ 
+14:
+(move pos-1-0 pos-2-0 n0)
+ 
+15:
+(create-block pos-2-0)
+ 
+16:
+(move pos-2-0 pos-1-0 n0)
+ 
+17:
+(move-up pos-1-0 n0 pos-1-1 n1)
+ 
+18:
+(place-block pos-1-1 pos-2-1 n1 n2)
+ 
+19:
+(move-down pos-1-1 n1 pos-1-0 n0)
+ 
+20:
+(move pos-1-0 pos-2-0 n0)
+ 
+21:
+(create-block pos-2-0)
+ 
+22:
+(place-block pos-2-0 pos-1-0 n0 n1)
+ 
+23:
+(create-block pos-2-0)
+ 
+24:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+25:
+(move pos-1-0 pos-1-1 n1)
+ 
+26:
+(move-up pos-1-1 n1 pos-2-1 n2)
+ 
+27:
+(place-block pos-2-1 pos-3-1 n2 n3)
+ 
+28:
+(move-down pos-2-1 n2 pos-1-1 n1)
+ 
+29:
+(move pos-1-1 pos-1-0 n1)
+ 
+30:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+31:
+(create-block pos-2-0)
+ 
+32:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+33:
+(place-block pos-1-0 pos-1-1 n1 n2)
+ 
+34:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+35:
+(create-block pos-2-0)
+ 
+36:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+37:
+(move-up pos-1-0 n1 pos-1-1 n2)
+ 
+38:
+(place-block pos-1-1 pos-2-1 n2 n3)
+ 
+39:
+(move-down pos-1-1 n2 pos-1-0 n1)
+ 
+40:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+41:
+(create-block pos-2-0)
+ 
+42:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+43:
+(move-up pos-1-0 n1 pos-1-1 n2)
+ 
+44:
+(move-up pos-1-1 n2 pos-2-1 n3)
+ 
+45:
+(place-block pos-2-1 pos-3-1 n3 n4)
+ 
+46:
+(move-down pos-2-1 n3 pos-1-1 n2)
+ 
+47:
+(remove-block pos-1-1 pos-2-1 n3 n2)
+ 
+48:
+(move-down pos-1-1 n2 pos-1-0 n1)
+ 
+49:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+50:
+(destroy-block pos-2-0)
+ 
+51:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+52:
+(remove-block pos-1-0 pos-1-1 n2 n1)
+ 
+53:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+54:
+(destroy-block pos-2-0)
+ 
+55:
+(remove-block pos-2-0 pos-1-0 n1 n0)
+ 
+56:
+(destroy-block pos-2-0)
+ 
+57:
+(move pos-2-0 pos-1-0 n0)
+ 
+58:
+(move-up pos-1-0 n0 pos-1-1 n1)
+ 
+59:
+(remove-block pos-1-1 pos-2-1 n2 n1)
+ 
+60:
+(move-down pos-1-1 n1 pos-1-0 n0)
+ 
+61:
+(move pos-1-0 pos-2-0 n0)
+ 
+62:
+(destroy-block pos-2-0)
+ 
+63:
+(move pos-2-0 pos-1-0 n0)
+ 
+64:
+(remove-block pos-1-0 pos-1-1 n1 n0)
+ 
+65:
+(move pos-1-0 pos-2-0 n0)
+ 
+66:
+(destroy-block pos-2-0)
+ 
+67:
+(remove-block pos-2-0 pos-2-1 n1 n0)
+ 
+68:
+(destroy-block pos-2-0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (has-block)
+
+Checking next happening (time 2)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 3)
+Deleting (height pos-3-1 n0)
+Deleting (has-block)
+Adding (height pos-3-1 n1)
+
+Checking next happening (time 4)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 5)
+Adding (has-block)
+
+Checking next happening (time 6)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 7)
+Adding (has-block)
+
+Checking next happening (time 8)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 9)
+Deleting (height pos-3-1 n1)
+Deleting (has-block)
+Adding (height pos-3-1 n2)
+
+Checking next happening (time 10)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 11)
+Adding (has-block)
+
+Checking next happening (time 12)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 13)
+Deleting (height pos-1-1 n0)
+Deleting (has-block)
+Adding (height pos-1-1 n1)
+
+Checking next happening (time 14)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 15)
+Adding (has-block)
+
+Checking next happening (time 16)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 17)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 18)
+Deleting (height pos-2-1 n1)
+Deleting (has-block)
+Adding (height pos-2-1 n2)
+
+Checking next happening (time 19)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 20)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 21)
+Adding (has-block)
+
+Checking next happening (time 22)
+Deleting (height pos-1-0 n0)
+Deleting (has-block)
+Adding (height pos-1-0 n1)
+
+Checking next happening (time 23)
+Adding (has-block)
+
+Checking next happening (time 24)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 25)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 26)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 27)
+Deleting (height pos-3-1 n2)
+Deleting (has-block)
+Adding (height pos-3-1 n3)
+
+Checking next happening (time 28)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 29)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 30)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 31)
+Adding (has-block)
+
+Checking next happening (time 32)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 33)
+Deleting (height pos-1-1 n1)
+Deleting (has-block)
+Adding (height pos-1-1 n2)
+
+Checking next happening (time 34)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 35)
+Adding (has-block)
+
+Checking next happening (time 36)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 37)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 38)
+Deleting (height pos-2-1 n2)
+Deleting (has-block)
+Adding (height pos-2-1 n3)
+
+Checking next happening (time 39)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 40)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 41)
+Adding (has-block)
+
+Checking next happening (time 42)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 43)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 44)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 45)
+Deleting (height pos-3-1 n3)
+Deleting (has-block)
+Adding (height pos-3-1 n4)
+
+Checking next happening (time 46)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 47)
+Deleting (height pos-2-1 n3)
+Adding (height pos-2-1 n2)
+Adding (has-block)
+
+Checking next happening (time 48)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 49)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 50)
+Deleting (has-block)
+
+Checking next happening (time 51)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 52)
+Deleting (height pos-1-1 n2)
+Adding (height pos-1-1 n1)
+Adding (has-block)
+
+Checking next happening (time 53)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 54)
+Deleting (has-block)
+
+Checking next happening (time 55)
+Deleting (height pos-1-0 n1)
+Adding (height pos-1-0 n0)
+Adding (has-block)
+
+Checking next happening (time 56)
+Deleting (has-block)
+
+Checking next happening (time 57)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 58)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 59)
+Deleting (height pos-2-1 n2)
+Adding (height pos-2-1 n1)
+Adding (has-block)
+
+Checking next happening (time 60)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 61)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 62)
+Deleting (has-block)
+
+Checking next happening (time 63)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 64)
+Deleting (height pos-1-1 n1)
+Adding (height pos-1-1 n0)
+Adding (has-block)
+
+Checking next happening (time 65)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 66)
+Deleting (has-block)
+
+Checking next happening (time 67)
+Deleting (height pos-2-1 n1)
+Adding (height pos-2-1 n0)
+Adding (has-block)
+
+Checking next happening (time 68)
+Deleting (has-block)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 68 
+
+Successful plans:
+Value: 68
+ experiments/run0/plans/llm_ic_pddl/termes/p03.pddl 68 
+
+Type-checking move
+...action passes type checking.
+Type-checking move-up
+...action passes type checking.
+Type-checking move-down
+...action passes type checking.
+Type-checking place-block
+...action passes type checking.
+Type-checking remove-block
+...action passes type checking.
+Type-checking create-block
+...action passes type checking.
+Type-checking destroy-block
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/termes/p12.pddl
+Plan to validate:
+
+Plan size: 46
+1:
+(create-block pos-1-0)
+ 
+2:
+(move pos-1-0 pos-2-0 n0)
+ 
+3:
+(place-block pos-2-0 pos-2-1 n0 n1)
+ 
+4:
+(move pos-2-0 pos-1-0 n0)
+ 
+5:
+(create-block pos-1-0)
+ 
+6:
+(place-block pos-1-0 pos-2-0 n0 n1)
+ 
+7:
+(create-block pos-1-0)
+ 
+8:
+(move-up pos-1-0 n0 pos-2-0 n1)
+ 
+9:
+(move pos-2-0 pos-2-1 n1)
+ 
+10:
+(place-block pos-2-1 pos-2-0 n1 n2)
+ 
+11:
+(move-down pos-2-1 n1 pos-1-1 n0)
+ 
+12:
+(move pos-1-1 pos-1-0 n0)
+ 
+13:
+(create-block pos-1-0)
+ 
+14:
+(place-block pos-1-0 pos-1-1 n0 n1)
+ 
+15:
+(create-block pos-1-0)
+ 
+16:
+(move-up pos-1-0 n0 pos-1-1 n1)
+ 
+17:
+(place-block pos-1-1 pos-2-1 n1 n2)
+ 
+18:
+(move-down pos-1-1 n1 pos-1-0 n0)
+ 
+19:
+(create-block pos-1-0)
+ 
+20:
+(move pos-1-0 pos-0-0 n0)
+ 
+21:
+(place-block pos-0-0 pos-0-1 n0 n1)
+ 
+22:
+(move pos-0-0 pos-1-0 n0)
+ 
+23:
+(create-block pos-1-0)
+ 
+24:
+(place-block pos-1-0 pos-0-0 n0 n1)
+ 
+25:
+(create-block pos-1-0)
+ 
+26:
+(move-up pos-1-0 n0 pos-0-0 n1)
+ 
+27:
+(move pos-0-0 pos-0-1 n1)
+ 
+28:
+(place-block pos-0-1 pos-1-1 n1 n2)
+ 
+29:
+(move pos-0-1 pos-0-0 n1)
+ 
+30:
+(move-down pos-0-0 n1 pos-1-0 n0)
+ 
+31:
+(create-block pos-1-0)
+ 
+32:
+(move-up pos-1-0 n0 pos-0-0 n1)
+ 
+33:
+(move pos-0-0 pos-0-1 n1)
+ 
+34:
+(move-up pos-0-1 n1 pos-1-1 n2)
+ 
+35:
+(place-block pos-1-1 pos-2-1 n2 n3)
+ 
+36:
+(move-down pos-1-1 n2 pos-0-1 n1)
+ 
+37:
+(remove-block pos-0-1 pos-1-1 n2 n1)
+ 
+38:
+(place-block pos-0-1 pos-0-0 n1 n2)
+ 
+39:
+(move pos-0-1 pos-1-1 n1)
+ 
+40:
+(move-down pos-1-1 n1 pos-1-0 n0)
+ 
+41:
+(create-block pos-1-0)
+ 
+42:
+(move-up pos-1-0 n0 pos-1-1 n1)
+ 
+43:
+(place-block pos-1-1 pos-0-1 n1 n2)
+ 
+44:
+(move-down pos-1-1 n1 pos-1-0 n0)
+ 
+45:
+(remove-block pos-1-0 pos-1-1 n1 n0)
+ 
+46:
+(destroy-block pos-1-0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (has-block)
+
+Checking next happening (time 2)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 3)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 4)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 5)
+Adding (has-block)
+
+Checking next happening (time 6)
+Deleting (height pos-2-0 n0)
+Deleting (has-block)
+Adding (height pos-2-0 n1)
+
+Checking next happening (time 7)
+Adding (has-block)
+
+Checking next happening (time 8)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 9)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 10)
+Deleting (height pos-2-0 n1)
+Deleting (has-block)
+Adding (height pos-2-0 n2)
+
+Checking next happening (time 11)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 12)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 13)
+Adding (has-block)
+
+Checking next happening (time 14)
+Deleting (height pos-1-1 n0)
+Deleting (has-block)
+Adding (height pos-1-1 n1)
+
+Checking next happening (time 15)
+Adding (has-block)
+
+Checking next happening (time 16)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 17)
+Deleting (height pos-2-1 n1)
+Deleting (has-block)
+Adding (height pos-2-1 n2)
+
+Checking next happening (time 18)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 19)
+Adding (has-block)
+
+Checking next happening (time 20)
+Deleting (at pos-1-0)
+Adding (at pos-0-0)
+
+Checking next happening (time 21)
+Deleting (height pos-0-1 n0)
+Deleting (has-block)
+Adding (height pos-0-1 n1)
+
+Checking next happening (time 22)
+Deleting (at pos-0-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 23)
+Adding (has-block)
+
+Checking next happening (time 24)
+Deleting (height pos-0-0 n0)
+Deleting (has-block)
+Adding (height pos-0-0 n1)
+
+Checking next happening (time 25)
+Adding (has-block)
+
+Checking next happening (time 26)
+Deleting (at pos-1-0)
+Adding (at pos-0-0)
+
+Checking next happening (time 27)
+Deleting (at pos-0-0)
+Adding (at pos-0-1)
+
+Checking next happening (time 28)
+Deleting (height pos-1-1 n1)
+Deleting (has-block)
+Adding (height pos-1-1 n2)
+
+Checking next happening (time 29)
+Deleting (at pos-0-1)
+Adding (at pos-0-0)
+
+Checking next happening (time 30)
+Deleting (at pos-0-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 31)
+Adding (has-block)
+
+Checking next happening (time 32)
+Deleting (at pos-1-0)
+Adding (at pos-0-0)
+
+Checking next happening (time 33)
+Deleting (at pos-0-0)
+Adding (at pos-0-1)
+
+Checking next happening (time 34)
+Deleting (at pos-0-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 35)
+Deleting (height pos-2-1 n2)
+Deleting (has-block)
+Adding (height pos-2-1 n3)
+
+Checking next happening (time 36)
+Deleting (at pos-1-1)
+Adding (at pos-0-1)
+
+Checking next happening (time 37)
+Deleting (height pos-1-1 n2)
+Adding (height pos-1-1 n1)
+Adding (has-block)
+
+Checking next happening (time 38)
+Deleting (height pos-0-0 n1)
+Deleting (has-block)
+Adding (height pos-0-0 n2)
+
+Checking next happening (time 39)
+Deleting (at pos-0-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 40)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 41)
+Adding (has-block)
+
+Checking next happening (time 42)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 43)
+Deleting (height pos-0-1 n1)
+Deleting (has-block)
+Adding (height pos-0-1 n2)
+
+Checking next happening (time 44)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 45)
+Deleting (height pos-1-1 n1)
+Adding (height pos-1-1 n0)
+Adding (has-block)
+
+Checking next happening (time 46)
+Deleting (has-block)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 46 
+
+Successful plans:
+Value: 46
+ experiments/run0/plans/llm_ic_pddl/termes/p12.pddl 46 
+
+Type-checking move
+...action passes type checking.
+Type-checking move-up
+...action passes type checking.
+Type-checking move-down
+...action passes type checking.
+Type-checking place-block
+...action passes type checking.
+Type-checking remove-block
+...action passes type checking.
+Type-checking create-block
+...action passes type checking.
+Type-checking destroy-block
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/termes/p17.pddl
+Plan to validate:
+
+Plan size: 116
+1:
+(create-block pos-3-0)
+ 
+2:
+(move pos-3-0 pos-2-0 n0)
+ 
+3:
+(place-block pos-2-0 pos-1-0 n0 n1)
+ 
+4:
+(move pos-2-0 pos-3-0 n0)
+ 
+5:
+(create-block pos-3-0)
+ 
+6:
+(place-block pos-3-0 pos-2-0 n0 n1)
+ 
+7:
+(create-block pos-3-0)
+ 
+8:
+(move pos-3-0 pos-3-1 n0)
+ 
+9:
+(place-block pos-3-1 pos-3-2 n0 n1)
+ 
+10:
+(move pos-3-1 pos-3-0 n0)
+ 
+11:
+(create-block pos-3-0)
+ 
+12:
+(move-up pos-3-0 n0 pos-2-0 n1)
+ 
+13:
+(place-block pos-2-0 pos-1-0 n1 n2)
+ 
+14:
+(move-down pos-2-0 n1 pos-3-0 n0)
+ 
+15:
+(create-block pos-3-0)
+ 
+16:
+(move pos-3-0 pos-3-1 n0)
+ 
+17:
+(place-block pos-3-1 pos-2-1 n0 n1)
+ 
+18:
+(move pos-3-1 pos-3-0 n0)
+ 
+19:
+(create-block pos-3-0)
+ 
+20:
+(place-block pos-3-0 pos-3-1 n0 n1)
+ 
+21:
+(create-block pos-3-0)
+ 
+22:
+(move-up pos-3-0 n0 pos-3-1 n1)
+ 
+23:
+(place-block pos-3-1 pos-3-2 n1 n2)
+ 
+24:
+(move-down pos-3-1 n1 pos-3-0 n0)
+ 
+25:
+(create-block pos-3-0)
+ 
+26:
+(move-up pos-3-0 n0 pos-3-1 n1)
+ 
+27:
+(move pos-3-1 pos-2-1 n1)
+ 
+28:
+(place-block pos-2-1 pos-3-1 n1 n2)
+ 
+29:
+(move pos-2-1 pos-2-0 n1)
+ 
+30:
+(move-down pos-2-0 n1 pos-3-0 n0)
+ 
+31:
+(create-block pos-3-0)
+ 
+32:
+(move-up pos-3-0 n0 pos-2-0 n1)
+ 
+33:
+(move pos-2-0 pos-2-1 n1)
+ 
+34:
+(move-up pos-2-1 n1 pos-3-1 n2)
+ 
+35:
+(place-block pos-3-1 pos-3-2 n2 n3)
+ 
+36:
+(move-down pos-3-1 n2 pos-2-1 n1)
+ 
+37:
+(remove-block pos-2-1 pos-3-1 n2 n1)
+ 
+38:
+(move-down pos-2-1 n1 pos-1-1 n0)
+ 
+39:
+(place-block pos-1-1 pos-0-1 n0 n1)
+ 
+40:
+(remove-block pos-1-1 pos-2-1 n1 n0)
+ 
+41:
+(place-block pos-1-1 pos-1-2 n0 n1)
+ 
+42:
+(move pos-1-1 pos-2-1 n0)
+ 
+43:
+(remove-block pos-2-1 pos-3-1 n1 n0)
+ 
+44:
+(place-block pos-2-1 pos-1-1 n0 n1)
+ 
+45:
+(remove-block pos-2-1 pos-2-0 n1 n0)
+ 
+46:
+(move-up pos-2-1 n0 pos-1-1 n1)
+ 
+47:
+(place-block pos-1-1 pos-0-1 n1 n2)
+ 
+48:
+(remove-block pos-1-1 pos-1-0 n2 n1)
+ 
+49:
+(place-block pos-1-1 pos-1-2 n1 n2)
+ 
+50:
+(move pos-1-1 pos-1-0 n1)
+ 
+51:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+52:
+(move pos-2-0 pos-3-0 n0)
+ 
+53:
+(create-block pos-3-0)
+ 
+54:
+(place-block pos-3-0 pos-2-0 n0 n1)
+ 
+55:
+(create-block pos-3-0)
+ 
+56:
+(move-up pos-3-0 n0 pos-2-0 n1)
+ 
+57:
+(move pos-2-0 pos-1-0 n1)
+ 
+58:
+(place-block pos-1-0 pos-1-1 n1 n2)
+ 
+59:
+(move pos-1-0 pos-2-0 n1)
+ 
+60:
+(move-down pos-2-0 n1 pos-3-0 n0)
+ 
+61:
+(create-block pos-3-0)
+ 
+62:
+(move-up pos-3-0 n0 pos-2-0 n1)
+ 
+63:
+(move pos-2-0 pos-1-0 n1)
+ 
+64:
+(move-up pos-1-0 n1 pos-1-1 n2)
+ 
+65:
+(place-block pos-1-1 pos-0-1 n2 n3)
+ 
+66:
+(move-down pos-1-1 n2 pos-1-0 n1)
+ 
+67:
+(move pos-1-0 pos-2-0 n1)
+ 
+68:
+(move-down pos-2-0 n1 pos-3-0 n0)
+ 
+69:
+(create-block pos-3-0)
+ 
+70:
+(place-block pos-3-0 pos-3-1 n0 n1)
+ 
+71:
+(create-block pos-3-0)
+ 
+72:
+(move-up pos-3-0 n0 pos-2-0 n1)
+ 
+73:
+(move pos-2-0 pos-1-0 n1)
+ 
+74:
+(move-up pos-1-0 n1 pos-1-1 n2)
+ 
+75:
+(place-block pos-1-1 pos-1-2 n2 n3)
+ 
+76:
+(move-down pos-1-1 n2 pos-1-0 n1)
+ 
+77:
+(remove-block pos-1-0 pos-1-1 n2 n1)
+ 
+78:
+(place-block pos-1-0 pos-2-0 n1 n2)
+ 
+79:
+(move pos-1-0 pos-1-1 n1)
+ 
+80:
+(move-down pos-1-1 n1 pos-2-1 n0)
+ 
+81:
+(remove-block pos-2-1 pos-3-1 n1 n0)
+ 
+82:
+(move-up pos-2-1 n0 pos-1-1 n1)
+ 
+83:
+(place-block pos-1-1 pos-1-0 n1 n2)
+ 
+84:
+(move-down pos-1-1 n1 pos-2-1 n0)
+ 
+85:
+(remove-block pos-2-1 pos-1-1 n1 n0)
+ 
+86:
+(move pos-2-1 pos-3-1 n0)
+ 
+87:
+(place-block pos-3-1 pos-2-1 n0 n1)
+ 
+88:
+(move pos-3-1 pos-3-0 n0)
+ 
+89:
+(create-block pos-3-0)
+ 
+90:
+(move pos-3-0 pos-3-1 n0)
+ 
+91:
+(move-up pos-3-1 n0 pos-2-1 n1)
+ 
+92:
+(move-up pos-2-1 n1 pos-2-0 n2)
+ 
+93:
+(place-block pos-2-0 pos-1-0 n2 n3)
+ 
+94:
+(move-down pos-2-0 n2 pos-2-1 n1)
+ 
+95:
+(move-down pos-2-1 n1 pos-3-1 n0)
+ 
+96:
+(move pos-3-1 pos-3-0 n0)
+ 
+97:
+(create-block pos-3-0)
+ 
+98:
+(place-block pos-3-0 pos-3-1 n0 n1)
+ 
+99:
+(create-block pos-3-0)
+ 
+100:
+(move-up pos-3-0 n0 pos-3-1 n1)
+ 
+101:
+(place-block pos-3-1 pos-2-1 n1 n2)
+ 
+102:
+(move-down pos-3-1 n1 pos-3-0 n0)
+ 
+103:
+(create-block pos-3-0)
+ 
+104:
+(move-up pos-3-0 n0 pos-3-1 n1)
+ 
+105:
+(move-up pos-3-1 n1 pos-2-1 n2)
+ 
+106:
+(place-block pos-2-1 pos-2-0 n2 n3)
+ 
+107:
+(move-down pos-2-1 n2 pos-3-1 n1)
+ 
+108:
+(remove-block pos-3-1 pos-2-1 n2 n1)
+ 
+109:
+(move-down pos-3-1 n1 pos-3-0 n0)
+ 
+110:
+(destroy-block pos-3-0)
+ 
+111:
+(remove-block pos-3-0 pos-3-1 n1 n0)
+ 
+112:
+(destroy-block pos-3-0)
+ 
+113:
+(move pos-3-0 pos-3-1 n0)
+ 
+114:
+(remove-block pos-3-1 pos-2-1 n1 n0)
+ 
+115:
+(move pos-3-1 pos-3-0 n0)
+ 
+116:
+(destroy-block pos-3-0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (has-block)
+
+Checking next happening (time 2)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 3)
+Deleting (height pos-1-0 n0)
+Deleting (has-block)
+Adding (height pos-1-0 n1)
+
+Checking next happening (time 4)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 5)
+Adding (has-block)
+
+Checking next happening (time 6)
+Deleting (height pos-2-0 n0)
+Deleting (has-block)
+Adding (height pos-2-0 n1)
+
+Checking next happening (time 7)
+Adding (has-block)
+
+Checking next happening (time 8)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 9)
+Deleting (height pos-3-2 n0)
+Deleting (has-block)
+Adding (height pos-3-2 n1)
+
+Checking next happening (time 10)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 11)
+Adding (has-block)
+
+Checking next happening (time 12)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 13)
+Deleting (height pos-1-0 n1)
+Deleting (has-block)
+Adding (height pos-1-0 n2)
+
+Checking next happening (time 14)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 15)
+Adding (has-block)
+
+Checking next happening (time 16)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 17)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 18)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 19)
+Adding (has-block)
+
+Checking next happening (time 20)
+Deleting (height pos-3-1 n0)
+Deleting (has-block)
+Adding (height pos-3-1 n1)
+
+Checking next happening (time 21)
+Adding (has-block)
+
+Checking next happening (time 22)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 23)
+Deleting (height pos-3-2 n1)
+Deleting (has-block)
+Adding (height pos-3-2 n2)
+
+Checking next happening (time 24)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 25)
+Adding (has-block)
+
+Checking next happening (time 26)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 27)
+Deleting (at pos-3-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 28)
+Deleting (height pos-3-1 n1)
+Deleting (has-block)
+Adding (height pos-3-1 n2)
+
+Checking next happening (time 29)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 30)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 31)
+Adding (has-block)
+
+Checking next happening (time 32)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 33)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 34)
+Deleting (at pos-2-1)
+Adding (at pos-3-1)
+
+Checking next happening (time 35)
+Deleting (height pos-3-2 n2)
+Deleting (has-block)
+Adding (height pos-3-2 n3)
+
+Checking next happening (time 36)
+Deleting (at pos-3-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 37)
+Deleting (height pos-3-1 n2)
+Adding (height pos-3-1 n1)
+Adding (has-block)
+
+Checking next happening (time 38)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 39)
+Deleting (height pos-0-1 n0)
+Deleting (has-block)
+Adding (height pos-0-1 n1)
+
+Checking next happening (time 40)
+Deleting (height pos-2-1 n1)
+Adding (height pos-2-1 n0)
+Adding (has-block)
+
+Checking next happening (time 41)
+Deleting (height pos-1-2 n0)
+Deleting (has-block)
+Adding (height pos-1-2 n1)
+
+Checking next happening (time 42)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 43)
+Deleting (height pos-3-1 n1)
+Adding (height pos-3-1 n0)
+Adding (has-block)
+
+Checking next happening (time 44)
+Deleting (height pos-1-1 n0)
+Deleting (has-block)
+Adding (height pos-1-1 n1)
+
+Checking next happening (time 45)
+Deleting (height pos-2-0 n1)
+Adding (height pos-2-0 n0)
+Adding (has-block)
+
+Checking next happening (time 46)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 47)
+Deleting (height pos-0-1 n1)
+Deleting (has-block)
+Adding (height pos-0-1 n2)
+
+Checking next happening (time 48)
+Deleting (height pos-1-0 n2)
+Adding (height pos-1-0 n1)
+Adding (has-block)
+
+Checking next happening (time 49)
+Deleting (height pos-1-2 n1)
+Deleting (has-block)
+Adding (height pos-1-2 n2)
+
+Checking next happening (time 50)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 51)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 52)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 53)
+Adding (has-block)
+
+Checking next happening (time 54)
+Deleting (height pos-2-0 n0)
+Deleting (has-block)
+Adding (height pos-2-0 n1)
+
+Checking next happening (time 55)
+Adding (has-block)
+
+Checking next happening (time 56)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 57)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 58)
+Deleting (height pos-1-1 n1)
+Deleting (has-block)
+Adding (height pos-1-1 n2)
+
+Checking next happening (time 59)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 60)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 61)
+Adding (has-block)
+
+Checking next happening (time 62)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 63)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 64)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 65)
+Deleting (height pos-0-1 n2)
+Deleting (has-block)
+Adding (height pos-0-1 n3)
+
+Checking next happening (time 66)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 67)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 68)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 69)
+Adding (has-block)
+
+Checking next happening (time 70)
+Deleting (height pos-3-1 n0)
+Deleting (has-block)
+Adding (height pos-3-1 n1)
+
+Checking next happening (time 71)
+Adding (has-block)
+
+Checking next happening (time 72)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 73)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 74)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 75)
+Deleting (height pos-1-2 n2)
+Deleting (has-block)
+Adding (height pos-1-2 n3)
+
+Checking next happening (time 76)
+Deleting (at pos-1-1)
+Adding (at pos-1-0)
+
+Checking next happening (time 77)
+Deleting (height pos-1-1 n2)
+Adding (height pos-1-1 n1)
+Adding (has-block)
+
+Checking next happening (time 78)
+Deleting (height pos-2-0 n1)
+Deleting (has-block)
+Adding (height pos-2-0 n2)
+
+Checking next happening (time 79)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 80)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 81)
+Deleting (height pos-3-1 n1)
+Adding (height pos-3-1 n0)
+Adding (has-block)
+
+Checking next happening (time 82)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 83)
+Deleting (height pos-1-0 n1)
+Deleting (has-block)
+Adding (height pos-1-0 n2)
+
+Checking next happening (time 84)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 85)
+Deleting (height pos-1-1 n1)
+Adding (height pos-1-1 n0)
+Adding (has-block)
+
+Checking next happening (time 86)
+Deleting (at pos-2-1)
+Adding (at pos-3-1)
+
+Checking next happening (time 87)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 88)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 89)
+Adding (has-block)
+
+Checking next happening (time 90)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 91)
+Deleting (at pos-3-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 92)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 93)
+Deleting (height pos-1-0 n2)
+Deleting (has-block)
+Adding (height pos-1-0 n3)
+
+Checking next happening (time 94)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 95)
+Deleting (at pos-2-1)
+Adding (at pos-3-1)
+
+Checking next happening (time 96)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 97)
+Adding (has-block)
+
+Checking next happening (time 98)
+Deleting (height pos-3-1 n0)
+Deleting (has-block)
+Adding (height pos-3-1 n1)
+
+Checking next happening (time 99)
+Adding (has-block)
+
+Checking next happening (time 100)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 101)
+Deleting (height pos-2-1 n1)
+Deleting (has-block)
+Adding (height pos-2-1 n2)
+
+Checking next happening (time 102)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 103)
+Adding (has-block)
+
+Checking next happening (time 104)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 105)
+Deleting (at pos-3-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 106)
+Deleting (height pos-2-0 n2)
+Deleting (has-block)
+Adding (height pos-2-0 n3)
+
+Checking next happening (time 107)
+Deleting (at pos-2-1)
+Adding (at pos-3-1)
+
+Checking next happening (time 108)
+Deleting (height pos-2-1 n2)
+Adding (height pos-2-1 n1)
+Adding (has-block)
+
+Checking next happening (time 109)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 110)
+Deleting (has-block)
+
+Checking next happening (time 111)
+Deleting (height pos-3-1 n1)
+Adding (height pos-3-1 n0)
+Adding (has-block)
+
+Checking next happening (time 112)
+Deleting (has-block)
+
+Checking next happening (time 113)
+Deleting (at pos-3-0)
+Adding (at pos-3-1)
+
+Checking next happening (time 114)
+Deleting (height pos-2-1 n1)
+Adding (height pos-2-1 n0)
+Adding (has-block)
+
+Checking next happening (time 115)
+Deleting (at pos-3-1)
+Adding (at pos-3-0)
+
+Checking next happening (time 116)
+Deleting (has-block)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 116 
+
+Successful plans:
+Value: 116
+ experiments/run0/plans/llm_ic_pddl/termes/p17.pddl 116 
+
+Type-checking move
+...action passes type checking.
+Type-checking move-up
+...action passes type checking.
+Type-checking move-down
+...action passes type checking.
+Type-checking place-block
+...action passes type checking.
+Type-checking remove-block
+...action passes type checking.
+Type-checking create-block
+...action passes type checking.
+Type-checking destroy-block
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/termes/p18.pddl
+Plan to validate:
+
+Plan size: 76
+1:
+(create-block pos-2-0)
+ 
+2:
+(move pos-2-0 pos-1-0 n0)
+ 
+3:
+(place-block pos-1-0 pos-0-0 n0 n1)
+ 
+4:
+(move pos-1-0 pos-2-0 n0)
+ 
+5:
+(create-block pos-2-0)
+ 
+6:
+(place-block pos-2-0 pos-1-0 n0 n1)
+ 
+7:
+(create-block pos-2-0)
+ 
+8:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+9:
+(place-block pos-1-0 pos-0-0 n1 n2)
+ 
+10:
+(move-down pos-1-0 n1 pos-2-0 n0)
+ 
+11:
+(create-block pos-2-0)
+ 
+12:
+(move pos-2-0 pos-2-1 n0)
+ 
+13:
+(place-block pos-2-1 pos-2-2 n0 n1)
+ 
+14:
+(move pos-2-1 pos-2-0 n0)
+ 
+15:
+(create-block pos-2-0)
+ 
+16:
+(move pos-2-0 pos-2-1 n0)
+ 
+17:
+(place-block pos-2-1 pos-1-1 n0 n1)
+ 
+18:
+(move pos-2-1 pos-2-0 n0)
+ 
+19:
+(create-block pos-2-0)
+ 
+20:
+(move-up pos-2-0 n0 pos-1-0 n1)
+ 
+21:
+(move pos-1-0 pos-1-1 n1)
+ 
+22:
+(place-block pos-1-1 pos-1-0 n1 n2)
+ 
+23:
+(move-down pos-1-1 n1 pos-2-1 n0)
+ 
+24:
+(move pos-2-1 pos-2-0 n0)
+ 
+25:
+(create-block pos-2-0)
+ 
+26:
+(place-block pos-2-0 pos-2-1 n0 n1)
+ 
+27:
+(create-block pos-2-0)
+ 
+28:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+29:
+(place-block pos-2-1 pos-1-1 n1 n2)
+ 
+30:
+(move-down pos-2-1 n1 pos-2-0 n0)
+ 
+31:
+(create-block pos-2-0)
+ 
+32:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+33:
+(move-up pos-2-1 n1 pos-1-1 n2)
+ 
+34:
+(place-block pos-1-1 pos-1-0 n2 n3)
+ 
+35:
+(move-down pos-1-1 n2 pos-2-1 n1)
+ 
+36:
+(remove-block pos-2-1 pos-1-1 n2 n1)
+ 
+37:
+(move pos-2-1 pos-2-2 n1)
+ 
+38:
+(move-down pos-2-2 n1 pos-1-2 n0)
+ 
+39:
+(place-block pos-1-2 pos-0-2 n0 n1)
+ 
+40:
+(remove-block pos-1-2 pos-1-1 n1 n0)
+ 
+41:
+(move pos-1-2 pos-1-1 n0)
+ 
+42:
+(place-block pos-1-1 pos-1-2 n0 n1)
+ 
+43:
+(remove-block pos-1-1 pos-2-1 n1 n0)
+ 
+44:
+(move-up pos-1-1 n0 pos-1-2 n1)
+ 
+45:
+(place-block pos-1-2 pos-0-2 n1 n2)
+ 
+46:
+(move pos-1-2 pos-2-2 n1)
+ 
+47:
+(move-down pos-2-2 n1 pos-2-1 n0)
+ 
+48:
+(move pos-2-1 pos-2-0 n0)
+ 
+49:
+(create-block pos-2-0)
+ 
+50:
+(move pos-2-0 pos-2-1 n0)
+ 
+51:
+(move-up pos-2-1 n0 pos-2-2 n1)
+ 
+52:
+(place-block pos-2-2 pos-1-2 n1 n2)
+ 
+53:
+(move-down pos-2-2 n1 pos-2-1 n0)
+ 
+54:
+(move pos-2-1 pos-2-0 n0)
+ 
+55:
+(create-block pos-2-0)
+ 
+56:
+(move pos-2-0 pos-3-0 n0)
+ 
+57:
+(place-block pos-3-0 pos-3-1 n0 n1)
+ 
+58:
+(move pos-3-0 pos-2-0 n0)
+ 
+59:
+(create-block pos-2-0)
+ 
+60:
+(place-block pos-2-0 pos-2-1 n0 n1)
+ 
+61:
+(create-block pos-2-0)
+ 
+62:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+63:
+(place-block pos-2-1 pos-2-2 n1 n2)
+ 
+64:
+(move-down pos-2-1 n1 pos-2-0 n0)
+ 
+65:
+(create-block pos-2-0)
+ 
+66:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+67:
+(move-up pos-2-1 n1 pos-2-2 n2)
+ 
+68:
+(place-block pos-2-2 pos-1-2 n2 n3)
+ 
+69:
+(move-down pos-2-2 n2 pos-2-1 n1)
+ 
+70:
+(move-down pos-2-1 n1 pos-2-0 n0)
+ 
+71:
+(create-block pos-2-0)
+ 
+72:
+(move-up pos-2-0 n0 pos-2-1 n1)
+ 
+73:
+(place-block pos-2-1 pos-3-1 n1 n2)
+ 
+74:
+(move-down pos-2-1 n1 pos-2-0 n0)
+ 
+75:
+(remove-block pos-2-0 pos-2-1 n1 n0)
+ 
+76:
+(destroy-block pos-2-0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (has-block)
+
+Checking next happening (time 2)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 3)
+Deleting (height pos-0-0 n0)
+Deleting (has-block)
+Adding (height pos-0-0 n1)
+
+Checking next happening (time 4)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 5)
+Adding (has-block)
+
+Checking next happening (time 6)
+Deleting (height pos-1-0 n0)
+Deleting (has-block)
+Adding (height pos-1-0 n1)
+
+Checking next happening (time 7)
+Adding (has-block)
+
+Checking next happening (time 8)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 9)
+Deleting (height pos-0-0 n1)
+Deleting (has-block)
+Adding (height pos-0-0 n2)
+
+Checking next happening (time 10)
+Deleting (at pos-1-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 11)
+Adding (has-block)
+
+Checking next happening (time 12)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 13)
+Deleting (height pos-2-2 n0)
+Deleting (has-block)
+Adding (height pos-2-2 n1)
+
+Checking next happening (time 14)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 15)
+Adding (has-block)
+
+Checking next happening (time 16)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 17)
+Deleting (height pos-1-1 n0)
+Deleting (has-block)
+Adding (height pos-1-1 n1)
+
+Checking next happening (time 18)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 19)
+Adding (has-block)
+
+Checking next happening (time 20)
+Deleting (at pos-2-0)
+Adding (at pos-1-0)
+
+Checking next happening (time 21)
+Deleting (at pos-1-0)
+Adding (at pos-1-1)
+
+Checking next happening (time 22)
+Deleting (height pos-1-0 n1)
+Deleting (has-block)
+Adding (height pos-1-0 n2)
+
+Checking next happening (time 23)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 24)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 25)
+Adding (has-block)
+
+Checking next happening (time 26)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 27)
+Adding (has-block)
+
+Checking next happening (time 28)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 29)
+Deleting (height pos-1-1 n1)
+Deleting (has-block)
+Adding (height pos-1-1 n2)
+
+Checking next happening (time 30)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 31)
+Adding (has-block)
+
+Checking next happening (time 32)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 33)
+Deleting (at pos-2-1)
+Adding (at pos-1-1)
+
+Checking next happening (time 34)
+Deleting (height pos-1-0 n2)
+Deleting (has-block)
+Adding (height pos-1-0 n3)
+
+Checking next happening (time 35)
+Deleting (at pos-1-1)
+Adding (at pos-2-1)
+
+Checking next happening (time 36)
+Deleting (height pos-1-1 n2)
+Adding (height pos-1-1 n1)
+Adding (has-block)
+
+Checking next happening (time 37)
+Deleting (at pos-2-1)
+Adding (at pos-2-2)
+
+Checking next happening (time 38)
+Deleting (at pos-2-2)
+Adding (at pos-1-2)
+
+Checking next happening (time 39)
+Deleting (height pos-0-2 n0)
+Deleting (has-block)
+Adding (height pos-0-2 n1)
+
+Checking next happening (time 40)
+Deleting (height pos-1-1 n1)
+Adding (height pos-1-1 n0)
+Adding (has-block)
+
+Checking next happening (time 41)
+Deleting (at pos-1-2)
+Adding (at pos-1-1)
+
+Checking next happening (time 42)
+Deleting (height pos-1-2 n0)
+Deleting (has-block)
+Adding (height pos-1-2 n1)
+
+Checking next happening (time 43)
+Deleting (height pos-2-1 n1)
+Adding (height pos-2-1 n0)
+Adding (has-block)
+
+Checking next happening (time 44)
+Deleting (at pos-1-1)
+Adding (at pos-1-2)
+
+Checking next happening (time 45)
+Deleting (height pos-0-2 n1)
+Deleting (has-block)
+Adding (height pos-0-2 n2)
+
+Checking next happening (time 46)
+Deleting (at pos-1-2)
+Adding (at pos-2-2)
+
+Checking next happening (time 47)
+Deleting (at pos-2-2)
+Adding (at pos-2-1)
+
+Checking next happening (time 48)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 49)
+Adding (has-block)
+
+Checking next happening (time 50)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 51)
+Deleting (at pos-2-1)
+Adding (at pos-2-2)
+
+Checking next happening (time 52)
+Deleting (height pos-1-2 n1)
+Deleting (has-block)
+Adding (height pos-1-2 n2)
+
+Checking next happening (time 53)
+Deleting (at pos-2-2)
+Adding (at pos-2-1)
+
+Checking next happening (time 54)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 55)
+Adding (has-block)
+
+Checking next happening (time 56)
+Deleting (at pos-2-0)
+Adding (at pos-3-0)
+
+Checking next happening (time 57)
+Deleting (height pos-3-1 n0)
+Deleting (has-block)
+Adding (height pos-3-1 n1)
+
+Checking next happening (time 58)
+Deleting (at pos-3-0)
+Adding (at pos-2-0)
+
+Checking next happening (time 59)
+Adding (has-block)
+
+Checking next happening (time 60)
+Deleting (height pos-2-1 n0)
+Deleting (has-block)
+Adding (height pos-2-1 n1)
+
+Checking next happening (time 61)
+Adding (has-block)
+
+Checking next happening (time 62)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 63)
+Deleting (height pos-2-2 n1)
+Deleting (has-block)
+Adding (height pos-2-2 n2)
+
+Checking next happening (time 64)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 65)
+Adding (has-block)
+
+Checking next happening (time 66)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 67)
+Deleting (at pos-2-1)
+Adding (at pos-2-2)
+
+Checking next happening (time 68)
+Deleting (height pos-1-2 n2)
+Deleting (has-block)
+Adding (height pos-1-2 n3)
+
+Checking next happening (time 69)
+Deleting (at pos-2-2)
+Adding (at pos-2-1)
+
+Checking next happening (time 70)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 71)
+Adding (has-block)
+
+Checking next happening (time 72)
+Deleting (at pos-2-0)
+Adding (at pos-2-1)
+
+Checking next happening (time 73)
+Deleting (height pos-3-1 n1)
+Deleting (has-block)
+Adding (height pos-3-1 n2)
+
+Checking next happening (time 74)
+Deleting (at pos-2-1)
+Adding (at pos-2-0)
+
+Checking next happening (time 75)
+Deleting (height pos-2-1 n1)
+Adding (height pos-2-1 n0)
+Adding (has-block)
+
+Checking next happening (time 76)
+Deleting (has-block)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 76 
+
+Successful plans:
+Value: 76
+ experiments/run0/plans/llm_ic_pddl/termes/p18.pddl 76 
+

@@ -1,0 +1,1889 @@
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p02.pddl
+Plan to validate:
+
+Plan size: 3
+1:
+(go-out hoist0 depot48-1-1 loadarea)
+ 
+2:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist0 crate0 depot48-1-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run0/plans/llm_ic_pddl/storage/p02.pddl 3 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p03.pddl
+Plan to validate:
+
+Plan size: 3
+1:
+(go-out hoist0 depot48-1-2 loadarea)
+ 
+2:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist0 crate0 depot48-1-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run0/plans/llm_ic_pddl/storage/p03.pddl 3 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p04.pddl
+Plan to validate:
+
+Plan size: 8
+1:
+(move hoist0 depot48-1-1 depot48-2-1)
+ 
+2:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+5:
+(drop hoist0 crate0 depot48-1-1 depot48-2-1 depot48)
+ 
+6:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(drop hoist0 crate1 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-1)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run0/plans/llm_ic_pddl/storage/p04.pddl 8 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p05.pddl
+Plan to validate:
+
+Plan size: 8
+1:
+(move hoist0 depot48-1-1 depot48-2-1)
+ 
+2:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+5:
+(drop hoist0 crate0 depot48-1-1 depot48-2-1 depot48)
+ 
+6:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(drop hoist0 crate1 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-1)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run0/plans/llm_ic_pddl/storage/p05.pddl 8 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p06.pddl
+Plan to validate:
+
+Plan size: 8
+1:
+(move hoist0 depot48-1-1 depot48-2-1)
+ 
+2:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+5:
+(drop hoist0 crate0 depot48-1-1 depot48-2-1 depot48)
+ 
+6:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(drop hoist0 crate1 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-1)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run0/plans/llm_ic_pddl/storage/p06.pddl 8 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p07.pddl
+Plan to validate:
+
+Plan size: 16
+1:
+(move hoist0 depot48-1-3 depot48-1-2)
+ 
+2:
+(move hoist0 depot48-1-2 depot48-2-2)
+ 
+3:
+(move hoist0 depot48-2-2 depot48-2-1)
+ 
+4:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+5:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+6:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+7:
+(move hoist0 depot48-2-1 depot48-2-2)
+ 
+8:
+(drop hoist0 crate0 depot48-1-2 depot48-2-2 depot48)
+ 
+9:
+(move hoist0 depot48-2-2 depot48-2-1)
+ 
+10:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+11:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+12:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+13:
+(drop hoist0 crate1 depot48-2-2 depot48-2-1 depot48)
+ 
+14:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+15:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+16:
+(drop hoist0 crate2 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-3)
+Deleting (clear depot48-1-2)
+Adding (at hoist0 depot48-1-2)
+Adding (clear depot48-1-3)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-1-2)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 3)
+Deleting (at hoist0 depot48-2-2)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 4)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 5)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 6)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 7)
+Deleting (at hoist0 depot48-2-1)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 8)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 9)
+Deleting (at hoist0 depot48-2-2)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 10)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 11)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 12)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 13)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-2)
+Adding (in crate1 depot48)
+
+Checking next happening (time 14)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 15)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 16)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate2 depot48-2-1)
+Adding (in crate2 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 16 
+
+Successful plans:
+Value: 16
+ experiments/run0/plans/llm_ic_pddl/storage/p07.pddl 16 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p08.pddl
+Plan to validate:
+
+Plan size: 12
+1:
+(move hoist0 depot48-2-2 depot48-2-3)
+ 
+2:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(drop hoist0 crate0 depot48-2-3 loadarea depot48)
+ 
+5:
+(lift hoist1 crate0 depot48-2-3 depot48-1-3 depot48)
+ 
+6:
+(drop hoist1 crate0 depot48-1-2 depot48-1-3 depot48)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(go-in hoist0 loadarea depot48-2-3)
+ 
+9:
+(drop hoist0 crate1 depot48-2-2 depot48-2-3 depot48)
+ 
+10:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+11:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+12:
+(drop hoist0 crate2 depot48-2-3 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-2-2)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-2-3)
+Adding (available hoist0)
+Adding (on crate0 depot48-2-3)
+Adding (in crate0 depot48)
+
+Checking next happening (time 5)
+Deleting (on crate0 depot48-2-3)
+Deleting (available hoist1)
+Deleting (in crate0 depot48)
+Adding (clear depot48-2-3)
+Adding (lifting hoist1 crate0)
+
+Checking next happening (time 6)
+Deleting (lifting hoist1 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist1)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+
+Checking next happening (time 9)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-2)
+Adding (in crate1 depot48)
+
+Checking next happening (time 10)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 11)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 12)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-2-3)
+Adding (available hoist0)
+Adding (on crate2 depot48-2-3)
+Adding (in crate2 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run0/plans/llm_ic_pddl/storage/p08.pddl 12 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p09.pddl
+Plan to validate:
+
+Plan size: 17
+1:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+2:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist0 crate0 depot48-2-1 loadarea depot48)
+ 
+4:
+(move hoist1 depot48-1-2 depot48-2-2)
+ 
+5:
+(lift hoist1 crate0 depot48-2-1 depot48-2-2 depot48)
+ 
+6:
+(drop hoist1 crate0 depot48-1-2 depot48-2-2 depot48)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(drop hoist0 crate1 depot48-2-1 loadarea depot48)
+ 
+9:
+(lift hoist1 crate1 depot48-2-1 depot48-2-2 depot48)
+ 
+10:
+(move hoist1 depot48-2-2 depot48-2-3)
+ 
+11:
+(drop hoist1 crate1 depot48-2-2 depot48-2-3 depot48)
+ 
+12:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+13:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+14:
+(drop hoist0 crate2 depot48-1-1 depot48-2-1 depot48)
+ 
+15:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+16:
+(lift hoist0 crate3 container-0-3 loadarea container0)
+ 
+17:
+(drop hoist0 crate3 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-2-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 4)
+Deleting (at hoist1 depot48-1-2)
+Deleting (clear depot48-2-2)
+Adding (at hoist1 depot48-2-2)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 5)
+Deleting (on crate0 depot48-2-1)
+Deleting (available hoist1)
+Deleting (in crate0 depot48)
+Adding (clear depot48-2-1)
+Adding (lifting hoist1 crate0)
+
+Checking next happening (time 6)
+Deleting (lifting hoist1 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist1)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+
+Checking next happening (time 9)
+Deleting (on crate1 depot48-2-1)
+Deleting (available hoist1)
+Deleting (in crate1 depot48)
+Adding (clear depot48-2-1)
+Adding (lifting hoist1 crate1)
+
+Checking next happening (time 10)
+Deleting (at hoist1 depot48-2-2)
+Deleting (clear depot48-2-3)
+Adding (at hoist1 depot48-2-3)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 11)
+Deleting (lifting hoist1 crate1)
+Deleting (clear depot48-2-2)
+Adding (available hoist1)
+Adding (on crate1 depot48-2-2)
+Adding (in crate1 depot48)
+
+Checking next happening (time 12)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 13)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 14)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate2 depot48-1-1)
+Adding (in crate2 depot48)
+
+Checking next happening (time 15)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 16)
+Deleting (on crate3 container-0-3)
+Deleting (available hoist0)
+Deleting (in crate3 container0)
+Adding (clear container-0-3)
+Adding (lifting hoist0 crate3)
+
+Checking next happening (time 17)
+Deleting (lifting hoist0 crate3)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate3 depot48-2-1)
+Adding (in crate3 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 17 
+
+Successful plans:
+Value: 17
+ experiments/run0/plans/llm_ic_pddl/storage/p09.pddl 17 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p10.pddl
+Plan to validate:
+
+Plan size: 20
+1:
+(move hoist0 depot48-1-1 depot48-1-2)
+ 
+2:
+(move hoist0 depot48-1-2 depot48-1-3)
+ 
+3:
+(move hoist0 depot48-1-3 depot48-2-3)
+ 
+4:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+5:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+6:
+(go-in hoist0 loadarea depot48-2-3)
+ 
+7:
+(drop hoist0 crate0 depot48-2-2 depot48-2-3 depot48)
+ 
+8:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+9:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+10:
+(go-in hoist0 loadarea depot48-2-3)
+ 
+11:
+(move hoist0 depot48-2-3 depot48-1-3)
+ 
+12:
+(drop hoist0 crate1 depot48-1-2 depot48-1-3 depot48)
+ 
+13:
+(move hoist0 depot48-1-3 depot48-2-3)
+ 
+14:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+15:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+16:
+(go-in hoist0 loadarea depot48-2-3)
+ 
+17:
+(drop hoist0 crate2 depot48-1-3 depot48-2-3 depot48)
+ 
+18:
+(go-out hoist0 depot48-2-3 loadarea)
+ 
+19:
+(lift hoist0 crate3 container-0-3 loadarea container0)
+ 
+20:
+(drop hoist0 crate3 depot48-2-3 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-1)
+Deleting (clear depot48-1-2)
+Adding (at hoist0 depot48-1-2)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-1-2)
+Deleting (clear depot48-1-3)
+Adding (at hoist0 depot48-1-3)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 3)
+Deleting (at hoist0 depot48-1-3)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+Adding (clear depot48-1-3)
+
+Checking next happening (time 4)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 5)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 6)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+
+Checking next happening (time 7)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate0 depot48-2-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 8)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 9)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 10)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+
+Checking next happening (time 11)
+Deleting (at hoist0 depot48-2-3)
+Deleting (clear depot48-1-3)
+Adding (at hoist0 depot48-1-3)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 12)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-1-2)
+Adding (available hoist0)
+Adding (on crate1 depot48-1-2)
+Adding (in crate1 depot48)
+
+Checking next happening (time 13)
+Deleting (at hoist0 depot48-1-3)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+Adding (clear depot48-1-3)
+
+Checking next happening (time 14)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 15)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 16)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-3)
+Adding (at hoist0 depot48-2-3)
+
+Checking next happening (time 17)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-1-3)
+Adding (available hoist0)
+Adding (on crate2 depot48-1-3)
+Adding (in crate2 depot48)
+
+Checking next happening (time 18)
+Deleting (at hoist0 depot48-2-3)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-3)
+
+Checking next happening (time 19)
+Deleting (on crate3 container-0-3)
+Deleting (available hoist0)
+Deleting (in crate3 container0)
+Adding (clear container-0-3)
+Adding (lifting hoist0 crate3)
+
+Checking next happening (time 20)
+Deleting (lifting hoist0 crate3)
+Deleting (clear depot48-2-3)
+Adding (available hoist0)
+Adding (on crate3 depot48-2-3)
+Adding (in crate3 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 20 
+
+Successful plans:
+Value: 20
+ experiments/run0/plans/llm_ic_pddl/storage/p10.pddl 20 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p13.pddl
+Plan to validate:
+
+Plan size: 3
+1:
+(go-out hoist0 depot48-1-2 loadarea)
+ 
+2:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist0 crate0 depot48-1-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run0/plans/llm_ic_pddl/storage/p13.pddl 3 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p14.pddl
+Plan to validate:
+
+Plan size: 3
+1:
+(go-out hoist2 depot48-1-2 loadarea)
+ 
+2:
+(lift hoist2 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist2 crate0 depot48-1-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist2 depot48-1-2)
+Adding (at hoist2 loadarea)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist2)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist2 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist2 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist2)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run0/plans/llm_ic_pddl/storage/p14.pddl 3 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p15.pddl
+Plan to validate:
+
+Plan size: 9
+1:
+(move hoist0 depot48-1-2 depot48-1-1)
+ 
+2:
+(move hoist0 depot48-1-1 depot48-2-1)
+ 
+3:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+4:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+5:
+(go-in hoist0 loadarea depot48-2-1)
+ 
+6:
+(drop hoist0 crate0 depot48-1-1 depot48-2-1 depot48)
+ 
+7:
+(go-out hoist0 depot48-2-1 loadarea)
+ 
+8:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+9:
+(drop hoist0 crate1 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-2)
+Deleting (clear depot48-1-1)
+Adding (at hoist0 depot48-1-1)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-1-1)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+Adding (clear depot48-1-1)
+
+Checking next happening (time 3)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 4)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 5)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist0 depot48-2-1)
+
+Checking next happening (time 6)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 7)
+Deleting (at hoist0 depot48-2-1)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 8)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 9)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ experiments/run0/plans/llm_ic_pddl/storage/p15.pddl 9 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p16.pddl
+Plan to validate:
+
+Plan size: 7
+1:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+2:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+3:
+(go-in hoist0 loadarea depot48-2-2)
+ 
+4:
+(drop hoist0 crate0 depot48-1-2 depot48-2-2 depot48)
+ 
+5:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+6:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+7:
+(drop hoist0 crate1 depot48-2-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 3)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+
+Checking next happening (time 4)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-2)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 5)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 6)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 7)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-2)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 7 
+
+Successful plans:
+Value: 7
+ experiments/run0/plans/llm_ic_pddl/storage/p16.pddl 7 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p17.pddl
+Plan to validate:
+
+Plan size: 7
+1:
+(go-out hoist1 depot48-2-1 loadarea)
+ 
+2:
+(lift hoist1 crate0 container-0-0 loadarea container0)
+ 
+3:
+(go-in hoist1 loadarea depot48-2-1)
+ 
+4:
+(drop hoist1 crate0 depot48-1-1 depot48-2-1 depot48)
+ 
+5:
+(go-out hoist1 depot48-2-1 loadarea)
+ 
+6:
+(lift hoist1 crate1 container-0-1 loadarea container0)
+ 
+7:
+(drop hoist1 crate1 depot48-2-1 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist1 depot48-2-1)
+Adding (at hoist1 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist1)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist1 crate0)
+
+Checking next happening (time 3)
+Deleting (at hoist1 loadarea)
+Deleting (clear depot48-2-1)
+Adding (at hoist1 depot48-2-1)
+
+Checking next happening (time 4)
+Deleting (lifting hoist1 crate0)
+Deleting (clear depot48-1-1)
+Adding (available hoist1)
+Adding (on crate0 depot48-1-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 5)
+Deleting (at hoist1 depot48-2-1)
+Adding (at hoist1 loadarea)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 6)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist1)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist1 crate1)
+
+Checking next happening (time 7)
+Deleting (lifting hoist1 crate1)
+Deleting (clear depot48-2-1)
+Adding (available hoist1)
+Adding (on crate1 depot48-2-1)
+Adding (in crate1 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 7 
+
+Successful plans:
+Value: 7
+ experiments/run0/plans/llm_ic_pddl/storage/p17.pddl 7 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p18.pddl
+Plan to validate:
+
+Plan size: 12
+1:
+(move hoist0 depot48-1-2 depot48-2-2)
+ 
+2:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(go-in hoist0 loadarea depot48-2-2)
+ 
+5:
+(drop hoist0 crate0 depot48-2-1 depot48-2-2 depot48)
+ 
+6:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(go-in hoist0 loadarea depot48-2-2)
+ 
+9:
+(drop hoist0 crate1 depot48-2-3 depot48-2-2 depot48)
+ 
+10:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+11:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+12:
+(drop hoist0 crate2 depot48-2-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-1-2)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+Adding (clear depot48-1-2)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-2-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+
+Checking next happening (time 9)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-3)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-3)
+Adding (in crate1 depot48)
+
+Checking next happening (time 10)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 11)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 12)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate2 depot48-2-2)
+Adding (in crate2 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run0/plans/llm_ic_pddl/storage/p18.pddl 12 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p19.pddl
+Plan to validate:
+
+Plan size: 12
+1:
+(move hoist0 depot48-2-1 depot48-2-2)
+ 
+2:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+3:
+(lift hoist0 crate0 container-0-0 loadarea container0)
+ 
+4:
+(go-in hoist0 loadarea depot48-2-2)
+ 
+5:
+(drop hoist0 crate0 depot48-2-1 depot48-2-2 depot48)
+ 
+6:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+7:
+(lift hoist0 crate1 container-0-1 loadarea container0)
+ 
+8:
+(go-in hoist0 loadarea depot48-2-2)
+ 
+9:
+(drop hoist0 crate1 depot48-2-3 depot48-2-2 depot48)
+ 
+10:
+(go-out hoist0 depot48-2-2 loadarea)
+ 
+11:
+(lift hoist0 crate2 container-0-2 loadarea container0)
+ 
+12:
+(drop hoist0 crate2 depot48-2-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist0 depot48-2-1)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+Adding (clear depot48-2-1)
+
+Checking next happening (time 2)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 3)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist0)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 4)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-2-1)
+Adding (available hoist0)
+Adding (on crate0 depot48-2-1)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 7)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist0)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist0 crate1)
+
+Checking next happening (time 8)
+Deleting (at hoist0 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist0 depot48-2-2)
+
+Checking next happening (time 9)
+Deleting (lifting hoist0 crate1)
+Deleting (clear depot48-2-3)
+Adding (available hoist0)
+Adding (on crate1 depot48-2-3)
+Adding (in crate1 depot48)
+
+Checking next happening (time 10)
+Deleting (at hoist0 depot48-2-2)
+Adding (at hoist0 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 11)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist0)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist0 crate2)
+
+Checking next happening (time 12)
+Deleting (lifting hoist0 crate2)
+Deleting (clear depot48-2-2)
+Adding (available hoist0)
+Adding (on crate2 depot48-2-2)
+Adding (in crate2 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run0/plans/llm_ic_pddl/storage/p19.pddl 12 
+
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking move
+...action passes type checking.
+Type-checking go-out
+...action passes type checking.
+Type-checking go-in
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/storage/p20.pddl
+Plan to validate:
+
+Plan size: 11
+1:
+(go-out hoist2 depot48-2-2 loadarea)
+ 
+2:
+(lift hoist2 crate0 container-0-0 loadarea container0)
+ 
+3:
+(drop hoist2 crate0 depot48-2-2 loadarea depot48)
+ 
+4:
+(lift hoist0 crate0 depot48-2-2 depot48-2-3 depot48)
+ 
+5:
+(drop hoist0 crate0 depot48-1-3 depot48-2-3 depot48)
+ 
+6:
+(lift hoist2 crate1 container-0-1 loadarea container0)
+ 
+7:
+(go-in hoist2 loadarea depot48-2-2)
+ 
+8:
+(drop hoist2 crate1 depot48-1-2 depot48-2-2 depot48)
+ 
+9:
+(go-out hoist2 depot48-2-2 loadarea)
+ 
+10:
+(lift hoist2 crate2 container-0-2 loadarea container0)
+ 
+11:
+(drop hoist2 crate2 depot48-2-2 loadarea depot48)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at hoist2 depot48-2-2)
+Adding (at hoist2 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 2)
+Deleting (on crate0 container-0-0)
+Deleting (available hoist2)
+Deleting (in crate0 container0)
+Adding (clear container-0-0)
+Adding (lifting hoist2 crate0)
+
+Checking next happening (time 3)
+Deleting (lifting hoist2 crate0)
+Deleting (clear depot48-2-2)
+Adding (available hoist2)
+Adding (on crate0 depot48-2-2)
+Adding (in crate0 depot48)
+
+Checking next happening (time 4)
+Deleting (on crate0 depot48-2-2)
+Deleting (available hoist0)
+Deleting (in crate0 depot48)
+Adding (clear depot48-2-2)
+Adding (lifting hoist0 crate0)
+
+Checking next happening (time 5)
+Deleting (lifting hoist0 crate0)
+Deleting (clear depot48-1-3)
+Adding (available hoist0)
+Adding (on crate0 depot48-1-3)
+Adding (in crate0 depot48)
+
+Checking next happening (time 6)
+Deleting (on crate1 container-0-1)
+Deleting (available hoist2)
+Deleting (in crate1 container0)
+Adding (clear container-0-1)
+Adding (lifting hoist2 crate1)
+
+Checking next happening (time 7)
+Deleting (at hoist2 loadarea)
+Deleting (clear depot48-2-2)
+Adding (at hoist2 depot48-2-2)
+
+Checking next happening (time 8)
+Deleting (lifting hoist2 crate1)
+Deleting (clear depot48-1-2)
+Adding (available hoist2)
+Adding (on crate1 depot48-1-2)
+Adding (in crate1 depot48)
+
+Checking next happening (time 9)
+Deleting (at hoist2 depot48-2-2)
+Adding (at hoist2 loadarea)
+Adding (clear depot48-2-2)
+
+Checking next happening (time 10)
+Deleting (on crate2 container-0-2)
+Deleting (available hoist2)
+Deleting (in crate2 container0)
+Adding (clear container-0-2)
+Adding (lifting hoist2 crate2)
+
+Checking next happening (time 11)
+Deleting (lifting hoist2 crate2)
+Deleting (clear depot48-2-2)
+Adding (available hoist2)
+Adding (on crate2 depot48-2-2)
+Adding (in crate2 depot48)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 11 
+
+Successful plans:
+Value: 11
+ experiments/run0/plans/llm_ic_pddl/storage/p20.pddl 11 
+

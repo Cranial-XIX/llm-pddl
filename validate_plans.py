@@ -25,7 +25,7 @@ if __name__ == "__main__":
     for task in range(len(domain)):
         task_nl_file, task_pddl_file = domain.get_task_file(task) 
         suffix = domain.get_task_suffix(task)
-        plan_path = os.path.join(f"experiments/{args.run}/plans/llm_ic_pddl", suffix + '.*')
+        plan_path = os.path.join(f"experiments/{args.run}/plans/llm_ic_pddl", suffix + "*")
         plan_files = glob.glob(plan_path)
         plan_files = [plan for plan in plan_files if not plan.endswith('sas')]
         plan_valid = 0

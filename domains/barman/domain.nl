@@ -19,6 +19,7 @@ You can only leave a container if you are holding it.
 You can only fill a shot glass if you are holding the shot glass, your other hand is empty, the shot glass is empty and clean.
 You can only refill a shot glass if you are holding the shot glass, your other hand is empty, the shot glass is empty and has contained the saree ingredient before.
 You can only empty a shot glass if you are holding the shot glass and it contains a beverage.
+You can only clean a shot glass if you are holding the shot glass and it is empty, and your other hand is empty.
 You can only pour from a shot glass to a clean shaker if you are holding the shot glass, the shot glass contains an ingredient, and the shaker is empty and clean.
 You can only pour from a shot glass to a used shaker if you are holding the shot glass, the shot glass contains an ingredient, the shaker is unshaked and at a level not full.
 You can only empty a shaker if you are holding the shaker and the shaker contains a shaked beverage.

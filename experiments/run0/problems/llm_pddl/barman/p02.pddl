@@ -1,0 +1,28 @@
+(define (problem cocktail_problem)
+    (:domain cocktail_domain)
+    (:objects 
+        shot1 shot2 shot3 - shotglass
+        shaker1 - shaker
+        ingredient1 ingredient2 ingredient3 - ingredient
+        dispenser1 dispenser2 dispenser3 - dispenser
+        left_hand right_hand - hand
+    )
+    (:init 
+        (empty shot1) (clean shot1) (on_table shot1)
+        (empty shot2) (clean shot2) (on_table shot2)
+        (empty shot3) (clean shot3) (on_table shot3)
+        (empty shaker1) (clean shaker1) (on_table shaker1)
+        (empty left_hand) (empty right_hand)
+        (first_ingredient cocktail1 ingredient3)
+        (second_ingredient cocktail1 ingredient1)
+        (first_ingredient cocktail2 ingredient3)
+        (second_ingredient cocktail2 ingredient2)
+        (first_ingredient cocktail3 ingredient3)
+        (second_ingredient cocktail3 ingredient1)
+    )
+    (:goal (and
+        (contains shot1 cocktail1)
+        (contains shot2 cocktail3)
+        (contains shot3 cocktail2)
+    ))
+)

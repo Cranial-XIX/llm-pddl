@@ -1,0 +1,1436 @@
+Type-checking grasp
+...action passes type checking.
+Type-checking leave
+...action passes type checking.
+Type-checking fill-shot
+...action passes type checking.
+Type-checking refill-shot
+...action passes type checking.
+Type-checking empty-shot
+...action passes type checking.
+Type-checking clean-shot
+...action passes type checking.
+Type-checking pour-shot-to-clean-shaker
+...action passes type checking.
+Type-checking pour-shot-to-used-shaker
+...action passes type checking.
+Type-checking empty-shaker
+...action passes type checking.
+Type-checking clean-shaker
+...action passes type checking.
+Type-checking shake
+...action passes type checking.
+Type-checking pour-shaker-to-shot
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/barman/p01.pddl
+Plan to validate:
+
+Plan size: 36
+1:
+(grasp left shot4)
+ 
+2:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+3:
+(pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1)
+ 
+4:
+(clean-shot shot4 ingredient1 left right)
+ 
+5:
+(fill-shot shot4 ingredient2 left right dispenser2)
+ 
+6:
+(grasp right shaker1)
+ 
+7:
+(pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2)
+ 
+8:
+(leave left shot4)
+ 
+9:
+(shake cocktail3 ingredient1 ingredient2 shaker1 right left)
+ 
+10:
+(pour-shaker-to-shot cocktail3 shot2 right shaker1 l2 l1)
+ 
+11:
+(empty-shaker right shaker1 cocktail3 l1 l0)
+ 
+12:
+(clean-shaker right left shaker1)
+ 
+13:
+(grasp left shot4)
+ 
+14:
+(leave right shaker1)
+ 
+15:
+(refill-shot shot4 ingredient2 left right dispenser2)
+ 
+16:
+(pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1)
+ 
+17:
+(clean-shot shot4 ingredient2 left right)
+ 
+18:
+(fill-shot shot4 ingredient3 left right dispenser3)
+ 
+19:
+(grasp right shaker1)
+ 
+20:
+(pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2)
+ 
+21:
+(leave left shot4)
+ 
+22:
+(shake cocktail2 ingredient2 ingredient3 shaker1 right left)
+ 
+23:
+(pour-shaker-to-shot cocktail2 shot3 right shaker1 l2 l1)
+ 
+24:
+(empty-shaker right shaker1 cocktail2 l1 l0)
+ 
+25:
+(clean-shaker right left shaker1)
+ 
+26:
+(grasp left shot4)
+ 
+27:
+(leave right shaker1)
+ 
+28:
+(refill-shot shot4 ingredient3 left right dispenser3)
+ 
+29:
+(pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l0 l1)
+ 
+30:
+(clean-shot shot4 ingredient3 left right)
+ 
+31:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+32:
+(grasp right shaker1)
+ 
+33:
+(pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2)
+ 
+34:
+(leave left shot4)
+ 
+35:
+(shake cocktail1 ingredient1 ingredient3 shaker1 right left)
+ 
+36:
+(pour-shaker-to-shot cocktail1 shot1 right shaker1 l2 l1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 2)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 3)
+Deleting (contains shot4 ingredient1)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient1)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 4)
+Deleting (used shot4 ingredient1)
+Adding (clean shot4)
+
+Checking next happening (time 5)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient2)
+Adding (used shot4 ingredient2)
+
+Checking next happening (time 6)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 7)
+Deleting (contains shot4 ingredient2)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient2)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 8)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 9)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient1)
+Deleting (contains shaker1 ingredient2)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail3)
+
+Checking next happening (time 10)
+Deleting (clean shot2)
+Deleting (empty shot2)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot2 cocktail3)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 11)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail3)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 12)
+Adding (clean shaker1)
+
+Checking next happening (time 13)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 14)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 15)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient2)
+
+Checking next happening (time 16)
+Deleting (contains shot4 ingredient2)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient2)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 17)
+Deleting (used shot4 ingredient2)
+Adding (clean shot4)
+
+Checking next happening (time 18)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient3)
+Adding (used shot4 ingredient3)
+
+Checking next happening (time 19)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 20)
+Deleting (contains shot4 ingredient3)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient3)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 21)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 22)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient2)
+Deleting (contains shaker1 ingredient3)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail2)
+
+Checking next happening (time 23)
+Deleting (clean shot3)
+Deleting (empty shot3)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot3 cocktail2)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 24)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail2)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 25)
+Adding (clean shaker1)
+
+Checking next happening (time 26)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 27)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 28)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient3)
+
+Checking next happening (time 29)
+Deleting (contains shot4 ingredient3)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient3)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 30)
+Deleting (used shot4 ingredient3)
+Adding (clean shot4)
+
+Checking next happening (time 31)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 32)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 33)
+Deleting (contains shot4 ingredient1)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient1)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 34)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 35)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient1)
+Deleting (contains shaker1 ingredient3)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail1)
+
+Checking next happening (time 36)
+Deleting (clean shot1)
+Deleting (empty shot1)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot1 cocktail1)
+Adding (shaker-level shaker1 l1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 36 
+
+Successful plans:
+Value: 36
+ experiments/run0/plans/llm_ic_pddl/barman/p01.pddl 36 
+
+Type-checking grasp
+...action passes type checking.
+Type-checking leave
+...action passes type checking.
+Type-checking fill-shot
+...action passes type checking.
+Type-checking refill-shot
+...action passes type checking.
+Type-checking empty-shot
+...action passes type checking.
+Type-checking clean-shot
+...action passes type checking.
+Type-checking pour-shot-to-clean-shaker
+...action passes type checking.
+Type-checking pour-shot-to-used-shaker
+...action passes type checking.
+Type-checking empty-shaker
+...action passes type checking.
+Type-checking clean-shaker
+...action passes type checking.
+Type-checking shake
+...action passes type checking.
+Type-checking pour-shaker-to-shot
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/barman/p02.pddl
+Plan to validate:
+
+Plan size: 36
+1:
+(grasp left shot4)
+ 
+2:
+(fill-shot shot4 ingredient2 left right dispenser2)
+ 
+3:
+(pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1)
+ 
+4:
+(clean-shot shot4 ingredient2 left right)
+ 
+5:
+(fill-shot shot4 ingredient3 left right dispenser3)
+ 
+6:
+(grasp right shaker1)
+ 
+7:
+(pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2)
+ 
+8:
+(leave left shot4)
+ 
+9:
+(shake cocktail2 ingredient3 ingredient2 shaker1 right left)
+ 
+10:
+(pour-shaker-to-shot cocktail2 shot3 right shaker1 l2 l1)
+ 
+11:
+(empty-shaker right shaker1 cocktail2 l1 l0)
+ 
+12:
+(clean-shaker right left shaker1)
+ 
+13:
+(grasp left shot4)
+ 
+14:
+(leave right shaker1)
+ 
+15:
+(refill-shot shot4 ingredient3 left right dispenser3)
+ 
+16:
+(pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l0 l1)
+ 
+17:
+(clean-shot shot4 ingredient3 left right)
+ 
+18:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+19:
+(grasp right shaker1)
+ 
+20:
+(pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2)
+ 
+21:
+(leave left shot4)
+ 
+22:
+(shake cocktail1 ingredient3 ingredient1 shaker1 right left)
+ 
+23:
+(pour-shaker-to-shot cocktail1 shot1 right shaker1 l2 l1)
+ 
+24:
+(empty-shaker right shaker1 cocktail1 l1 l0)
+ 
+25:
+(clean-shaker right left shaker1)
+ 
+26:
+(grasp left shot4)
+ 
+27:
+(leave right shaker1)
+ 
+28:
+(refill-shot shot4 ingredient1 left right dispenser1)
+ 
+29:
+(pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1)
+ 
+30:
+(clean-shot shot4 ingredient1 left right)
+ 
+31:
+(fill-shot shot4 ingredient3 left right dispenser3)
+ 
+32:
+(grasp right shaker1)
+ 
+33:
+(pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2)
+ 
+34:
+(leave left shot4)
+ 
+35:
+(shake cocktail3 ingredient3 ingredient1 shaker1 right left)
+ 
+36:
+(pour-shaker-to-shot cocktail3 shot2 right shaker1 l2 l1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 2)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient2)
+Adding (used shot4 ingredient2)
+
+Checking next happening (time 3)
+Deleting (contains shot4 ingredient2)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient2)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 4)
+Deleting (used shot4 ingredient2)
+Adding (clean shot4)
+
+Checking next happening (time 5)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient3)
+Adding (used shot4 ingredient3)
+
+Checking next happening (time 6)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 7)
+Deleting (contains shot4 ingredient3)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient3)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 8)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 9)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient3)
+Deleting (contains shaker1 ingredient2)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail2)
+
+Checking next happening (time 10)
+Deleting (clean shot3)
+Deleting (empty shot3)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot3 cocktail2)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 11)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail2)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 12)
+Adding (clean shaker1)
+
+Checking next happening (time 13)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 14)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 15)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient3)
+
+Checking next happening (time 16)
+Deleting (contains shot4 ingredient3)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient3)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 17)
+Deleting (used shot4 ingredient3)
+Adding (clean shot4)
+
+Checking next happening (time 18)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 19)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 20)
+Deleting (contains shot4 ingredient1)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient1)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 21)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 22)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient3)
+Deleting (contains shaker1 ingredient1)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail1)
+
+Checking next happening (time 23)
+Deleting (clean shot1)
+Deleting (empty shot1)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot1 cocktail1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 24)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail1)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 25)
+Adding (clean shaker1)
+
+Checking next happening (time 26)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 27)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 28)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient1)
+
+Checking next happening (time 29)
+Deleting (contains shot4 ingredient1)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient1)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 30)
+Deleting (used shot4 ingredient1)
+Adding (clean shot4)
+
+Checking next happening (time 31)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient3)
+Adding (used shot4 ingredient3)
+
+Checking next happening (time 32)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 33)
+Deleting (contains shot4 ingredient3)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient3)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 34)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 35)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient3)
+Deleting (contains shaker1 ingredient1)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail3)
+
+Checking next happening (time 36)
+Deleting (clean shot2)
+Deleting (empty shot2)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot2 cocktail3)
+Adding (shaker-level shaker1 l1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 36 
+
+Successful plans:
+Value: 36
+ experiments/run0/plans/llm_ic_pddl/barman/p02.pddl 36 
+
+Type-checking grasp
+...action passes type checking.
+Type-checking leave
+...action passes type checking.
+Type-checking fill-shot
+...action passes type checking.
+Type-checking refill-shot
+...action passes type checking.
+Type-checking empty-shot
+...action passes type checking.
+Type-checking clean-shot
+...action passes type checking.
+Type-checking pour-shot-to-clean-shaker
+...action passes type checking.
+Type-checking pour-shot-to-used-shaker
+...action passes type checking.
+Type-checking empty-shaker
+...action passes type checking.
+Type-checking clean-shaker
+...action passes type checking.
+Type-checking shake
+...action passes type checking.
+Type-checking pour-shaker-to-shot
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/barman/p03.pddl
+Plan to validate:
+
+Plan size: 36
+1:
+(grasp left shot4)
+ 
+2:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+3:
+(pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1)
+ 
+4:
+(clean-shot shot4 ingredient1 left right)
+ 
+5:
+(fill-shot shot4 ingredient2 left right dispenser2)
+ 
+6:
+(grasp right shaker1)
+ 
+7:
+(pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2)
+ 
+8:
+(leave left shot4)
+ 
+9:
+(shake cocktail3 ingredient2 ingredient1 shaker1 right left)
+ 
+10:
+(pour-shaker-to-shot cocktail3 shot3 right shaker1 l2 l1)
+ 
+11:
+(empty-shaker right shaker1 cocktail3 l1 l0)
+ 
+12:
+(clean-shaker right left shaker1)
+ 
+13:
+(grasp left shot4)
+ 
+14:
+(leave right shaker1)
+ 
+15:
+(refill-shot shot4 ingredient2 left right dispenser2)
+ 
+16:
+(pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1)
+ 
+17:
+(clean-shot shot4 ingredient2 left right)
+ 
+18:
+(fill-shot shot4 ingredient3 left right dispenser3)
+ 
+19:
+(grasp right shaker1)
+ 
+20:
+(pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2)
+ 
+21:
+(leave left shot4)
+ 
+22:
+(shake cocktail2 ingredient2 ingredient3 shaker1 right left)
+ 
+23:
+(pour-shaker-to-shot cocktail2 shot1 right shaker1 l2 l1)
+ 
+24:
+(empty-shaker right shaker1 cocktail2 l1 l0)
+ 
+25:
+(clean-shaker right left shaker1)
+ 
+26:
+(grasp left shot4)
+ 
+27:
+(leave right shaker1)
+ 
+28:
+(refill-shot shot4 ingredient3 left right dispenser3)
+ 
+29:
+(pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l0 l1)
+ 
+30:
+(clean-shot shot4 ingredient3 left right)
+ 
+31:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+32:
+(grasp right shaker1)
+ 
+33:
+(pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2)
+ 
+34:
+(leave left shot4)
+ 
+35:
+(shake cocktail1 ingredient1 ingredient3 shaker1 right left)
+ 
+36:
+(pour-shaker-to-shot cocktail1 shot2 right shaker1 l2 l1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 2)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 3)
+Deleting (contains shot4 ingredient1)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient1)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 4)
+Deleting (used shot4 ingredient1)
+Adding (clean shot4)
+
+Checking next happening (time 5)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient2)
+Adding (used shot4 ingredient2)
+
+Checking next happening (time 6)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 7)
+Deleting (contains shot4 ingredient2)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient2)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 8)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 9)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient2)
+Deleting (contains shaker1 ingredient1)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail3)
+
+Checking next happening (time 10)
+Deleting (clean shot3)
+Deleting (empty shot3)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot3 cocktail3)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 11)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail3)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 12)
+Adding (clean shaker1)
+
+Checking next happening (time 13)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 14)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 15)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient2)
+
+Checking next happening (time 16)
+Deleting (contains shot4 ingredient2)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient2)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 17)
+Deleting (used shot4 ingredient2)
+Adding (clean shot4)
+
+Checking next happening (time 18)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient3)
+Adding (used shot4 ingredient3)
+
+Checking next happening (time 19)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 20)
+Deleting (contains shot4 ingredient3)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient3)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 21)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 22)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient2)
+Deleting (contains shaker1 ingredient3)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail2)
+
+Checking next happening (time 23)
+Deleting (clean shot1)
+Deleting (empty shot1)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot1 cocktail2)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 24)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail2)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 25)
+Adding (clean shaker1)
+
+Checking next happening (time 26)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 27)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 28)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient3)
+
+Checking next happening (time 29)
+Deleting (contains shot4 ingredient3)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient3)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 30)
+Deleting (used shot4 ingredient3)
+Adding (clean shot4)
+
+Checking next happening (time 31)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 32)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 33)
+Deleting (contains shot4 ingredient1)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient1)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 34)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 35)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient1)
+Deleting (contains shaker1 ingredient3)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail1)
+
+Checking next happening (time 36)
+Deleting (clean shot2)
+Deleting (empty shot2)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot2 cocktail1)
+Adding (shaker-level shaker1 l1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 36 
+
+Successful plans:
+Value: 36
+ experiments/run0/plans/llm_ic_pddl/barman/p03.pddl 36 
+
+Type-checking grasp
+...action passes type checking.
+Type-checking leave
+...action passes type checking.
+Type-checking fill-shot
+...action passes type checking.
+Type-checking refill-shot
+...action passes type checking.
+Type-checking empty-shot
+...action passes type checking.
+Type-checking clean-shot
+...action passes type checking.
+Type-checking pour-shot-to-clean-shaker
+...action passes type checking.
+Type-checking pour-shot-to-used-shaker
+...action passes type checking.
+Type-checking empty-shaker
+...action passes type checking.
+Type-checking clean-shaker
+...action passes type checking.
+Type-checking shake
+...action passes type checking.
+Type-checking pour-shaker-to-shot
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/barman/p04.pddl
+Plan to validate:
+
+Plan size: 36
+1:
+(grasp left shot4)
+ 
+2:
+(fill-shot shot4 ingredient2 left right dispenser2)
+ 
+3:
+(pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1)
+ 
+4:
+(clean-shot shot4 ingredient2 left right)
+ 
+5:
+(fill-shot shot4 ingredient1 left right dispenser1)
+ 
+6:
+(grasp right shaker1)
+ 
+7:
+(pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2)
+ 
+8:
+(leave left shot4)
+ 
+9:
+(shake cocktail1 ingredient2 ingredient1 shaker1 right left)
+ 
+10:
+(pour-shaker-to-shot cocktail1 shot1 right shaker1 l2 l1)
+ 
+11:
+(empty-shaker right shaker1 cocktail1 l1 l0)
+ 
+12:
+(clean-shaker right left shaker1)
+ 
+13:
+(grasp left shot4)
+ 
+14:
+(leave right shaker1)
+ 
+15:
+(refill-shot shot4 ingredient1 left right dispenser1)
+ 
+16:
+(pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1)
+ 
+17:
+(clean-shot shot4 ingredient1 left right)
+ 
+18:
+(fill-shot shot4 ingredient2 left right dispenser2)
+ 
+19:
+(grasp right shaker1)
+ 
+20:
+(pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2)
+ 
+21:
+(leave left shot4)
+ 
+22:
+(shake cocktail3 ingredient1 ingredient2 shaker1 right left)
+ 
+23:
+(pour-shaker-to-shot cocktail3 shot2 right shaker1 l2 l1)
+ 
+24:
+(empty-shaker right shaker1 cocktail3 l1 l0)
+ 
+25:
+(clean-shaker right left shaker1)
+ 
+26:
+(grasp left shot4)
+ 
+27:
+(leave right shaker1)
+ 
+28:
+(refill-shot shot4 ingredient2 left right dispenser2)
+ 
+29:
+(pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1)
+ 
+30:
+(clean-shot shot4 ingredient2 left right)
+ 
+31:
+(fill-shot shot4 ingredient3 left right dispenser3)
+ 
+32:
+(grasp right shaker1)
+ 
+33:
+(pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2)
+ 
+34:
+(leave left shot4)
+ 
+35:
+(shake cocktail2 ingredient2 ingredient3 shaker1 right left)
+ 
+36:
+(pour-shaker-to-shot cocktail2 shot3 right shaker1 l2 l1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 2)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient2)
+Adding (used shot4 ingredient2)
+
+Checking next happening (time 3)
+Deleting (contains shot4 ingredient2)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient2)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 4)
+Deleting (used shot4 ingredient2)
+Adding (clean shot4)
+
+Checking next happening (time 5)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient1)
+Adding (used shot4 ingredient1)
+
+Checking next happening (time 6)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 7)
+Deleting (contains shot4 ingredient1)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient1)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 8)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 9)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient2)
+Deleting (contains shaker1 ingredient1)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail1)
+
+Checking next happening (time 10)
+Deleting (clean shot1)
+Deleting (empty shot1)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot1 cocktail1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 11)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail1)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 12)
+Adding (clean shaker1)
+
+Checking next happening (time 13)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 14)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 15)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient1)
+
+Checking next happening (time 16)
+Deleting (contains shot4 ingredient1)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient1)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 17)
+Deleting (used shot4 ingredient1)
+Adding (clean shot4)
+
+Checking next happening (time 18)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient2)
+Adding (used shot4 ingredient2)
+
+Checking next happening (time 19)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 20)
+Deleting (contains shot4 ingredient2)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient2)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 21)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 22)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient1)
+Deleting (contains shaker1 ingredient2)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail3)
+
+Checking next happening (time 23)
+Deleting (clean shot2)
+Deleting (empty shot2)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot2 cocktail3)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 24)
+Deleting (shaked shaker1)
+Deleting (shaker-level shaker1 l1)
+Deleting (contains shaker1 cocktail3)
+Adding (shaker-level shaker1 l0)
+Adding (empty shaker1)
+
+Checking next happening (time 25)
+Adding (clean shaker1)
+
+Checking next happening (time 26)
+Deleting (ontable shot4)
+Deleting (handempty left)
+Adding (holding left shot4)
+
+Checking next happening (time 27)
+Deleting (holding right shaker1)
+Adding (handempty right)
+Adding (ontable shaker1)
+
+Checking next happening (time 28)
+Deleting (empty shot4)
+Adding (contains shot4 ingredient2)
+
+Checking next happening (time 29)
+Deleting (contains shot4 ingredient2)
+Deleting (empty shaker1)
+Deleting (clean shaker1)
+Deleting (shaker-level shaker1 l0)
+Adding (empty shot4)
+Adding (contains shaker1 ingredient2)
+Adding (unshaked shaker1)
+Adding (shaker-level shaker1 l1)
+
+Checking next happening (time 30)
+Deleting (used shot4 ingredient2)
+Adding (clean shot4)
+
+Checking next happening (time 31)
+Deleting (empty shot4)
+Deleting (clean shot4)
+Adding (contains shot4 ingredient3)
+Adding (used shot4 ingredient3)
+
+Checking next happening (time 32)
+Deleting (ontable shaker1)
+Deleting (handempty right)
+Adding (holding right shaker1)
+
+Checking next happening (time 33)
+Deleting (contains shot4 ingredient3)
+Deleting (shaker-level shaker1 l1)
+Adding (contains shaker1 ingredient3)
+Adding (empty shot4)
+Adding (shaker-level shaker1 l2)
+
+Checking next happening (time 34)
+Deleting (holding left shot4)
+Adding (handempty left)
+Adding (ontable shot4)
+
+Checking next happening (time 35)
+Deleting (unshaked shaker1)
+Deleting (contains shaker1 ingredient2)
+Deleting (contains shaker1 ingredient3)
+Adding (shaked shaker1)
+Adding (contains shaker1 cocktail2)
+
+Checking next happening (time 36)
+Deleting (clean shot3)
+Deleting (empty shot3)
+Deleting (shaker-level shaker1 l2)
+Adding (contains shot3 cocktail2)
+Adding (shaker-level shaker1 l1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 36 
+
+Successful plans:
+Value: 36
+ experiments/run0/plans/llm_ic_pddl/barman/p04.pddl 36 
+

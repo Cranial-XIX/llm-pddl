@@ -1,0 +1,3401 @@
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p01.pddl
+Plan to validate:
+
+Plan size: 0
+
+Plan executed successfully - checking goal
+Plan valid
+Final value: 0 
+
+Successful plans:
+Value: 0
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p01.pddl 0 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p02.pddl
+Plan to validate:
+
+Plan size: 6
+1:
+(unstack b1 b3)
+ 
+2:
+(putdown b1)
+ 
+3:
+(unstack b3 b2)
+ 
+4:
+(stack b3 b1)
+ 
+5:
+(pickup b2)
+ 
+6:
+(stack b2 b3)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b1 b3)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b3)
+
+Checking next happening (time 2)
+Deleting (holding b1)
+Adding (clear b1)
+Adding (arm-empty)
+Adding (on-table b1)
+
+Checking next happening (time 3)
+Deleting (on b3 b2)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b2)
+
+Checking next happening (time 4)
+Deleting (clear b1)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b1)
+
+Checking next happening (time 5)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 6)
+Deleting (clear b3)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b3)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p02.pddl 6 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p03.pddl
+Plan to validate:
+
+Plan size: 6
+1:
+(unstack b1 b3)
+ 
+2:
+(putdown b1)
+ 
+3:
+(unstack b3 b2)
+ 
+4:
+(stack b3 b4)
+ 
+5:
+(pickup b2)
+ 
+6:
+(stack b2 b1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b1 b3)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b3)
+
+Checking next happening (time 2)
+Deleting (holding b1)
+Adding (clear b1)
+Adding (arm-empty)
+Adding (on-table b1)
+
+Checking next happening (time 3)
+Deleting (on b3 b2)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b2)
+
+Checking next happening (time 4)
+Deleting (clear b4)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b4)
+
+Checking next happening (time 5)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 6)
+Deleting (clear b1)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p03.pddl 6 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p04.pddl
+Plan to validate:
+
+Plan size: 12
+1:
+(unstack b3 b1)
+ 
+2:
+(putdown b3)
+ 
+3:
+(unstack b1 b4)
+ 
+4:
+(putdown b1)
+ 
+5:
+(unstack b4 b2)
+ 
+6:
+(putdown b4)
+ 
+7:
+(pickup b3)
+ 
+8:
+(stack b3 b4)
+ 
+9:
+(pickup b2)
+ 
+10:
+(stack b2 b3)
+ 
+11:
+(pickup b1)
+ 
+12:
+(stack b1 b2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b3 b1)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b1)
+
+Checking next happening (time 2)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 3)
+Deleting (on b1 b4)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b4)
+
+Checking next happening (time 4)
+Deleting (holding b1)
+Adding (clear b1)
+Adding (arm-empty)
+Adding (on-table b1)
+
+Checking next happening (time 5)
+Deleting (on b4 b2)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b2)
+
+Checking next happening (time 6)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 7)
+Deleting (clear b3)
+Deleting (on-table b3)
+Deleting (arm-empty)
+Adding (holding b3)
+
+Checking next happening (time 8)
+Deleting (clear b4)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b4)
+
+Checking next happening (time 9)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 10)
+Deleting (clear b3)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b3)
+
+Checking next happening (time 11)
+Deleting (clear b1)
+Deleting (on-table b1)
+Deleting (arm-empty)
+Adding (holding b1)
+
+Checking next happening (time 12)
+Deleting (clear b2)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p04.pddl 12 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p05.pddl
+Plan to validate:
+
+Plan size: 8
+1:
+(unstack b4 b1)
+ 
+2:
+(putdown b4)
+ 
+3:
+(unstack b1 b2)
+ 
+4:
+(stack b1 b4)
+ 
+5:
+(unstack b2 b3)
+ 
+6:
+(putdown b2)
+ 
+7:
+(unstack b1 b4)
+ 
+8:
+(stack b1 b3)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b4 b1)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b1)
+
+Checking next happening (time 2)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 3)
+Deleting (on b1 b2)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b2)
+
+Checking next happening (time 4)
+Deleting (clear b4)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b4)
+
+Checking next happening (time 5)
+Deleting (on b2 b3)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b3)
+
+Checking next happening (time 6)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 7)
+Deleting (on b1 b4)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b4)
+
+Checking next happening (time 8)
+Deleting (clear b3)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b3)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p05.pddl 8 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p06.pddl
+Plan to validate:
+
+Plan size: 12
+1:
+(unstack b5 b3)
+ 
+2:
+(putdown b5)
+ 
+3:
+(unstack b3 b4)
+ 
+4:
+(stack b3 b5)
+ 
+5:
+(unstack b4 b2)
+ 
+6:
+(stack b4 b3)
+ 
+7:
+(unstack b2 b1)
+ 
+8:
+(putdown b2)
+ 
+9:
+(pickup b1)
+ 
+10:
+(stack b1 b2)
+ 
+11:
+(unstack b4 b3)
+ 
+12:
+(stack b4 b1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b5 b3)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b3)
+
+Checking next happening (time 2)
+Deleting (holding b5)
+Adding (clear b5)
+Adding (arm-empty)
+Adding (on-table b5)
+
+Checking next happening (time 3)
+Deleting (on b3 b4)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b4)
+
+Checking next happening (time 4)
+Deleting (clear b5)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b5)
+
+Checking next happening (time 5)
+Deleting (on b4 b2)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b2)
+
+Checking next happening (time 6)
+Deleting (clear b3)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b3)
+
+Checking next happening (time 7)
+Deleting (on b2 b1)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b1)
+
+Checking next happening (time 8)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 9)
+Deleting (clear b1)
+Deleting (on-table b1)
+Deleting (arm-empty)
+Adding (holding b1)
+
+Checking next happening (time 10)
+Deleting (clear b2)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b2)
+
+Checking next happening (time 11)
+Deleting (on b4 b3)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b3)
+
+Checking next happening (time 12)
+Deleting (clear b1)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p06.pddl 12 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p08.pddl
+Plan to validate:
+
+Plan size: 14
+1:
+(unstack b6 b4)
+ 
+2:
+(putdown b6)
+ 
+3:
+(unstack b4 b5)
+ 
+4:
+(putdown b4)
+ 
+5:
+(unstack b5 b1)
+ 
+6:
+(putdown b5)
+ 
+7:
+(unstack b1 b3)
+ 
+8:
+(stack b1 b4)
+ 
+9:
+(unstack b3 b2)
+ 
+10:
+(stack b3 b5)
+ 
+11:
+(pickup b6)
+ 
+12:
+(stack b6 b2)
+ 
+13:
+(unstack b1 b4)
+ 
+14:
+(stack b1 b6)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b6 b4)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b4)
+
+Checking next happening (time 2)
+Deleting (holding b6)
+Adding (clear b6)
+Adding (arm-empty)
+Adding (on-table b6)
+
+Checking next happening (time 3)
+Deleting (on b4 b5)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b5)
+
+Checking next happening (time 4)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 5)
+Deleting (on b5 b1)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b1)
+
+Checking next happening (time 6)
+Deleting (holding b5)
+Adding (clear b5)
+Adding (arm-empty)
+Adding (on-table b5)
+
+Checking next happening (time 7)
+Deleting (on b1 b3)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b3)
+
+Checking next happening (time 8)
+Deleting (clear b4)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b4)
+
+Checking next happening (time 9)
+Deleting (on b3 b2)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b2)
+
+Checking next happening (time 10)
+Deleting (clear b5)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b5)
+
+Checking next happening (time 11)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 12)
+Deleting (clear b2)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b2)
+
+Checking next happening (time 13)
+Deleting (on b1 b4)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b4)
+
+Checking next happening (time 14)
+Deleting (clear b6)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b6)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 14 
+
+Successful plans:
+Value: 14
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p08.pddl 14 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p09.pddl
+Plan to validate:
+
+Plan size: 14
+1:
+(unstack b4 b7)
+ 
+2:
+(putdown b4)
+ 
+3:
+(unstack b7 b3)
+ 
+4:
+(stack b7 b4)
+ 
+5:
+(unstack b3 b6)
+ 
+6:
+(stack b3 b7)
+ 
+7:
+(pickup b5)
+ 
+8:
+(stack b5 b3)
+ 
+9:
+(pickup b6)
+ 
+10:
+(stack b6 b5)
+ 
+11:
+(pickup b2)
+ 
+12:
+(stack b2 b6)
+ 
+13:
+(pickup b1)
+ 
+14:
+(stack b1 b2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b4 b7)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b7)
+
+Checking next happening (time 2)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 3)
+Deleting (on b7 b3)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b3)
+
+Checking next happening (time 4)
+Deleting (clear b4)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b4)
+
+Checking next happening (time 5)
+Deleting (on b3 b6)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b6)
+
+Checking next happening (time 6)
+Deleting (clear b7)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b7)
+
+Checking next happening (time 7)
+Deleting (clear b5)
+Deleting (on-table b5)
+Deleting (arm-empty)
+Adding (holding b5)
+
+Checking next happening (time 8)
+Deleting (clear b3)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b3)
+
+Checking next happening (time 9)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 10)
+Deleting (clear b5)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b5)
+
+Checking next happening (time 11)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 12)
+Deleting (clear b6)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b6)
+
+Checking next happening (time 13)
+Deleting (clear b1)
+Deleting (on-table b1)
+Deleting (arm-empty)
+Adding (holding b1)
+
+Checking next happening (time 14)
+Deleting (clear b2)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 14 
+
+Successful plans:
+Value: 14
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p09.pddl 14 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p11.pddl
+Plan to validate:
+
+Plan size: 22
+1:
+(unstack b8 b3)
+ 
+2:
+(putdown b8)
+ 
+3:
+(unstack b3 b7)
+ 
+4:
+(putdown b3)
+ 
+5:
+(unstack b7 b5)
+ 
+6:
+(putdown b7)
+ 
+7:
+(pickup b8)
+ 
+8:
+(stack b8 b7)
+ 
+9:
+(unstack b5 b6)
+ 
+10:
+(putdown b5)
+ 
+11:
+(pickup b3)
+ 
+12:
+(stack b3 b5)
+ 
+13:
+(unstack b6 b4)
+ 
+14:
+(putdown b6)
+ 
+15:
+(unstack b4 b2)
+ 
+16:
+(stack b4 b6)
+ 
+17:
+(unstack b2 b1)
+ 
+18:
+(stack b2 b3)
+ 
+19:
+(pickup b1)
+ 
+20:
+(stack b1 b8)
+ 
+21:
+(unstack b4 b6)
+ 
+22:
+(stack b4 b2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b8 b3)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b3)
+
+Checking next happening (time 2)
+Deleting (holding b8)
+Adding (clear b8)
+Adding (arm-empty)
+Adding (on-table b8)
+
+Checking next happening (time 3)
+Deleting (on b3 b7)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b7)
+
+Checking next happening (time 4)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 5)
+Deleting (on b7 b5)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b5)
+
+Checking next happening (time 6)
+Deleting (holding b7)
+Adding (clear b7)
+Adding (arm-empty)
+Adding (on-table b7)
+
+Checking next happening (time 7)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 8)
+Deleting (clear b7)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b7)
+
+Checking next happening (time 9)
+Deleting (on b5 b6)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b6)
+
+Checking next happening (time 10)
+Deleting (holding b5)
+Adding (clear b5)
+Adding (arm-empty)
+Adding (on-table b5)
+
+Checking next happening (time 11)
+Deleting (clear b3)
+Deleting (on-table b3)
+Deleting (arm-empty)
+Adding (holding b3)
+
+Checking next happening (time 12)
+Deleting (clear b5)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b5)
+
+Checking next happening (time 13)
+Deleting (on b6 b4)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b4)
+
+Checking next happening (time 14)
+Deleting (holding b6)
+Adding (clear b6)
+Adding (arm-empty)
+Adding (on-table b6)
+
+Checking next happening (time 15)
+Deleting (on b4 b2)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b2)
+
+Checking next happening (time 16)
+Deleting (clear b6)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b6)
+
+Checking next happening (time 17)
+Deleting (on b2 b1)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b1)
+
+Checking next happening (time 18)
+Deleting (clear b3)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b3)
+
+Checking next happening (time 19)
+Deleting (clear b1)
+Deleting (on-table b1)
+Deleting (arm-empty)
+Adding (holding b1)
+
+Checking next happening (time 20)
+Deleting (clear b8)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b8)
+
+Checking next happening (time 21)
+Deleting (on b4 b6)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b6)
+
+Checking next happening (time 22)
+Deleting (clear b2)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 22 
+
+Successful plans:
+Value: 22
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p11.pddl 22 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p12.pddl
+Plan to validate:
+
+Plan size: 20
+1:
+(unstack b7 b8)
+ 
+2:
+(stack b7 b5)
+ 
+3:
+(unstack b8 b1)
+ 
+4:
+(putdown b8)
+ 
+5:
+(pickup b2)
+ 
+6:
+(stack b2 b8)
+ 
+7:
+(pickup b3)
+ 
+8:
+(stack b3 b2)
+ 
+9:
+(unstack b1 b6)
+ 
+10:
+(stack b1 b3)
+ 
+11:
+(unstack b7 b5)
+ 
+12:
+(stack b7 b1)
+ 
+13:
+(unstack b6 b4)
+ 
+14:
+(stack b6 b5)
+ 
+15:
+(pickup b4)
+ 
+16:
+(stack b4 b7)
+ 
+17:
+(unstack b6 b5)
+ 
+18:
+(stack b6 b4)
+ 
+19:
+(pickup b5)
+ 
+20:
+(stack b5 b6)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b7 b8)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b8)
+
+Checking next happening (time 2)
+Deleting (clear b5)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b5)
+
+Checking next happening (time 3)
+Deleting (on b8 b1)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b1)
+
+Checking next happening (time 4)
+Deleting (holding b8)
+Adding (clear b8)
+Adding (arm-empty)
+Adding (on-table b8)
+
+Checking next happening (time 5)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 6)
+Deleting (clear b8)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b8)
+
+Checking next happening (time 7)
+Deleting (clear b3)
+Deleting (on-table b3)
+Deleting (arm-empty)
+Adding (holding b3)
+
+Checking next happening (time 8)
+Deleting (clear b2)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b2)
+
+Checking next happening (time 9)
+Deleting (on b1 b6)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b6)
+
+Checking next happening (time 10)
+Deleting (clear b3)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b3)
+
+Checking next happening (time 11)
+Deleting (on b7 b5)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b5)
+
+Checking next happening (time 12)
+Deleting (clear b1)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b1)
+
+Checking next happening (time 13)
+Deleting (on b6 b4)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b4)
+
+Checking next happening (time 14)
+Deleting (clear b5)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b5)
+
+Checking next happening (time 15)
+Deleting (clear b4)
+Deleting (on-table b4)
+Deleting (arm-empty)
+Adding (holding b4)
+
+Checking next happening (time 16)
+Deleting (clear b7)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b7)
+
+Checking next happening (time 17)
+Deleting (on b6 b5)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b5)
+
+Checking next happening (time 18)
+Deleting (clear b4)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b4)
+
+Checking next happening (time 19)
+Deleting (clear b5)
+Deleting (on-table b5)
+Deleting (arm-empty)
+Adding (holding b5)
+
+Checking next happening (time 20)
+Deleting (clear b6)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b6)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 20 
+
+Successful plans:
+Value: 20
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p12.pddl 20 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p13.pddl
+Plan to validate:
+
+Plan size: 26
+1:
+(unstack b8 b6)
+ 
+2:
+(stack b8 b7)
+ 
+3:
+(unstack b6 b9)
+ 
+4:
+(putdown b6)
+ 
+5:
+(unstack b9 b5)
+ 
+6:
+(stack b9 b6)
+ 
+7:
+(unstack b5 b2)
+ 
+8:
+(stack b5 b8)
+ 
+9:
+(unstack b2 b3)
+ 
+10:
+(stack b2 b9)
+ 
+11:
+(unstack b3 b1)
+ 
+12:
+(stack b3 b2)
+ 
+13:
+(unstack b1 b4)
+ 
+14:
+(putdown b1)
+ 
+15:
+(unstack b3 b2)
+ 
+16:
+(stack b3 b1)
+ 
+17:
+(unstack b5 b8)
+ 
+18:
+(stack b5 b3)
+ 
+19:
+(unstack b2 b9)
+ 
+20:
+(stack b2 b5)
+ 
+21:
+(pickup b4)
+ 
+22:
+(stack b4 b8)
+ 
+23:
+(unstack b9 b6)
+ 
+24:
+(stack b9 b2)
+ 
+25:
+(pickup b6)
+ 
+26:
+(stack b6 b4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b8 b6)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b6)
+
+Checking next happening (time 2)
+Deleting (clear b7)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b7)
+
+Checking next happening (time 3)
+Deleting (on b6 b9)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b9)
+
+Checking next happening (time 4)
+Deleting (holding b6)
+Adding (clear b6)
+Adding (arm-empty)
+Adding (on-table b6)
+
+Checking next happening (time 5)
+Deleting (on b9 b5)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b5)
+
+Checking next happening (time 6)
+Deleting (clear b6)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b6)
+
+Checking next happening (time 7)
+Deleting (on b5 b2)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b2)
+
+Checking next happening (time 8)
+Deleting (clear b8)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b8)
+
+Checking next happening (time 9)
+Deleting (on b2 b3)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b3)
+
+Checking next happening (time 10)
+Deleting (clear b9)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b9)
+
+Checking next happening (time 11)
+Deleting (on b3 b1)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b1)
+
+Checking next happening (time 12)
+Deleting (clear b2)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b2)
+
+Checking next happening (time 13)
+Deleting (on b1 b4)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b4)
+
+Checking next happening (time 14)
+Deleting (holding b1)
+Adding (clear b1)
+Adding (arm-empty)
+Adding (on-table b1)
+
+Checking next happening (time 15)
+Deleting (on b3 b2)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b2)
+
+Checking next happening (time 16)
+Deleting (clear b1)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b1)
+
+Checking next happening (time 17)
+Deleting (on b5 b8)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b8)
+
+Checking next happening (time 18)
+Deleting (clear b3)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b3)
+
+Checking next happening (time 19)
+Deleting (on b2 b9)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b9)
+
+Checking next happening (time 20)
+Deleting (clear b5)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b5)
+
+Checking next happening (time 21)
+Deleting (clear b4)
+Deleting (on-table b4)
+Deleting (arm-empty)
+Adding (holding b4)
+
+Checking next happening (time 22)
+Deleting (clear b8)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b8)
+
+Checking next happening (time 23)
+Deleting (on b9 b6)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b6)
+
+Checking next happening (time 24)
+Deleting (clear b2)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b2)
+
+Checking next happening (time 25)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 26)
+Deleting (clear b4)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 26 
+
+Successful plans:
+Value: 26
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p13.pddl 26 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p14.pddl
+Plan to validate:
+
+Plan size: 22
+1:
+(unstack b4 b6)
+ 
+2:
+(putdown b4)
+ 
+3:
+(unstack b5 b1)
+ 
+4:
+(stack b5 b6)
+ 
+5:
+(unstack b1 b3)
+ 
+6:
+(stack b1 b4)
+ 
+7:
+(pickup b3)
+ 
+8:
+(stack b3 b5)
+ 
+9:
+(unstack b8 b9)
+ 
+10:
+(stack b8 b3)
+ 
+11:
+(unstack b9 b7)
+ 
+12:
+(putdown b9)
+ 
+13:
+(unstack b7 b2)
+ 
+14:
+(stack b7 b8)
+ 
+15:
+(pickup b2)
+ 
+16:
+(stack b2 b7)
+ 
+17:
+(unstack b1 b4)
+ 
+18:
+(stack b1 b2)
+ 
+19:
+(pickup b4)
+ 
+20:
+(stack b4 b1)
+ 
+21:
+(pickup b9)
+ 
+22:
+(stack b9 b4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b4 b6)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b6)
+
+Checking next happening (time 2)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 3)
+Deleting (on b5 b1)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b1)
+
+Checking next happening (time 4)
+Deleting (clear b6)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b6)
+
+Checking next happening (time 5)
+Deleting (on b1 b3)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b3)
+
+Checking next happening (time 6)
+Deleting (clear b4)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b4)
+
+Checking next happening (time 7)
+Deleting (clear b3)
+Deleting (on-table b3)
+Deleting (arm-empty)
+Adding (holding b3)
+
+Checking next happening (time 8)
+Deleting (clear b5)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b5)
+
+Checking next happening (time 9)
+Deleting (on b8 b9)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b9)
+
+Checking next happening (time 10)
+Deleting (clear b3)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b3)
+
+Checking next happening (time 11)
+Deleting (on b9 b7)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b7)
+
+Checking next happening (time 12)
+Deleting (holding b9)
+Adding (clear b9)
+Adding (arm-empty)
+Adding (on-table b9)
+
+Checking next happening (time 13)
+Deleting (on b7 b2)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b2)
+
+Checking next happening (time 14)
+Deleting (clear b8)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b8)
+
+Checking next happening (time 15)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 16)
+Deleting (clear b7)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b7)
+
+Checking next happening (time 17)
+Deleting (on b1 b4)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b4)
+
+Checking next happening (time 18)
+Deleting (clear b2)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b2)
+
+Checking next happening (time 19)
+Deleting (clear b4)
+Deleting (on-table b4)
+Deleting (arm-empty)
+Adding (holding b4)
+
+Checking next happening (time 20)
+Deleting (clear b1)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b1)
+
+Checking next happening (time 21)
+Deleting (clear b9)
+Deleting (on-table b9)
+Deleting (arm-empty)
+Adding (holding b9)
+
+Checking next happening (time 22)
+Deleting (clear b4)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 22 
+
+Successful plans:
+Value: 22
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p14.pddl 22 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p15.pddl
+Plan to validate:
+
+Plan size: 26
+1:
+(unstack b9 b2)
+ 
+2:
+(putdown b9)
+ 
+3:
+(unstack b2 b10)
+ 
+4:
+(putdown b2)
+ 
+5:
+(unstack b10 b7)
+ 
+6:
+(stack b10 b2)
+ 
+7:
+(unstack b7 b4)
+ 
+8:
+(putdown b7)
+ 
+9:
+(unstack b4 b8)
+ 
+10:
+(stack b4 b7)
+ 
+11:
+(pickup b9)
+ 
+12:
+(stack b9 b4)
+ 
+13:
+(unstack b10 b2)
+ 
+14:
+(stack b10 b9)
+ 
+15:
+(unstack b8 b6)
+ 
+16:
+(putdown b8)
+ 
+17:
+(unstack b6 b3)
+ 
+18:
+(putdown b6)
+ 
+19:
+(unstack b3 b1)
+ 
+20:
+(stack b3 b10)
+ 
+21:
+(pickup b2)
+ 
+22:
+(stack b2 b1)
+ 
+23:
+(pickup b8)
+ 
+24:
+(stack b8 b2)
+ 
+25:
+(pickup b6)
+ 
+26:
+(stack b6 b8)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b9 b2)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b2)
+
+Checking next happening (time 2)
+Deleting (holding b9)
+Adding (clear b9)
+Adding (arm-empty)
+Adding (on-table b9)
+
+Checking next happening (time 3)
+Deleting (on b2 b10)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b10)
+
+Checking next happening (time 4)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 5)
+Deleting (on b10 b7)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b7)
+
+Checking next happening (time 6)
+Deleting (clear b2)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b2)
+
+Checking next happening (time 7)
+Deleting (on b7 b4)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b4)
+
+Checking next happening (time 8)
+Deleting (holding b7)
+Adding (clear b7)
+Adding (arm-empty)
+Adding (on-table b7)
+
+Checking next happening (time 9)
+Deleting (on b4 b8)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b8)
+
+Checking next happening (time 10)
+Deleting (clear b7)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b7)
+
+Checking next happening (time 11)
+Deleting (clear b9)
+Deleting (on-table b9)
+Deleting (arm-empty)
+Adding (holding b9)
+
+Checking next happening (time 12)
+Deleting (clear b4)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b4)
+
+Checking next happening (time 13)
+Deleting (on b10 b2)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b2)
+
+Checking next happening (time 14)
+Deleting (clear b9)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b9)
+
+Checking next happening (time 15)
+Deleting (on b8 b6)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b6)
+
+Checking next happening (time 16)
+Deleting (holding b8)
+Adding (clear b8)
+Adding (arm-empty)
+Adding (on-table b8)
+
+Checking next happening (time 17)
+Deleting (on b6 b3)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b3)
+
+Checking next happening (time 18)
+Deleting (holding b6)
+Adding (clear b6)
+Adding (arm-empty)
+Adding (on-table b6)
+
+Checking next happening (time 19)
+Deleting (on b3 b1)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b1)
+
+Checking next happening (time 20)
+Deleting (clear b10)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b10)
+
+Checking next happening (time 21)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 22)
+Deleting (clear b1)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b1)
+
+Checking next happening (time 23)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 24)
+Deleting (clear b2)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b2)
+
+Checking next happening (time 25)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 26)
+Deleting (clear b8)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b8)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 26 
+
+Successful plans:
+Value: 26
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p15.pddl 26 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p16.pddl
+Plan to validate:
+
+Plan size: 28
+1:
+(unstack b5 b4)
+ 
+2:
+(putdown b5)
+ 
+3:
+(unstack b4 b2)
+ 
+4:
+(putdown b4)
+ 
+5:
+(unstack b7 b1)
+ 
+6:
+(stack b7 b4)
+ 
+7:
+(unstack b2 b3)
+ 
+8:
+(putdown b2)
+ 
+9:
+(unstack b3 b6)
+ 
+10:
+(putdown b3)
+ 
+11:
+(pickup b5)
+ 
+12:
+(stack b5 b3)
+ 
+13:
+(pickup b1)
+ 
+14:
+(stack b1 b5)
+ 
+15:
+(unstack b6 b9)
+ 
+16:
+(putdown b6)
+ 
+17:
+(unstack b9 b10)
+ 
+18:
+(stack b9 b6)
+ 
+19:
+(unstack b10 b8)
+ 
+20:
+(stack b10 b1)
+ 
+21:
+(pickup b8)
+ 
+22:
+(stack b8 b7)
+ 
+23:
+(unstack b10 b1)
+ 
+24:
+(stack b10 b8)
+ 
+25:
+(pickup b2)
+ 
+26:
+(stack b2 b10)
+ 
+27:
+(unstack b9 b6)
+ 
+28:
+(stack b9 b2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b5 b4)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b4)
+
+Checking next happening (time 2)
+Deleting (holding b5)
+Adding (clear b5)
+Adding (arm-empty)
+Adding (on-table b5)
+
+Checking next happening (time 3)
+Deleting (on b4 b2)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b2)
+
+Checking next happening (time 4)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 5)
+Deleting (on b7 b1)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b1)
+
+Checking next happening (time 6)
+Deleting (clear b4)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b4)
+
+Checking next happening (time 7)
+Deleting (on b2 b3)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b3)
+
+Checking next happening (time 8)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 9)
+Deleting (on b3 b6)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b6)
+
+Checking next happening (time 10)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 11)
+Deleting (clear b5)
+Deleting (on-table b5)
+Deleting (arm-empty)
+Adding (holding b5)
+
+Checking next happening (time 12)
+Deleting (clear b3)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b3)
+
+Checking next happening (time 13)
+Deleting (clear b1)
+Deleting (on-table b1)
+Deleting (arm-empty)
+Adding (holding b1)
+
+Checking next happening (time 14)
+Deleting (clear b5)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b5)
+
+Checking next happening (time 15)
+Deleting (on b6 b9)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b9)
+
+Checking next happening (time 16)
+Deleting (holding b6)
+Adding (clear b6)
+Adding (arm-empty)
+Adding (on-table b6)
+
+Checking next happening (time 17)
+Deleting (on b9 b10)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b10)
+
+Checking next happening (time 18)
+Deleting (clear b6)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b6)
+
+Checking next happening (time 19)
+Deleting (on b10 b8)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b8)
+
+Checking next happening (time 20)
+Deleting (clear b1)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b1)
+
+Checking next happening (time 21)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 22)
+Deleting (clear b7)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b7)
+
+Checking next happening (time 23)
+Deleting (on b10 b1)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b1)
+
+Checking next happening (time 24)
+Deleting (clear b8)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b8)
+
+Checking next happening (time 25)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 26)
+Deleting (clear b10)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b10)
+
+Checking next happening (time 27)
+Deleting (on b9 b6)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b6)
+
+Checking next happening (time 28)
+Deleting (clear b2)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 28 
+
+Successful plans:
+Value: 28
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p16.pddl 28 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p17.pddl
+Plan to validate:
+
+Plan size: 22
+1:
+(unstack b3 b4)
+ 
+2:
+(putdown b3)
+ 
+3:
+(unstack b4 b10)
+ 
+4:
+(putdown b4)
+ 
+5:
+(unstack b5 b2)
+ 
+6:
+(stack b5 b4)
+ 
+7:
+(unstack b9 b6)
+ 
+8:
+(stack b9 b5)
+ 
+9:
+(unstack b10 b7)
+ 
+10:
+(stack b10 b9)
+ 
+11:
+(unstack b7 b8)
+ 
+12:
+(stack b7 b3)
+ 
+13:
+(unstack b8 b1)
+ 
+14:
+(putdown b8)
+ 
+15:
+(unstack b1 b11)
+ 
+16:
+(putdown b1)
+ 
+17:
+(pickup b11)
+ 
+18:
+(stack b11 b1)
+ 
+19:
+(pickup b6)
+ 
+20:
+(stack b6 b10)
+ 
+21:
+(pickup b2)
+ 
+22:
+(stack b2 b7)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b3 b4)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b4)
+
+Checking next happening (time 2)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 3)
+Deleting (on b4 b10)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b10)
+
+Checking next happening (time 4)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 5)
+Deleting (on b5 b2)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b2)
+
+Checking next happening (time 6)
+Deleting (clear b4)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b4)
+
+Checking next happening (time 7)
+Deleting (on b9 b6)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b6)
+
+Checking next happening (time 8)
+Deleting (clear b5)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b5)
+
+Checking next happening (time 9)
+Deleting (on b10 b7)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b7)
+
+Checking next happening (time 10)
+Deleting (clear b9)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b9)
+
+Checking next happening (time 11)
+Deleting (on b7 b8)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b8)
+
+Checking next happening (time 12)
+Deleting (clear b3)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b3)
+
+Checking next happening (time 13)
+Deleting (on b8 b1)
+Deleting (clear b8)
+Deleting (arm-empty)
+Adding (holding b8)
+Adding (clear b1)
+
+Checking next happening (time 14)
+Deleting (holding b8)
+Adding (clear b8)
+Adding (arm-empty)
+Adding (on-table b8)
+
+Checking next happening (time 15)
+Deleting (on b1 b11)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b11)
+
+Checking next happening (time 16)
+Deleting (holding b1)
+Adding (clear b1)
+Adding (arm-empty)
+Adding (on-table b1)
+
+Checking next happening (time 17)
+Deleting (clear b11)
+Deleting (on-table b11)
+Deleting (arm-empty)
+Adding (holding b11)
+
+Checking next happening (time 18)
+Deleting (clear b1)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b1)
+
+Checking next happening (time 19)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 20)
+Deleting (clear b10)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b10)
+
+Checking next happening (time 21)
+Deleting (clear b2)
+Deleting (on-table b2)
+Deleting (arm-empty)
+Adding (holding b2)
+
+Checking next happening (time 22)
+Deleting (clear b7)
+Deleting (holding b2)
+Adding (arm-empty)
+Adding (clear b2)
+Adding (on b2 b7)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 22 
+
+Successful plans:
+Value: 22
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p17.pddl 22 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p18.pddl
+Plan to validate:
+
+Plan size: 30
+1:
+(unstack b10 b2)
+ 
+2:
+(stack b10 b4)
+ 
+3:
+(unstack b2 b5)
+ 
+4:
+(putdown b2)
+ 
+5:
+(unstack b5 b3)
+ 
+6:
+(putdown b5)
+ 
+7:
+(unstack b3 b6)
+ 
+8:
+(stack b3 b10)
+ 
+9:
+(unstack b6 b7)
+ 
+10:
+(stack b6 b5)
+ 
+11:
+(unstack b7 b1)
+ 
+12:
+(stack b7 b2)
+ 
+13:
+(unstack b3 b10)
+ 
+14:
+(stack b3 b7)
+ 
+15:
+(unstack b1 b9)
+ 
+16:
+(stack b1 b6)
+ 
+17:
+(unstack b9 b11)
+ 
+18:
+(putdown b9)
+ 
+19:
+(unstack b10 b4)
+ 
+20:
+(stack b10 b9)
+ 
+21:
+(unstack b11 b8)
+ 
+22:
+(stack b11 b1)
+ 
+23:
+(pickup b8)
+ 
+24:
+(stack b8 b3)
+ 
+25:
+(unstack b11 b1)
+ 
+26:
+(stack b11 b8)
+ 
+27:
+(pickup b4)
+ 
+28:
+(stack b4 b11)
+ 
+29:
+(unstack b1 b6)
+ 
+30:
+(stack b1 b4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b10 b2)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b2)
+
+Checking next happening (time 2)
+Deleting (clear b4)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b4)
+
+Checking next happening (time 3)
+Deleting (on b2 b5)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b5)
+
+Checking next happening (time 4)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 5)
+Deleting (on b5 b3)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b3)
+
+Checking next happening (time 6)
+Deleting (holding b5)
+Adding (clear b5)
+Adding (arm-empty)
+Adding (on-table b5)
+
+Checking next happening (time 7)
+Deleting (on b3 b6)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b6)
+
+Checking next happening (time 8)
+Deleting (clear b10)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b10)
+
+Checking next happening (time 9)
+Deleting (on b6 b7)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b7)
+
+Checking next happening (time 10)
+Deleting (clear b5)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b5)
+
+Checking next happening (time 11)
+Deleting (on b7 b1)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b1)
+
+Checking next happening (time 12)
+Deleting (clear b2)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b2)
+
+Checking next happening (time 13)
+Deleting (on b3 b10)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b10)
+
+Checking next happening (time 14)
+Deleting (clear b7)
+Deleting (holding b3)
+Adding (arm-empty)
+Adding (clear b3)
+Adding (on b3 b7)
+
+Checking next happening (time 15)
+Deleting (on b1 b9)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b9)
+
+Checking next happening (time 16)
+Deleting (clear b6)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b6)
+
+Checking next happening (time 17)
+Deleting (on b9 b11)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b11)
+
+Checking next happening (time 18)
+Deleting (holding b9)
+Adding (clear b9)
+Adding (arm-empty)
+Adding (on-table b9)
+
+Checking next happening (time 19)
+Deleting (on b10 b4)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b4)
+
+Checking next happening (time 20)
+Deleting (clear b9)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b9)
+
+Checking next happening (time 21)
+Deleting (on b11 b8)
+Deleting (clear b11)
+Deleting (arm-empty)
+Adding (holding b11)
+Adding (clear b8)
+
+Checking next happening (time 22)
+Deleting (clear b1)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b1)
+
+Checking next happening (time 23)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 24)
+Deleting (clear b3)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b3)
+
+Checking next happening (time 25)
+Deleting (on b11 b1)
+Deleting (clear b11)
+Deleting (arm-empty)
+Adding (holding b11)
+Adding (clear b1)
+
+Checking next happening (time 26)
+Deleting (clear b8)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b8)
+
+Checking next happening (time 27)
+Deleting (clear b4)
+Deleting (on-table b4)
+Deleting (arm-empty)
+Adding (holding b4)
+
+Checking next happening (time 28)
+Deleting (clear b11)
+Deleting (holding b4)
+Adding (arm-empty)
+Adding (clear b4)
+Adding (on b4 b11)
+
+Checking next happening (time 29)
+Deleting (on b1 b6)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b6)
+
+Checking next happening (time 30)
+Deleting (clear b4)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 30 
+
+Successful plans:
+Value: 30
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p18.pddl 30 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p19.pddl
+Plan to validate:
+
+Plan size: 24
+1:
+(unstack b3 b8)
+ 
+2:
+(putdown b3)
+ 
+3:
+(pickup b8)
+ 
+4:
+(stack b8 b3)
+ 
+5:
+(unstack b2 b5)
+ 
+6:
+(putdown b2)
+ 
+7:
+(unstack b4 b12)
+ 
+8:
+(putdown b4)
+ 
+9:
+(unstack b5 b7)
+ 
+10:
+(stack b5 b2)
+ 
+11:
+(unstack b7 b10)
+ 
+12:
+(stack b7 b4)
+ 
+13:
+(unstack b10 b11)
+ 
+14:
+(stack b10 b8)
+ 
+15:
+(pickup b11)
+ 
+16:
+(stack b11 b7)
+ 
+17:
+(unstack b12 b9)
+ 
+18:
+(stack b12 b11)
+ 
+19:
+(unstack b5 b2)
+ 
+20:
+(stack b5 b10)
+ 
+21:
+(unstack b6 b1)
+ 
+22:
+(stack b6 b12)
+ 
+23:
+(pickup b9)
+ 
+24:
+(stack b9 b2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b3 b8)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b8)
+
+Checking next happening (time 2)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 3)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 4)
+Deleting (clear b3)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b3)
+
+Checking next happening (time 5)
+Deleting (on b2 b5)
+Deleting (clear b2)
+Deleting (arm-empty)
+Adding (holding b2)
+Adding (clear b5)
+
+Checking next happening (time 6)
+Deleting (holding b2)
+Adding (clear b2)
+Adding (arm-empty)
+Adding (on-table b2)
+
+Checking next happening (time 7)
+Deleting (on b4 b12)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b12)
+
+Checking next happening (time 8)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 9)
+Deleting (on b5 b7)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b7)
+
+Checking next happening (time 10)
+Deleting (clear b2)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b2)
+
+Checking next happening (time 11)
+Deleting (on b7 b10)
+Deleting (clear b7)
+Deleting (arm-empty)
+Adding (holding b7)
+Adding (clear b10)
+
+Checking next happening (time 12)
+Deleting (clear b4)
+Deleting (holding b7)
+Adding (arm-empty)
+Adding (clear b7)
+Adding (on b7 b4)
+
+Checking next happening (time 13)
+Deleting (on b10 b11)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b11)
+
+Checking next happening (time 14)
+Deleting (clear b8)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b8)
+
+Checking next happening (time 15)
+Deleting (clear b11)
+Deleting (on-table b11)
+Deleting (arm-empty)
+Adding (holding b11)
+
+Checking next happening (time 16)
+Deleting (clear b7)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b7)
+
+Checking next happening (time 17)
+Deleting (on b12 b9)
+Deleting (clear b12)
+Deleting (arm-empty)
+Adding (holding b12)
+Adding (clear b9)
+
+Checking next happening (time 18)
+Deleting (clear b11)
+Deleting (holding b12)
+Adding (arm-empty)
+Adding (clear b12)
+Adding (on b12 b11)
+
+Checking next happening (time 19)
+Deleting (on b5 b2)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b2)
+
+Checking next happening (time 20)
+Deleting (clear b10)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b10)
+
+Checking next happening (time 21)
+Deleting (on b6 b1)
+Deleting (clear b6)
+Deleting (arm-empty)
+Adding (holding b6)
+Adding (clear b1)
+
+Checking next happening (time 22)
+Deleting (clear b12)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b12)
+
+Checking next happening (time 23)
+Deleting (clear b9)
+Deleting (on-table b9)
+Deleting (arm-empty)
+Adding (holding b9)
+
+Checking next happening (time 24)
+Deleting (clear b2)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 24 
+
+Successful plans:
+Value: 24
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p19.pddl 24 
+
+Checking plan: experiments/run0/plans/llm_ic_pddl/blocksworld/p20.pddl
+Plan to validate:
+
+Plan size: 30
+1:
+(unstack b11 b4)
+ 
+2:
+(stack b11 b7)
+ 
+3:
+(unstack b4 b10)
+ 
+4:
+(putdown b4)
+ 
+5:
+(unstack b10 b3)
+ 
+6:
+(stack b10 b4)
+ 
+7:
+(unstack b3 b9)
+ 
+8:
+(putdown b3)
+ 
+9:
+(unstack b5 b8)
+ 
+10:
+(stack b5 b3)
+ 
+11:
+(unstack b9 b1)
+ 
+12:
+(stack b9 b11)
+ 
+13:
+(unstack b1 b12)
+ 
+14:
+(stack b1 b10)
+ 
+15:
+(unstack b12 b2)
+ 
+16:
+(stack b12 b5)
+ 
+17:
+(pickup b6)
+ 
+18:
+(stack b6 b2)
+ 
+19:
+(unstack b1 b10)
+ 
+20:
+(stack b1 b6)
+ 
+21:
+(unstack b10 b4)
+ 
+22:
+(stack b10 b1)
+ 
+23:
+(unstack b9 b11)
+ 
+24:
+(stack b9 b10)
+ 
+25:
+(pickup b8)
+ 
+26:
+(stack b8 b9)
+ 
+27:
+(unstack b12 b5)
+ 
+28:
+(stack b12 b8)
+ 
+29:
+(unstack b11 b7)
+ 
+30:
+(stack b11 b12)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (on b11 b4)
+Deleting (clear b11)
+Deleting (arm-empty)
+Adding (holding b11)
+Adding (clear b4)
+
+Checking next happening (time 2)
+Deleting (clear b7)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b7)
+
+Checking next happening (time 3)
+Deleting (on b4 b10)
+Deleting (clear b4)
+Deleting (arm-empty)
+Adding (holding b4)
+Adding (clear b10)
+
+Checking next happening (time 4)
+Deleting (holding b4)
+Adding (clear b4)
+Adding (arm-empty)
+Adding (on-table b4)
+
+Checking next happening (time 5)
+Deleting (on b10 b3)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b3)
+
+Checking next happening (time 6)
+Deleting (clear b4)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b4)
+
+Checking next happening (time 7)
+Deleting (on b3 b9)
+Deleting (clear b3)
+Deleting (arm-empty)
+Adding (holding b3)
+Adding (clear b9)
+
+Checking next happening (time 8)
+Deleting (holding b3)
+Adding (clear b3)
+Adding (arm-empty)
+Adding (on-table b3)
+
+Checking next happening (time 9)
+Deleting (on b5 b8)
+Deleting (clear b5)
+Deleting (arm-empty)
+Adding (holding b5)
+Adding (clear b8)
+
+Checking next happening (time 10)
+Deleting (clear b3)
+Deleting (holding b5)
+Adding (arm-empty)
+Adding (clear b5)
+Adding (on b5 b3)
+
+Checking next happening (time 11)
+Deleting (on b9 b1)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b1)
+
+Checking next happening (time 12)
+Deleting (clear b11)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b11)
+
+Checking next happening (time 13)
+Deleting (on b1 b12)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b12)
+
+Checking next happening (time 14)
+Deleting (clear b10)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b10)
+
+Checking next happening (time 15)
+Deleting (on b12 b2)
+Deleting (clear b12)
+Deleting (arm-empty)
+Adding (holding b12)
+Adding (clear b2)
+
+Checking next happening (time 16)
+Deleting (clear b5)
+Deleting (holding b12)
+Adding (arm-empty)
+Adding (clear b12)
+Adding (on b12 b5)
+
+Checking next happening (time 17)
+Deleting (clear b6)
+Deleting (on-table b6)
+Deleting (arm-empty)
+Adding (holding b6)
+
+Checking next happening (time 18)
+Deleting (clear b2)
+Deleting (holding b6)
+Adding (arm-empty)
+Adding (clear b6)
+Adding (on b6 b2)
+
+Checking next happening (time 19)
+Deleting (on b1 b10)
+Deleting (clear b1)
+Deleting (arm-empty)
+Adding (holding b1)
+Adding (clear b10)
+
+Checking next happening (time 20)
+Deleting (clear b6)
+Deleting (holding b1)
+Adding (arm-empty)
+Adding (clear b1)
+Adding (on b1 b6)
+
+Checking next happening (time 21)
+Deleting (on b10 b4)
+Deleting (clear b10)
+Deleting (arm-empty)
+Adding (holding b10)
+Adding (clear b4)
+
+Checking next happening (time 22)
+Deleting (clear b1)
+Deleting (holding b10)
+Adding (arm-empty)
+Adding (clear b10)
+Adding (on b10 b1)
+
+Checking next happening (time 23)
+Deleting (on b9 b11)
+Deleting (clear b9)
+Deleting (arm-empty)
+Adding (holding b9)
+Adding (clear b11)
+
+Checking next happening (time 24)
+Deleting (clear b10)
+Deleting (holding b9)
+Adding (arm-empty)
+Adding (clear b9)
+Adding (on b9 b10)
+
+Checking next happening (time 25)
+Deleting (clear b8)
+Deleting (on-table b8)
+Deleting (arm-empty)
+Adding (holding b8)
+
+Checking next happening (time 26)
+Deleting (clear b9)
+Deleting (holding b8)
+Adding (arm-empty)
+Adding (clear b8)
+Adding (on b8 b9)
+
+Checking next happening (time 27)
+Deleting (on b12 b5)
+Deleting (clear b12)
+Deleting (arm-empty)
+Adding (holding b12)
+Adding (clear b5)
+
+Checking next happening (time 28)
+Deleting (clear b8)
+Deleting (holding b12)
+Adding (arm-empty)
+Adding (clear b12)
+Adding (on b12 b8)
+
+Checking next happening (time 29)
+Deleting (on b11 b7)
+Deleting (clear b11)
+Deleting (arm-empty)
+Adding (holding b11)
+Adding (clear b7)
+
+Checking next happening (time 30)
+Deleting (clear b12)
+Deleting (holding b11)
+Adding (arm-empty)
+Adding (clear b11)
+Adding (on b11 b12)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 30 
+
+Successful plans:
+Value: 30
+ experiments/run0/plans/llm_ic_pddl/blocksworld/p20.pddl 30 
+

@@ -1,0 +1,3657 @@
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p01.pddl.1
+Plan to validate:
+
+Plan size: 0
+
+Plan executed successfully - checking goal
+Plan valid
+Final value: 0 
+
+Successful plans:
+Value: 0
+ experiments/run1/plans/llm_ic_pddl/grippers/p01.pddl.1 0 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.2
+Plan to validate:
+
+Plan size: 10
+1:
+(move robot2 room3 room1)
+ 
+2:
+(pick robot2 ball2 room1 lgripper2)
+ 
+3:
+(pick robot2 ball3 room1 rgripper2)
+ 
+4:
+(move robot2 room1 room2)
+ 
+5:
+(drop robot2 ball2 room2 lgripper2)
+ 
+6:
+(move robot2 room2 room3)
+ 
+7:
+(pick robot2 ball1 room3 lgripper2)
+ 
+8:
+(drop robot2 ball3 room3 rgripper2)
+ 
+9:
+(move robot2 room3 room2)
+ 
+10:
+(drop robot2 ball1 room2 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball2 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at ball3 room1)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball3 rgripper2)
+
+Checking next happening (time 4)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 5)
+Deleting (carry robot2 ball2 lgripper2)
+Adding (at ball2 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 6)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 7)
+Deleting (at ball1 room3)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball1 lgripper2)
+
+Checking next happening (time 8)
+Deleting (carry robot2 ball3 rgripper2)
+Adding (at ball3 room3)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 9)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 10)
+Deleting (carry robot2 ball1 lgripper2)
+Adding (at ball1 room2)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.2 10 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.1
+Plan to validate:
+
+Plan size: 11
+1:
+(move robot2 room3 room1)
+ 
+2:
+(pick robot2 ball2 room1 lgripper2)
+ 
+3:
+(move robot2 room1 room2)
+ 
+4:
+(drop robot2 ball2 room2 lgripper2)
+ 
+5:
+(move robot1 room2 room1)
+ 
+6:
+(pick robot1 ball3 room1 lgripper1)
+ 
+7:
+(move robot1 room1 room3)
+ 
+8:
+(pick robot1 ball1 room3 rgripper1)
+ 
+9:
+(drop robot1 ball3 room3 lgripper1)
+ 
+10:
+(move robot1 room3 room2)
+ 
+11:
+(drop robot1 ball1 room2 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball2 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 4)
+Deleting (carry robot2 ball2 lgripper2)
+Adding (at ball2 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 5)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 6)
+Deleting (at ball3 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball3 lgripper1)
+
+Checking next happening (time 7)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 8)
+Deleting (at ball1 room3)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball1 rgripper1)
+
+Checking next happening (time 9)
+Deleting (carry robot1 ball3 lgripper1)
+Adding (at ball3 room3)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 10)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 11)
+Deleting (carry robot1 ball1 rgripper1)
+Adding (at ball1 room2)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 11 
+
+Successful plans:
+Value: 11
+ experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.1 11 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.3
+Plan to validate:
+
+Plan size: 9
+1:
+(move robot2 room3 room1)
+ 
+2:
+(pick robot2 ball2 room1 lgripper2)
+ 
+3:
+(pick robot2 ball3 room1 rgripper2)
+ 
+4:
+(move robot2 room1 room3)
+ 
+5:
+(drop robot2 ball3 room3 rgripper2)
+ 
+6:
+(pick robot2 ball1 room3 rgripper2)
+ 
+7:
+(move robot2 room3 room2)
+ 
+8:
+(drop robot2 ball2 room2 lgripper2)
+ 
+9:
+(drop robot2 ball1 room2 rgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball2 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at ball3 room1)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball3 rgripper2)
+
+Checking next happening (time 4)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 5)
+Deleting (carry robot2 ball3 rgripper2)
+Adding (at ball3 room3)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 6)
+Deleting (at ball1 room3)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball1 rgripper2)
+
+Checking next happening (time 7)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 8)
+Deleting (carry robot2 ball2 lgripper2)
+Adding (at ball2 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 9)
+Deleting (carry robot2 ball1 rgripper2)
+Adding (at ball1 room2)
+Adding (free robot2 rgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ experiments/run1/plans/llm_ic_pddl/grippers/p02.pddl.3 9 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p03.pddl.1
+Plan to validate:
+
+Plan size: 6
+1:
+(pick robot1 ball1 room1 lgripper1)
+ 
+2:
+(pick robot1 ball2 room1 rgripper1)
+ 
+3:
+(move robot1 room1 room4)
+ 
+4:
+(drop robot1 ball2 room4 rgripper1)
+ 
+5:
+(move robot1 room4 room5)
+ 
+6:
+(drop robot1 ball1 room5 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball1 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room1)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 3)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room4)
+
+Checking next happening (time 4)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room4)
+Adding (free robot1 rgripper1)
+
+Checking next happening (time 5)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room5)
+
+Checking next happening (time 6)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room5)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ experiments/run1/plans/llm_ic_pddl/grippers/p03.pddl.1 6 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p04.pddl.1
+Plan to validate:
+
+Plan size: 3
+1:
+(pick robot3 ball3 room1 lgripper3)
+ 
+2:
+(move robot3 room1 room3)
+ 
+3:
+(drop robot3 ball3 room3 lgripper3)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room1)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball3 lgripper3)
+
+Checking next happening (time 2)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room3)
+
+Checking next happening (time 3)
+Deleting (carry robot3 ball3 lgripper3)
+Adding (at ball3 room3)
+Adding (free robot3 lgripper3)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run1/plans/llm_ic_pddl/grippers/p04.pddl.1 3 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p05.pddl.1
+Plan to validate:
+
+Plan size: 3
+1:
+(pick robot2 ball3 room1 lgripper2)
+ 
+2:
+(move robot2 room1 room2)
+ 
+3:
+(drop robot2 ball3 room2 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball3 lgripper2)
+
+Checking next happening (time 2)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot2 ball3 lgripper2)
+Adding (at ball3 room2)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run1/plans/llm_ic_pddl/grippers/p05.pddl.1 3 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p06.pddl.1
+Plan to validate:
+
+Plan size: 4
+1:
+(move robot2 room2 room1)
+ 
+2:
+(pick robot2 ball1 room1 lgripper2)
+ 
+3:
+(move robot2 room1 room3)
+ 
+4:
+(drop robot2 ball1 room3 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 2)
+Deleting (at ball1 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball1 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 4)
+Deleting (carry robot2 ball1 lgripper2)
+Adding (at ball1 room3)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 4 
+
+Successful plans:
+Value: 4
+ experiments/run1/plans/llm_ic_pddl/grippers/p06.pddl.1 4 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.3
+Plan to validate:
+
+Plan size: 8
+1:
+(pick robot1 ball1 room4 lgripper1)
+ 
+2:
+(pick robot1 ball2 room4 rgripper1)
+ 
+3:
+(move robot1 room4 room2)
+ 
+4:
+(drop robot1 ball1 room2 lgripper1)
+ 
+5:
+(pick robot1 ball3 room2 lgripper1)
+ 
+6:
+(move robot1 room2 room3)
+ 
+7:
+(drop robot1 ball3 room3 lgripper1)
+ 
+8:
+(drop robot1 ball2 room3 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball1 room4)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room4)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 3)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 4)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room2)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 5)
+Deleting (at ball3 room2)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball3 lgripper1)
+
+Checking next happening (time 6)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 7)
+Deleting (carry robot1 ball3 lgripper1)
+Adding (at ball3 room3)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 8)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room3)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.3 8 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.1
+Plan to validate:
+
+Plan size: 10
+1:
+(pick robot2 ball3 room2 lgripper2)
+ 
+2:
+(move robot2 room2 room3)
+ 
+3:
+(drop robot2 ball3 room3 lgripper2)
+ 
+4:
+(pick robot1 ball1 room4 lgripper1)
+ 
+5:
+(move robot1 room4 room2)
+ 
+6:
+(drop robot1 ball1 room2 lgripper1)
+ 
+7:
+(move robot2 room3 room4)
+ 
+8:
+(pick robot2 ball2 room4 lgripper2)
+ 
+9:
+(move robot2 room4 room3)
+ 
+10:
+(drop robot2 ball2 room3 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball3 lgripper2)
+
+Checking next happening (time 2)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 3)
+Deleting (carry robot2 ball3 lgripper2)
+Adding (at ball3 room3)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 4)
+Deleting (at ball1 room4)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 5)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 6)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room2)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 7)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room4)
+
+Checking next happening (time 8)
+Deleting (at ball2 room4)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball2 lgripper2)
+
+Checking next happening (time 9)
+Deleting (at-robby robot2 room4)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 10)
+Deleting (carry robot2 ball2 lgripper2)
+Adding (at ball2 room3)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.1 10 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.2
+Plan to validate:
+
+Plan size: 9
+1:
+(pick robot2 ball3 room2 lgripper2)
+ 
+2:
+(move robot2 room2 room3)
+ 
+3:
+(drop robot2 ball3 room3 lgripper2)
+ 
+4:
+(pick robot1 ball1 room4 lgripper1)
+ 
+5:
+(pick robot1 ball2 room4 rgripper1)
+ 
+6:
+(move robot1 room4 room2)
+ 
+7:
+(drop robot1 ball1 room2 lgripper1)
+ 
+8:
+(move robot1 room2 room3)
+ 
+9:
+(drop robot1 ball2 room3 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball3 lgripper2)
+
+Checking next happening (time 2)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 3)
+Deleting (carry robot2 ball3 lgripper2)
+Adding (at ball3 room3)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 4)
+Deleting (at ball1 room4)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 5)
+Deleting (at ball2 room4)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 6)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 7)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room2)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 8)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 9)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room3)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ experiments/run1/plans/llm_ic_pddl/grippers/p07.pddl.2 9 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p08.pddl.1
+Plan to validate:
+
+Plan size: 11
+1:
+(pick robot3 ball1 room2 lgripper3)
+ 
+2:
+(pick robot2 ball3 room1 lgripper2)
+ 
+3:
+(move robot2 room1 room2)
+ 
+4:
+(drop robot2 ball3 room2 lgripper2)
+ 
+5:
+(move robot3 room2 room1)
+ 
+6:
+(drop robot3 ball1 room1 lgripper3)
+ 
+7:
+(pick robot2 ball2 room2 lgripper2)
+ 
+8:
+(pick robot2 ball4 room2 rgripper2)
+ 
+9:
+(move robot2 room2 room1)
+ 
+10:
+(drop robot2 ball2 room1 lgripper2)
+ 
+11:
+(drop robot2 ball4 room1 rgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball1 room2)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball1 lgripper3)
+
+Checking next happening (time 2)
+Deleting (at ball3 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball3 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 4)
+Deleting (carry robot2 ball3 lgripper2)
+Adding (at ball3 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 5)
+Deleting (at-robby robot3 room2)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 6)
+Deleting (carry robot3 ball1 lgripper3)
+Adding (at ball1 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 7)
+Deleting (at ball2 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball2 lgripper2)
+
+Checking next happening (time 8)
+Deleting (at ball4 room2)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball4 rgripper2)
+
+Checking next happening (time 9)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 10)
+Deleting (carry robot2 ball2 lgripper2)
+Adding (at ball2 room1)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 11)
+Deleting (carry robot2 ball4 rgripper2)
+Adding (at ball4 room1)
+Adding (free robot2 rgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 11 
+
+Successful plans:
+Value: 11
+ experiments/run1/plans/llm_ic_pddl/grippers/p08.pddl.1 11 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.4
+Plan to validate:
+
+Plan size: 17
+1:
+(pick robot2 ball6 room1 lgripper2)
+ 
+2:
+(move robot2 room1 room2)
+ 
+3:
+(drop robot2 ball6 room2 lgripper2)
+ 
+4:
+(pick robot3 ball7 room3 lgripper3)
+ 
+5:
+(move robot3 room3 room1)
+ 
+6:
+(drop robot3 ball7 room1 lgripper3)
+ 
+7:
+(pick robot2 ball4 room2 lgripper2)
+ 
+8:
+(pick robot2 ball5 room2 rgripper2)
+ 
+9:
+(move robot2 room2 room3)
+ 
+10:
+(drop robot2 ball5 room3 rgripper2)
+ 
+11:
+(pick robot2 ball2 room3 rgripper2)
+ 
+12:
+(move robot2 room3 room4)
+ 
+13:
+(drop robot2 ball4 room4 lgripper2)
+ 
+14:
+(pick robot2 ball1 room4 lgripper2)
+ 
+15:
+(drop robot2 ball2 room4 rgripper2)
+ 
+16:
+(move robot2 room4 room1)
+ 
+17:
+(drop robot2 ball1 room1 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball6 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball6 lgripper2)
+
+Checking next happening (time 2)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot2 ball6 lgripper2)
+Adding (at ball6 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 4)
+Deleting (at ball7 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball7 lgripper3)
+
+Checking next happening (time 5)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 6)
+Deleting (carry robot3 ball7 lgripper3)
+Adding (at ball7 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 7)
+Deleting (at ball4 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball4 lgripper2)
+
+Checking next happening (time 8)
+Deleting (at ball5 room2)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball5 rgripper2)
+
+Checking next happening (time 9)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 10)
+Deleting (carry robot2 ball5 rgripper2)
+Adding (at ball5 room3)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 11)
+Deleting (at ball2 room3)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball2 rgripper2)
+
+Checking next happening (time 12)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room4)
+
+Checking next happening (time 13)
+Deleting (carry robot2 ball4 lgripper2)
+Adding (at ball4 room4)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 14)
+Deleting (at ball1 room4)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball1 lgripper2)
+
+Checking next happening (time 15)
+Deleting (carry robot2 ball2 rgripper2)
+Adding (at ball2 room4)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 16)
+Deleting (at-robby robot2 room4)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 17)
+Deleting (carry robot2 ball1 lgripper2)
+Adding (at ball1 room1)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 17 
+
+Successful plans:
+Value: 17
+ experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.4 17 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.3
+Plan to validate:
+
+Plan size: 18
+1:
+(move robot2 room1 room2)
+ 
+2:
+(pick robot3 ball7 room3 lgripper3)
+ 
+3:
+(move robot3 room3 room1)
+ 
+4:
+(drop robot3 ball7 room1 lgripper3)
+ 
+5:
+(pick robot3 ball6 room1 lgripper3)
+ 
+6:
+(move robot3 room1 room2)
+ 
+7:
+(drop robot3 ball6 room2 lgripper3)
+ 
+8:
+(pick robot1 ball1 room4 lgripper1)
+ 
+9:
+(move robot1 room4 room1)
+ 
+10:
+(drop robot1 ball1 room1 lgripper1)
+ 
+11:
+(pick robot3 ball4 room2 lgripper3)
+ 
+12:
+(pick robot3 ball5 room2 rgripper3)
+ 
+13:
+(move robot3 room2 room3)
+ 
+14:
+(drop robot3 ball5 room3 rgripper3)
+ 
+15:
+(pick robot3 ball2 room3 rgripper3)
+ 
+16:
+(move robot3 room3 room4)
+ 
+17:
+(drop robot3 ball4 room4 lgripper3)
+ 
+18:
+(drop robot3 ball2 room4 rgripper3)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 2)
+Deleting (at ball7 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball7 lgripper3)
+
+Checking next happening (time 3)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot3 ball7 lgripper3)
+Adding (at ball7 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 5)
+Deleting (at ball6 room1)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball6 lgripper3)
+
+Checking next happening (time 6)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 7)
+Deleting (carry robot3 ball6 lgripper3)
+Adding (at ball6 room2)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 8)
+Deleting (at ball1 room4)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 9)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 10)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room1)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 11)
+Deleting (at ball4 room2)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball4 lgripper3)
+
+Checking next happening (time 12)
+Deleting (at ball5 room2)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball5 rgripper3)
+
+Checking next happening (time 13)
+Deleting (at-robby robot3 room2)
+Adding (at-robby robot3 room3)
+
+Checking next happening (time 14)
+Deleting (carry robot3 ball5 rgripper3)
+Adding (at ball5 room3)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 15)
+Deleting (at ball2 room3)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball2 rgripper3)
+
+Checking next happening (time 16)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room4)
+
+Checking next happening (time 17)
+Deleting (carry robot3 ball4 lgripper3)
+Adding (at ball4 room4)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 18)
+Deleting (carry robot3 ball2 rgripper3)
+Adding (at ball2 room4)
+Adding (free robot3 rgripper3)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 18 
+
+Successful plans:
+Value: 18
+ experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.3 18 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.1
+Plan to validate:
+
+Plan size: 20
+1:
+(move robot3 room3 room1)
+ 
+2:
+(pick robot3 ball6 room1 lgripper3)
+ 
+3:
+(move robot1 room4 room1)
+ 
+4:
+(move robot3 room1 room2)
+ 
+5:
+(pick robot3 ball4 room2 rgripper3)
+ 
+6:
+(drop robot3 ball6 room2 lgripper3)
+ 
+7:
+(pick robot3 ball5 room2 lgripper3)
+ 
+8:
+(move robot3 room2 room3)
+ 
+9:
+(drop robot3 ball5 room3 lgripper3)
+ 
+10:
+(pick robot3 ball2 room3 lgripper3)
+ 
+11:
+(move robot3 room3 room4)
+ 
+12:
+(drop robot3 ball2 room4 lgripper3)
+ 
+13:
+(pick robot3 ball1 room4 lgripper3)
+ 
+14:
+(drop robot3 ball4 room4 rgripper3)
+ 
+15:
+(move robot3 room4 room1)
+ 
+16:
+(drop robot3 ball1 room1 lgripper3)
+ 
+17:
+(move robot1 room1 room3)
+ 
+18:
+(pick robot1 ball7 room3 lgripper1)
+ 
+19:
+(move robot1 room3 room1)
+ 
+20:
+(drop robot1 ball7 room1 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 2)
+Deleting (at ball6 room1)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball6 lgripper3)
+
+Checking next happening (time 3)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 4)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 5)
+Deleting (at ball4 room2)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball4 rgripper3)
+
+Checking next happening (time 6)
+Deleting (carry robot3 ball6 lgripper3)
+Adding (at ball6 room2)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 7)
+Deleting (at ball5 room2)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball5 lgripper3)
+
+Checking next happening (time 8)
+Deleting (at-robby robot3 room2)
+Adding (at-robby robot3 room3)
+
+Checking next happening (time 9)
+Deleting (carry robot3 ball5 lgripper3)
+Adding (at ball5 room3)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 10)
+Deleting (at ball2 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball2 lgripper3)
+
+Checking next happening (time 11)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room4)
+
+Checking next happening (time 12)
+Deleting (carry robot3 ball2 lgripper3)
+Adding (at ball2 room4)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 13)
+Deleting (at ball1 room4)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball1 lgripper3)
+
+Checking next happening (time 14)
+Deleting (carry robot3 ball4 rgripper3)
+Adding (at ball4 room4)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 15)
+Deleting (at-robby robot3 room4)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 16)
+Deleting (carry robot3 ball1 lgripper3)
+Adding (at ball1 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 17)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 18)
+Deleting (at ball7 room3)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball7 lgripper1)
+
+Checking next happening (time 19)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 20)
+Deleting (carry robot1 ball7 lgripper1)
+Adding (at ball7 room1)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 20 
+
+Successful plans:
+Value: 20
+ experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.1 20 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.2
+Plan to validate:
+
+Plan size: 19
+1:
+(move robot3 room3 room1)
+ 
+2:
+(pick robot3 ball6 room1 lgripper3)
+ 
+3:
+(move robot3 room1 room2)
+ 
+4:
+(drop robot3 ball6 room2 lgripper3)
+ 
+5:
+(pick robot3 ball5 room2 lgripper3)
+ 
+6:
+(move robot3 room2 room3)
+ 
+7:
+(drop robot3 ball5 room3 lgripper3)
+ 
+8:
+(pick robot3 ball2 room3 lgripper3)
+ 
+9:
+(pick robot3 ball7 room3 rgripper3)
+ 
+10:
+(move robot3 room3 room4)
+ 
+11:
+(drop robot3 ball2 room4 lgripper3)
+ 
+12:
+(pick robot3 ball1 room4 lgripper3)
+ 
+13:
+(move robot3 room4 room1)
+ 
+14:
+(move robot1 room4 room2)
+ 
+15:
+(pick robot1 ball4 room2 lgripper1)
+ 
+16:
+(move robot1 room2 room4)
+ 
+17:
+(drop robot3 ball1 room1 lgripper3)
+ 
+18:
+(drop robot3 ball7 room1 rgripper3)
+ 
+19:
+(drop robot1 ball4 room4 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 2)
+Deleting (at ball6 room1)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball6 lgripper3)
+
+Checking next happening (time 3)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 4)
+Deleting (carry robot3 ball6 lgripper3)
+Adding (at ball6 room2)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 5)
+Deleting (at ball5 room2)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball5 lgripper3)
+
+Checking next happening (time 6)
+Deleting (at-robby robot3 room2)
+Adding (at-robby robot3 room3)
+
+Checking next happening (time 7)
+Deleting (carry robot3 ball5 lgripper3)
+Adding (at ball5 room3)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 8)
+Deleting (at ball2 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball2 lgripper3)
+
+Checking next happening (time 9)
+Deleting (at ball7 room3)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball7 rgripper3)
+
+Checking next happening (time 10)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room4)
+
+Checking next happening (time 11)
+Deleting (carry robot3 ball2 lgripper3)
+Adding (at ball2 room4)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 12)
+Deleting (at ball1 room4)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball1 lgripper3)
+
+Checking next happening (time 13)
+Deleting (at-robby robot3 room4)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 14)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 15)
+Deleting (at ball4 room2)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball4 lgripper1)
+
+Checking next happening (time 16)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room4)
+
+Checking next happening (time 17)
+Deleting (carry robot3 ball1 lgripper3)
+Adding (at ball1 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 18)
+Deleting (carry robot3 ball7 rgripper3)
+Adding (at ball7 room1)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 19)
+Deleting (carry robot1 ball4 lgripper1)
+Adding (at ball4 room4)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 19 
+
+Successful plans:
+Value: 19
+ experiments/run1/plans/llm_ic_pddl/grippers/p09.pddl.2 19 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p10.pddl.1
+Plan to validate:
+
+Plan size: 9
+1:
+(pick robot3 ball2 room2 lgripper3)
+ 
+2:
+(move robot3 room2 room1)
+ 
+3:
+(drop robot3 ball2 room1 lgripper3)
+ 
+4:
+(move robot1 room1 room2)
+ 
+5:
+(pick robot1 ball3 room2 lgripper1)
+ 
+6:
+(pick robot1 ball4 room2 rgripper1)
+ 
+7:
+(move robot1 room2 room1)
+ 
+8:
+(drop robot1 ball3 room1 lgripper1)
+ 
+9:
+(drop robot1 ball4 room1 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball2 room2)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball2 lgripper3)
+
+Checking next happening (time 2)
+Deleting (at-robby robot3 room2)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 3)
+Deleting (carry robot3 ball2 lgripper3)
+Adding (at ball2 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 4)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 5)
+Deleting (at ball3 room2)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball3 lgripper1)
+
+Checking next happening (time 6)
+Deleting (at ball4 room2)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball4 rgripper1)
+
+Checking next happening (time 7)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 8)
+Deleting (carry robot1 ball3 lgripper1)
+Adding (at ball3 room1)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 9)
+Deleting (carry robot1 ball4 rgripper1)
+Adding (at ball4 room1)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ experiments/run1/plans/llm_ic_pddl/grippers/p10.pddl.1 9 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p11.pddl.1
+Plan to validate:
+
+Plan size: 3
+1:
+(pick robot1 ball3 room1 lgripper1)
+ 
+2:
+(move robot1 room1 room2)
+ 
+3:
+(drop robot1 ball3 room2 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball3 lgripper1)
+
+Checking next happening (time 2)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot1 ball3 lgripper1)
+Adding (at ball3 room2)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 3 
+
+Successful plans:
+Value: 3
+ experiments/run1/plans/llm_ic_pddl/grippers/p11.pddl.1 3 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p12.pddl.1
+Plan to validate:
+
+Plan size: 9
+1:
+(pick robot1 ball2 room2 lgripper1)
+ 
+2:
+(pick robot1 ball5 room2 rgripper1)
+ 
+3:
+(move robot1 room2 room1)
+ 
+4:
+(drop robot1 ball2 room1 lgripper1)
+ 
+5:
+(pick robot1 ball4 room1 lgripper1)
+ 
+6:
+(move robot1 room1 room2)
+ 
+7:
+(drop robot1 ball4 room2 lgripper1)
+ 
+8:
+(move robot1 room2 room3)
+ 
+9:
+(drop robot1 ball5 room3 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball2 room2)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball2 lgripper1)
+
+Checking next happening (time 2)
+Deleting (at ball5 room2)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball5 rgripper1)
+
+Checking next happening (time 3)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot1 ball2 lgripper1)
+Adding (at ball2 room1)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 5)
+Deleting (at ball4 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball4 lgripper1)
+
+Checking next happening (time 6)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 7)
+Deleting (carry robot1 ball4 lgripper1)
+Adding (at ball4 room2)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 8)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 9)
+Deleting (carry robot1 ball5 rgripper1)
+Adding (at ball5 room3)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ experiments/run1/plans/llm_ic_pddl/grippers/p12.pddl.1 9 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p13.pddl.1
+Plan to validate:
+
+Plan size: 6
+1:
+(move robot1 room1 room3)
+ 
+2:
+(pick robot1 ball1 room3 lgripper1)
+ 
+3:
+(pick robot1 ball2 room3 rgripper1)
+ 
+4:
+(move robot1 room3 room1)
+ 
+5:
+(drop robot1 ball1 room1 lgripper1)
+ 
+6:
+(drop robot1 ball2 room1 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 2)
+Deleting (at ball1 room3)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 3)
+Deleting (at ball2 room3)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 4)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 5)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room1)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 6)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room1)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ experiments/run1/plans/llm_ic_pddl/grippers/p13.pddl.1 6 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p14.pddl.1
+Plan to validate:
+
+Plan size: 6
+1:
+(move robot1 room2 room1)
+ 
+2:
+(pick robot1 ball2 room1 lgripper1)
+ 
+3:
+(pick robot1 ball3 room1 rgripper1)
+ 
+4:
+(move robot1 room1 room4)
+ 
+5:
+(drop robot1 ball2 room4 lgripper1)
+ 
+6:
+(drop robot1 ball3 room4 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 2)
+Deleting (at ball2 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball2 lgripper1)
+
+Checking next happening (time 3)
+Deleting (at ball3 room1)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball3 rgripper1)
+
+Checking next happening (time 4)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room4)
+
+Checking next happening (time 5)
+Deleting (carry robot1 ball2 lgripper1)
+Adding (at ball2 room4)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 6)
+Deleting (carry robot1 ball3 rgripper1)
+Adding (at ball3 room4)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ experiments/run1/plans/llm_ic_pddl/grippers/p14.pddl.1 6 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p15.pddl.2
+Plan to validate:
+
+Plan size: 10
+1:
+(move robot1 room4 room3)
+ 
+2:
+(pick robot1 ball1 room3 lgripper1)
+ 
+3:
+(pick robot1 ball3 room3 rgripper1)
+ 
+4:
+(move robot1 room3 room1)
+ 
+5:
+(drop robot1 ball3 room1 rgripper1)
+ 
+6:
+(move robot1 room1 room5)
+ 
+7:
+(pick robot1 ball2 room5 rgripper1)
+ 
+8:
+(drop robot1 ball1 room5 lgripper1)
+ 
+9:
+(move robot1 room5 room2)
+ 
+10:
+(drop robot1 ball2 room2 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 2)
+Deleting (at ball1 room3)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 3)
+Deleting (at ball3 room3)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball3 rgripper1)
+
+Checking next happening (time 4)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 5)
+Deleting (carry robot1 ball3 rgripper1)
+Adding (at ball3 room1)
+Adding (free robot1 rgripper1)
+
+Checking next happening (time 6)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room5)
+
+Checking next happening (time 7)
+Deleting (at ball2 room5)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 8)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room5)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 9)
+Deleting (at-robby robot1 room5)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 10)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room2)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ experiments/run1/plans/llm_ic_pddl/grippers/p15.pddl.2 10 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p15.pddl.1
+Plan to validate:
+
+Plan size: 12
+1:
+(move robot1 room4 room1)
+ 
+2:
+(move robot1 room1 room3)
+ 
+3:
+(pick robot1 ball1 room3 lgripper1)
+ 
+4:
+(pick robot1 ball3 room3 rgripper1)
+ 
+5:
+(move robot1 room3 room1)
+ 
+6:
+(drop robot1 ball3 room1 rgripper1)
+ 
+7:
+(move robot1 room1 room2)
+ 
+8:
+(move robot1 room2 room5)
+ 
+9:
+(pick robot1 ball2 room5 rgripper1)
+ 
+10:
+(drop robot1 ball1 room5 lgripper1)
+ 
+11:
+(move robot1 room5 room2)
+ 
+12:
+(drop robot1 ball2 room2 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 2)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 3)
+Deleting (at ball1 room3)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball1 lgripper1)
+
+Checking next happening (time 4)
+Deleting (at ball3 room3)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball3 rgripper1)
+
+Checking next happening (time 5)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 6)
+Deleting (carry robot1 ball3 rgripper1)
+Adding (at ball3 room1)
+Adding (free robot1 rgripper1)
+
+Checking next happening (time 7)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 8)
+Deleting (at-robby robot1 room2)
+Adding (at-robby robot1 room5)
+
+Checking next happening (time 9)
+Deleting (at ball2 room5)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball2 rgripper1)
+
+Checking next happening (time 10)
+Deleting (carry robot1 ball1 lgripper1)
+Adding (at ball1 room5)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 11)
+Deleting (at-robby robot1 room5)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 12)
+Deleting (carry robot1 ball2 rgripper1)
+Adding (at ball2 room2)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ experiments/run1/plans/llm_ic_pddl/grippers/p15.pddl.1 12 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.1
+Plan to validate:
+
+Plan size: 22
+1:
+(pick robot4 ball5 room4 lgripper4)
+ 
+2:
+(pick robot4 ball6 room4 rgripper4)
+ 
+3:
+(move robot4 room4 room1)
+ 
+4:
+(drop robot4 ball5 room1 lgripper4)
+ 
+5:
+(pick robot4 ball4 room1 lgripper4)
+ 
+6:
+(drop robot4 ball6 room1 rgripper4)
+ 
+7:
+(move robot4 room1 room2)
+ 
+8:
+(move robot4 room2 room3)
+ 
+9:
+(pick robot4 ball1 room3 rgripper4)
+ 
+10:
+(drop robot4 ball4 room3 lgripper4)
+ 
+11:
+(move robot4 room3 room1)
+ 
+12:
+(move robot4 room1 room2)
+ 
+13:
+(drop robot4 ball1 room2 rgripper4)
+ 
+14:
+(pick robot3 ball3 room3 lgripper3)
+ 
+15:
+(move robot3 room3 room1)
+ 
+16:
+(pick robot3 ball7 room1 rgripper3)
+ 
+17:
+(drop robot3 ball3 room1 lgripper3)
+ 
+18:
+(move robot3 room1 room4)
+ 
+19:
+(drop robot3 ball7 room4 rgripper3)
+ 
+20:
+(pick robot1 ball8 room1 lgripper1)
+ 
+21:
+(move robot1 room1 room2)
+ 
+22:
+(drop robot1 ball8 room2 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball5 room4)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball5 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at ball6 room4)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball6 rgripper4)
+
+Checking next happening (time 3)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot4 ball5 lgripper4)
+Adding (at ball5 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball4 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 6)
+Deleting (carry robot4 ball6 rgripper4)
+Adding (at ball6 room1)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 7)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 8)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 9)
+Deleting (at ball1 room3)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball1 rgripper4)
+
+Checking next happening (time 10)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 11)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 12)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 13)
+Deleting (carry robot4 ball1 rgripper4)
+Adding (at ball1 room2)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 14)
+Deleting (at ball3 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball3 lgripper3)
+
+Checking next happening (time 15)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 16)
+Deleting (at ball7 room1)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball7 rgripper3)
+
+Checking next happening (time 17)
+Deleting (carry robot3 ball3 lgripper3)
+Adding (at ball3 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 18)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room4)
+
+Checking next happening (time 19)
+Deleting (carry robot3 ball7 rgripper3)
+Adding (at ball7 room4)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 20)
+Deleting (at ball8 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball8 lgripper1)
+
+Checking next happening (time 21)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 22)
+Deleting (carry robot1 ball8 lgripper1)
+Adding (at ball8 room2)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 22 
+
+Successful plans:
+Value: 22
+ experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.1 22 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.3
+Plan to validate:
+
+Plan size: 20
+1:
+(pick robot4 ball5 room4 lgripper4)
+ 
+2:
+(pick robot4 ball6 room4 rgripper4)
+ 
+3:
+(move robot4 room4 room1)
+ 
+4:
+(drop robot4 ball5 room1 lgripper4)
+ 
+5:
+(pick robot4 ball4 room1 lgripper4)
+ 
+6:
+(drop robot4 ball6 room1 rgripper4)
+ 
+7:
+(move robot4 room1 room3)
+ 
+8:
+(pick robot4 ball1 room3 rgripper4)
+ 
+9:
+(drop robot4 ball4 room3 lgripper4)
+ 
+10:
+(move robot4 room3 room1)
+ 
+11:
+(pick robot4 ball8 room1 lgripper4)
+ 
+12:
+(move robot4 room1 room2)
+ 
+13:
+(drop robot4 ball8 room2 lgripper4)
+ 
+14:
+(drop robot4 ball1 room2 rgripper4)
+ 
+15:
+(pick robot3 ball3 room3 lgripper3)
+ 
+16:
+(move robot3 room3 room1)
+ 
+17:
+(pick robot3 ball7 room1 rgripper3)
+ 
+18:
+(drop robot3 ball3 room1 lgripper3)
+ 
+19:
+(move robot3 room1 room4)
+ 
+20:
+(drop robot3 ball7 room4 rgripper3)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball5 room4)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball5 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at ball6 room4)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball6 rgripper4)
+
+Checking next happening (time 3)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot4 ball5 lgripper4)
+Adding (at ball5 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball4 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 6)
+Deleting (carry robot4 ball6 rgripper4)
+Adding (at ball6 room1)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 7)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 8)
+Deleting (at ball1 room3)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball1 rgripper4)
+
+Checking next happening (time 9)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 10)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 11)
+Deleting (at ball8 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball8 lgripper4)
+
+Checking next happening (time 12)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 13)
+Deleting (carry robot4 ball8 lgripper4)
+Adding (at ball8 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 14)
+Deleting (carry robot4 ball1 rgripper4)
+Adding (at ball1 room2)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 15)
+Deleting (at ball3 room3)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball3 lgripper3)
+
+Checking next happening (time 16)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 17)
+Deleting (at ball7 room1)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball7 rgripper3)
+
+Checking next happening (time 18)
+Deleting (carry robot3 ball3 lgripper3)
+Adding (at ball3 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 19)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room4)
+
+Checking next happening (time 20)
+Deleting (carry robot3 ball7 rgripper3)
+Adding (at ball7 room4)
+Adding (free robot3 rgripper3)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 20 
+
+Successful plans:
+Value: 20
+ experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.3 20 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.2
+Plan to validate:
+
+Plan size: 21
+1:
+(pick robot4 ball5 room4 lgripper4)
+ 
+2:
+(pick robot4 ball6 room4 rgripper4)
+ 
+3:
+(move robot4 room4 room1)
+ 
+4:
+(drop robot4 ball5 room1 lgripper4)
+ 
+5:
+(pick robot4 ball4 room1 lgripper4)
+ 
+6:
+(drop robot4 ball6 room1 rgripper4)
+ 
+7:
+(move robot4 room1 room2)
+ 
+8:
+(move robot3 room3 room2)
+ 
+9:
+(move robot4 room2 room3)
+ 
+10:
+(drop robot4 ball4 room3 lgripper4)
+ 
+11:
+(pick robot1 ball7 room1 lgripper1)
+ 
+12:
+(move robot1 room1 room4)
+ 
+13:
+(drop robot1 ball7 room4 lgripper1)
+ 
+14:
+(pick robot4 ball1 room3 lgripper4)
+ 
+15:
+(pick robot4 ball3 room3 rgripper4)
+ 
+16:
+(move robot4 room3 room1)
+ 
+17:
+(drop robot4 ball3 room1 rgripper4)
+ 
+18:
+(pick robot4 ball8 room1 rgripper4)
+ 
+19:
+(move robot4 room1 room2)
+ 
+20:
+(drop robot4 ball1 room2 lgripper4)
+ 
+21:
+(drop robot4 ball8 room2 rgripper4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball5 room4)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball5 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at ball6 room4)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball6 rgripper4)
+
+Checking next happening (time 3)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot4 ball5 lgripper4)
+Adding (at ball5 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball4 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 6)
+Deleting (carry robot4 ball6 rgripper4)
+Adding (at ball6 room1)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 7)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 8)
+Deleting (at-robby robot3 room3)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 9)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 10)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 11)
+Deleting (at ball7 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball7 lgripper1)
+
+Checking next happening (time 12)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room4)
+
+Checking next happening (time 13)
+Deleting (carry robot1 ball7 lgripper1)
+Adding (at ball7 room4)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 14)
+Deleting (at ball1 room3)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball1 lgripper4)
+
+Checking next happening (time 15)
+Deleting (at ball3 room3)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball3 rgripper4)
+
+Checking next happening (time 16)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 17)
+Deleting (carry robot4 ball3 rgripper4)
+Adding (at ball3 room1)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 18)
+Deleting (at ball8 room1)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball8 rgripper4)
+
+Checking next happening (time 19)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 20)
+Deleting (carry robot4 ball1 lgripper4)
+Adding (at ball1 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 21)
+Deleting (carry robot4 ball8 rgripper4)
+Adding (at ball8 room2)
+Adding (free robot4 rgripper4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 21 
+
+Successful plans:
+Value: 21
+ experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.2 21 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.4
+Plan to validate:
+
+Plan size: 19
+1:
+(pick robot4 ball5 room4 lgripper4)
+ 
+2:
+(pick robot4 ball6 room4 rgripper4)
+ 
+3:
+(move robot4 room4 room1)
+ 
+4:
+(drop robot4 ball5 room1 lgripper4)
+ 
+5:
+(pick robot4 ball4 room1 lgripper4)
+ 
+6:
+(drop robot4 ball6 room1 rgripper4)
+ 
+7:
+(move robot4 room1 room3)
+ 
+8:
+(pick robot4 ball1 room3 rgripper4)
+ 
+9:
+(drop robot4 ball4 room3 lgripper4)
+ 
+10:
+(pick robot4 ball3 room3 lgripper4)
+ 
+11:
+(move robot4 room3 room1)
+ 
+12:
+(drop robot4 ball3 room1 lgripper4)
+ 
+13:
+(pick robot4 ball8 room1 lgripper4)
+ 
+14:
+(move robot4 room1 room2)
+ 
+15:
+(drop robot4 ball8 room2 lgripper4)
+ 
+16:
+(drop robot4 ball1 room2 rgripper4)
+ 
+17:
+(pick robot1 ball7 room1 lgripper1)
+ 
+18:
+(move robot1 room1 room4)
+ 
+19:
+(drop robot1 ball7 room4 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball5 room4)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball5 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at ball6 room4)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball6 rgripper4)
+
+Checking next happening (time 3)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 4)
+Deleting (carry robot4 ball5 lgripper4)
+Adding (at ball5 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball4 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 6)
+Deleting (carry robot4 ball6 rgripper4)
+Adding (at ball6 room1)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 7)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 8)
+Deleting (at ball1 room3)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball1 rgripper4)
+
+Checking next happening (time 9)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 10)
+Deleting (at ball3 room3)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball3 lgripper4)
+
+Checking next happening (time 11)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 12)
+Deleting (carry robot4 ball3 lgripper4)
+Adding (at ball3 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 13)
+Deleting (at ball8 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball8 lgripper4)
+
+Checking next happening (time 14)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 15)
+Deleting (carry robot4 ball8 lgripper4)
+Adding (at ball8 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 16)
+Deleting (carry robot4 ball1 rgripper4)
+Adding (at ball1 room2)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 17)
+Deleting (at ball7 room1)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball7 lgripper1)
+
+Checking next happening (time 18)
+Deleting (at-robby robot1 room1)
+Adding (at-robby robot1 room4)
+
+Checking next happening (time 19)
+Deleting (carry robot1 ball7 lgripper1)
+Adding (at ball7 room4)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 19 
+
+Successful plans:
+Value: 19
+ experiments/run1/plans/llm_ic_pddl/grippers/p16.pddl.4 19 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p17.pddl.1
+Plan to validate:
+
+Plan size: 8
+1:
+(pick robot4 ball1 room1 lgripper4)
+ 
+2:
+(move robot4 room1 room2)
+ 
+3:
+(drop robot4 ball1 room2 lgripper4)
+ 
+4:
+(pick robot4 ball3 room2 lgripper4)
+ 
+5:
+(pick robot4 ball4 room2 rgripper4)
+ 
+6:
+(move robot4 room2 room1)
+ 
+7:
+(drop robot4 ball3 room1 lgripper4)
+ 
+8:
+(drop robot4 ball4 room1 rgripper4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball1 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball1 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot4 ball1 lgripper4)
+Adding (at ball1 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 4)
+Deleting (at ball3 room2)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball3 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball4 room2)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball4 rgripper4)
+
+Checking next happening (time 6)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 7)
+Deleting (carry robot4 ball3 lgripper4)
+Adding (at ball3 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 8)
+Deleting (carry robot4 ball4 rgripper4)
+Adding (at ball4 room1)
+Adding (free robot4 rgripper4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run1/plans/llm_ic_pddl/grippers/p17.pddl.1 8 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p18.pddl.1
+Plan to validate:
+
+Plan size: 8
+1:
+(pick robot4 ball3 room1 lgripper4)
+ 
+2:
+(move robot4 room1 room2)
+ 
+3:
+(drop robot4 ball3 room2 lgripper4)
+ 
+4:
+(pick robot4 ball1 room2 lgripper4)
+ 
+5:
+(pick robot4 ball2 room2 rgripper4)
+ 
+6:
+(move robot4 room2 room1)
+ 
+7:
+(drop robot4 ball1 room1 lgripper4)
+ 
+8:
+(drop robot4 ball2 room1 rgripper4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball3 room1)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball3 lgripper4)
+
+Checking next happening (time 2)
+Deleting (at-robby robot4 room1)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot4 ball3 lgripper4)
+Adding (at ball3 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 4)
+Deleting (at ball1 room2)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball1 lgripper4)
+
+Checking next happening (time 5)
+Deleting (at ball2 room2)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball2 rgripper4)
+
+Checking next happening (time 6)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 7)
+Deleting (carry robot4 ball1 lgripper4)
+Adding (at ball1 room1)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 8)
+Deleting (carry robot4 ball2 rgripper4)
+Adding (at ball2 room1)
+Adding (free robot4 rgripper4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 8 
+
+Successful plans:
+Value: 8
+ experiments/run1/plans/llm_ic_pddl/grippers/p18.pddl.1 8 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.2
+Plan to validate:
+
+Plan size: 19
+1:
+(move robot4 room4 room2)
+ 
+2:
+(pick robot4 ball1 room2 lgripper4)
+ 
+3:
+(pick robot3 ball5 room4 lgripper3)
+ 
+4:
+(move robot3 room4 room1)
+ 
+5:
+(pick robot3 ball6 room1 rgripper3)
+ 
+6:
+(drop robot3 ball5 room1 lgripper3)
+ 
+7:
+(move robot3 room1 room2)
+ 
+8:
+(drop robot3 ball6 room2 rgripper3)
+ 
+9:
+(pick robot4 ball2 room2 rgripper4)
+ 
+10:
+(move robot4 room2 room3)
+ 
+11:
+(drop robot4 ball1 room3 lgripper4)
+ 
+12:
+(drop robot4 ball2 room3 rgripper4)
+ 
+13:
+(pick robot4 ball4 room3 lgripper4)
+ 
+14:
+(move robot4 room3 room2)
+ 
+15:
+(drop robot4 ball4 room2 lgripper4)
+ 
+16:
+(move robot4 room2 room5)
+ 
+17:
+(pick robot4 ball3 room5 lgripper4)
+ 
+18:
+(move robot4 room5 room1)
+ 
+19:
+(drop robot4 ball3 room1 lgripper4)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 2)
+Deleting (at ball1 room2)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball1 lgripper4)
+
+Checking next happening (time 3)
+Deleting (at ball5 room4)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball5 lgripper3)
+
+Checking next happening (time 4)
+Deleting (at-robby robot3 room4)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 5)
+Deleting (at ball6 room1)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball6 rgripper3)
+
+Checking next happening (time 6)
+Deleting (carry robot3 ball5 lgripper3)
+Adding (at ball5 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 7)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 8)
+Deleting (carry robot3 ball6 rgripper3)
+Adding (at ball6 room2)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 9)
+Deleting (at ball2 room2)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball2 rgripper4)
+
+Checking next happening (time 10)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 11)
+Deleting (carry robot4 ball1 lgripper4)
+Adding (at ball1 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 12)
+Deleting (carry robot4 ball2 rgripper4)
+Adding (at ball2 room3)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 13)
+Deleting (at ball4 room3)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 14)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 15)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 16)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room5)
+
+Checking next happening (time 17)
+Deleting (at ball3 room5)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball3 lgripper4)
+
+Checking next happening (time 18)
+Deleting (at-robby robot4 room5)
+Adding (at-robby robot4 room1)
+
+Checking next happening (time 19)
+Deleting (carry robot4 ball3 lgripper4)
+Adding (at ball3 room1)
+Adding (free robot4 lgripper4)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 19 
+
+Successful plans:
+Value: 19
+ experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.2 19 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.4
+Plan to validate:
+
+Plan size: 17
+1:
+(pick robot2 ball6 room1 lgripper2)
+ 
+2:
+(move robot2 room1 room2)
+ 
+3:
+(drop robot2 ball6 room2 lgripper2)
+ 
+4:
+(pick robot1 ball5 room4 lgripper1)
+ 
+5:
+(move robot1 room4 room5)
+ 
+6:
+(pick robot1 ball3 room5 rgripper1)
+ 
+7:
+(pick robot2 ball1 room2 lgripper2)
+ 
+8:
+(move robot1 room5 room1)
+ 
+9:
+(drop robot1 ball5 room1 lgripper1)
+ 
+10:
+(pick robot2 ball2 room2 rgripper2)
+ 
+11:
+(move robot2 room2 room3)
+ 
+12:
+(drop robot2 ball1 room3 lgripper2)
+ 
+13:
+(pick robot2 ball4 room3 lgripper2)
+ 
+14:
+(drop robot2 ball2 room3 rgripper2)
+ 
+15:
+(move robot2 room3 room2)
+ 
+16:
+(drop robot2 ball4 room2 lgripper2)
+ 
+17:
+(drop robot1 ball3 room1 rgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at ball6 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball6 lgripper2)
+
+Checking next happening (time 2)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 3)
+Deleting (carry robot2 ball6 lgripper2)
+Adding (at ball6 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 4)
+Deleting (at ball5 room4)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball5 lgripper1)
+
+Checking next happening (time 5)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room5)
+
+Checking next happening (time 6)
+Deleting (at ball3 room5)
+Deleting (free robot1 rgripper1)
+Adding (carry robot1 ball3 rgripper1)
+
+Checking next happening (time 7)
+Deleting (at ball1 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball1 lgripper2)
+
+Checking next happening (time 8)
+Deleting (at-robby robot1 room5)
+Adding (at-robby robot1 room1)
+
+Checking next happening (time 9)
+Deleting (carry robot1 ball5 lgripper1)
+Adding (at ball5 room1)
+Adding (free robot1 lgripper1)
+
+Checking next happening (time 10)
+Deleting (at ball2 room2)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball2 rgripper2)
+
+Checking next happening (time 11)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 12)
+Deleting (carry robot2 ball1 lgripper2)
+Adding (at ball1 room3)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 13)
+Deleting (at ball4 room3)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball4 lgripper2)
+
+Checking next happening (time 14)
+Deleting (carry robot2 ball2 rgripper2)
+Adding (at ball2 room3)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 15)
+Deleting (at-robby robot2 room3)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 16)
+Deleting (carry robot2 ball4 lgripper2)
+Adding (at ball4 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 17)
+Deleting (carry robot1 ball3 rgripper1)
+Adding (at ball3 room1)
+Adding (free robot1 rgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 17 
+
+Successful plans:
+Value: 17
+ experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.4 17 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.3
+Plan to validate:
+
+Plan size: 18
+1:
+(move robot1 room4 room3)
+ 
+2:
+(pick robot2 ball6 room1 lgripper2)
+ 
+3:
+(move robot2 room1 room2)
+ 
+4:
+(drop robot2 ball6 room2 lgripper2)
+ 
+5:
+(pick robot3 ball5 room4 lgripper3)
+ 
+6:
+(move robot3 room4 room5)
+ 
+7:
+(pick robot3 ball3 room5 rgripper3)
+ 
+8:
+(move robot3 room5 room1)
+ 
+9:
+(drop robot3 ball5 room1 lgripper3)
+ 
+10:
+(pick robot2 ball1 room2 lgripper2)
+ 
+11:
+(pick robot2 ball2 room2 rgripper2)
+ 
+12:
+(move robot2 room2 room3)
+ 
+13:
+(pick robot1 ball4 room3 lgripper1)
+ 
+14:
+(drop robot2 ball1 room3 lgripper2)
+ 
+15:
+(move robot1 room3 room2)
+ 
+16:
+(drop robot3 ball3 room1 rgripper3)
+ 
+17:
+(drop robot2 ball2 room3 rgripper2)
+ 
+18:
+(drop robot1 ball4 room2 lgripper1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot1 room4)
+Adding (at-robby robot1 room3)
+
+Checking next happening (time 2)
+Deleting (at ball6 room1)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball6 lgripper2)
+
+Checking next happening (time 3)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room2)
+
+Checking next happening (time 4)
+Deleting (carry robot2 ball6 lgripper2)
+Adding (at ball6 room2)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 5)
+Deleting (at ball5 room4)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball5 lgripper3)
+
+Checking next happening (time 6)
+Deleting (at-robby robot3 room4)
+Adding (at-robby robot3 room5)
+
+Checking next happening (time 7)
+Deleting (at ball3 room5)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball3 rgripper3)
+
+Checking next happening (time 8)
+Deleting (at-robby robot3 room5)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 9)
+Deleting (carry robot3 ball5 lgripper3)
+Adding (at ball5 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 10)
+Deleting (at ball1 room2)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball1 lgripper2)
+
+Checking next happening (time 11)
+Deleting (at ball2 room2)
+Deleting (free robot2 rgripper2)
+Adding (carry robot2 ball2 rgripper2)
+
+Checking next happening (time 12)
+Deleting (at-robby robot2 room2)
+Adding (at-robby robot2 room3)
+
+Checking next happening (time 13)
+Deleting (at ball4 room3)
+Deleting (free robot1 lgripper1)
+Adding (carry robot1 ball4 lgripper1)
+
+Checking next happening (time 14)
+Deleting (carry robot2 ball1 lgripper2)
+Adding (at ball1 room3)
+Adding (free robot2 lgripper2)
+
+Checking next happening (time 15)
+Deleting (at-robby robot1 room3)
+Adding (at-robby robot1 room2)
+
+Checking next happening (time 16)
+Deleting (carry robot3 ball3 rgripper3)
+Adding (at ball3 room1)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 17)
+Deleting (carry robot2 ball2 rgripper2)
+Adding (at ball2 room3)
+Adding (free robot2 rgripper2)
+
+Checking next happening (time 18)
+Deleting (carry robot1 ball4 lgripper1)
+Adding (at ball4 room2)
+Adding (free robot1 lgripper1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 18 
+
+Successful plans:
+Value: 18
+ experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.3 18 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.1
+Plan to validate:
+
+Plan size: 20
+1:
+(move robot4 room4 room2)
+ 
+2:
+(pick robot4 ball1 room2 lgripper4)
+ 
+3:
+(pick robot3 ball5 room4 lgripper3)
+ 
+4:
+(move robot3 room4 room1)
+ 
+5:
+(pick robot3 ball6 room1 rgripper3)
+ 
+6:
+(drop robot3 ball5 room1 lgripper3)
+ 
+7:
+(move robot4 room2 room3)
+ 
+8:
+(drop robot4 ball1 room3 lgripper4)
+ 
+9:
+(pick robot4 ball4 room3 lgripper4)
+ 
+10:
+(move robot4 room3 room2)
+ 
+11:
+(pick robot4 ball2 room2 rgripper4)
+ 
+12:
+(drop robot4 ball4 room2 lgripper4)
+ 
+13:
+(move robot4 room2 room3)
+ 
+14:
+(drop robot4 ball2 room3 rgripper4)
+ 
+15:
+(move robot3 room1 room2)
+ 
+16:
+(drop robot3 ball6 room2 rgripper3)
+ 
+17:
+(move robot2 room1 room5)
+ 
+18:
+(pick robot2 ball3 room5 lgripper2)
+ 
+19:
+(move robot2 room5 room1)
+ 
+20:
+(drop robot2 ball3 room1 lgripper2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at-robby robot4 room4)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 2)
+Deleting (at ball1 room2)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball1 lgripper4)
+
+Checking next happening (time 3)
+Deleting (at ball5 room4)
+Deleting (free robot3 lgripper3)
+Adding (carry robot3 ball5 lgripper3)
+
+Checking next happening (time 4)
+Deleting (at-robby robot3 room4)
+Adding (at-robby robot3 room1)
+
+Checking next happening (time 5)
+Deleting (at ball6 room1)
+Deleting (free robot3 rgripper3)
+Adding (carry robot3 ball6 rgripper3)
+
+Checking next happening (time 6)
+Deleting (carry robot3 ball5 lgripper3)
+Adding (at ball5 room1)
+Adding (free robot3 lgripper3)
+
+Checking next happening (time 7)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 8)
+Deleting (carry robot4 ball1 lgripper4)
+Adding (at ball1 room3)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 9)
+Deleting (at ball4 room3)
+Deleting (free robot4 lgripper4)
+Adding (carry robot4 ball4 lgripper4)
+
+Checking next happening (time 10)
+Deleting (at-robby robot4 room3)
+Adding (at-robby robot4 room2)
+
+Checking next happening (time 11)
+Deleting (at ball2 room2)
+Deleting (free robot4 rgripper4)
+Adding (carry robot4 ball2 rgripper4)
+
+Checking next happening (time 12)
+Deleting (carry robot4 ball4 lgripper4)
+Adding (at ball4 room2)
+Adding (free robot4 lgripper4)
+
+Checking next happening (time 13)
+Deleting (at-robby robot4 room2)
+Adding (at-robby robot4 room3)
+
+Checking next happening (time 14)
+Deleting (carry robot4 ball2 rgripper4)
+Adding (at ball2 room3)
+Adding (free robot4 rgripper4)
+
+Checking next happening (time 15)
+Deleting (at-robby robot3 room1)
+Adding (at-robby robot3 room2)
+
+Checking next happening (time 16)
+Deleting (carry robot3 ball6 rgripper3)
+Adding (at ball6 room2)
+Adding (free robot3 rgripper3)
+
+Checking next happening (time 17)
+Deleting (at-robby robot2 room1)
+Adding (at-robby robot2 room5)
+
+Checking next happening (time 18)
+Deleting (at ball3 room5)
+Deleting (free robot2 lgripper2)
+Adding (carry robot2 ball3 lgripper2)
+
+Checking next happening (time 19)
+Deleting (at-robby robot2 room5)
+Adding (at-robby robot2 room1)
+
+Checking next happening (time 20)
+Deleting (carry robot2 ball3 lgripper2)
+Adding (at ball3 room1)
+Adding (free robot2 lgripper2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 20 
+
+Successful plans:
+Value: 20
+ experiments/run1/plans/llm_ic_pddl/grippers/p19.pddl.1 20 
+
+Type-checking move
+...action passes type checking.
+Type-checking pick
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Checking plan: experiments/run1/plans/llm_ic_pddl/grippers/p20.pddl.1
+Plan to validate:
+
+Plan size: 0
+
+Plan executed successfully - checking goal
+Plan valid
+Final value: 0 
+
+Successful plans:
+Value: 0
+ experiments/run1/plans/llm_ic_pddl/grippers/p20.pddl.1 0 
+

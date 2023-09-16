@@ -1,0 +1,308 @@
+Type-checking change-color
+...action passes type checking.
+Type-checking paint-up
+...action passes type checking.
+Type-checking paint-down
+...action passes type checking.
+Type-checking up
+...action passes type checking.
+Type-checking down
+...action passes type checking.
+Type-checking right
+...action passes type checking.
+Type-checking left
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/floortile/p01.pddl
+Plan to validate:
+
+Plan size: 35
+1:
+(left robot2 tile_4-3 tile_4-2)
+ 
+2:
+(left robot2 tile_4-2 tile_4-1)
+ 
+3:
+(down robot1 tile_4-1 tile_3-1)
+ 
+4:
+(down robot1 tile_3-1 tile_2-1)
+ 
+5:
+(paint-down robot1 tile_1-1 tile_2-1 white)
+ 
+6:
+(up robot1 tile_2-1 tile_3-1)
+ 
+7:
+(up robot1 tile_3-1 tile_4-1)
+ 
+8:
+(down robot2 tile_4-1 tile_3-1)
+ 
+9:
+(paint-up robot2 tile_4-1 tile_3-1 black)
+ 
+10:
+(paint-down robot2 tile_2-1 tile_3-1 black)
+ 
+11:
+(right robot2 tile_3-1 tile_3-2)
+ 
+12:
+(paint-down robot1 tile_3-1 tile_4-1 white)
+ 
+13:
+(right robot1 tile_4-1 tile_4-2)
+ 
+14:
+(right robot2 tile_3-2 tile_3-3)
+ 
+15:
+(paint-up robot2 tile_4-3 tile_3-3 black)
+ 
+16:
+(down robot1 tile_4-2 tile_3-2)
+ 
+17:
+(paint-up robot1 tile_4-2 tile_3-2 white)
+ 
+18:
+(down robot1 tile_3-2 tile_2-2)
+ 
+19:
+(right robot1 tile_2-2 tile_2-3)
+ 
+20:
+(left robot2 tile_3-3 tile_3-2)
+ 
+21:
+(paint-up robot1 tile_3-3 tile_2-3 white)
+ 
+22:
+(down robot1 tile_2-3 tile_1-3)
+ 
+23:
+(left robot1 tile_1-3 tile_1-2)
+ 
+24:
+(down robot2 tile_3-2 tile_2-2)
+ 
+25:
+(paint-up robot2 tile_3-2 tile_2-2 black)
+ 
+26:
+(right robot2 tile_2-2 tile_2-3)
+ 
+27:
+(paint-up robot1 tile_2-2 tile_1-2 white)
+ 
+28:
+(down robot1 tile_1-2 tile_0-2)
+ 
+29:
+(right robot1 tile_0-2 tile_0-3)
+ 
+30:
+(down robot2 tile_2-3 tile_1-3)
+ 
+31:
+(paint-up robot2 tile_2-3 tile_1-3 black)
+ 
+32:
+(left robot2 tile_1-3 tile_1-2)
+ 
+33:
+(paint-up robot1 tile_1-3 tile_0-3 white)
+ 
+34:
+(down robot2 tile_1-2 tile_0-2)
+ 
+35:
+(paint-up robot2 tile_1-2 tile_0-2 black)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (robot-at robot2 tile_4-3)
+Deleting (clear tile_4-2)
+Adding (robot-at robot2 tile_4-2)
+Adding (clear tile_4-3)
+Updating (total-cost) (0) by 1 increase
+
+Checking next happening (time 2)
+Plan failed because of unsatisfied precondition in:
+(left robot2 tile_4-2 tile_4-1)
+
+
+Plan failed to execute
+
+Plan Repair Advice:
+
+(left robot2 tile_4-2 tile_4-1) has an unsatisfied precondition at time 2
+(Set (clear tile_4-1) to true)
+
+
+Failed plans:
+ experiments/run0/plans/llm_ic_pddl/floortile/p01.pddl 
+Type-checking change-color
+...action passes type checking.
+Type-checking paint-up
+...action passes type checking.
+Type-checking paint-down
+...action passes type checking.
+Type-checking up
+...action passes type checking.
+Type-checking down
+...action passes type checking.
+Type-checking right
+...action passes type checking.
+Type-checking left
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/floortile/p03.pddl
+Plan to validate:
+
+Plan size: 36
+1:
+(left robot1 tile_2-3 tile_2-2)
+ 
+2:
+(left robot1 tile_2-2 tile_2-1)
+ 
+3:
+(paint-down robot1 tile_1-1 tile_2-1 white)
+ 
+4:
+(right robot1 tile_2-1 tile_2-2)
+ 
+5:
+(up robot2 tile_1-1 tile_2-1)
+ 
+6:
+(up robot2 tile_2-1 tile_3-1)
+ 
+7:
+(paint-up robot2 tile_4-1 tile_3-1 black)
+ 
+8:
+(left robot1 tile_2-2 tile_2-1)
+ 
+9:
+(right robot2 tile_3-1 tile_3-2)
+ 
+10:
+(paint-up robot1 tile_3-1 tile_2-1 white)
+ 
+11:
+(right robot1 tile_2-1 tile_2-2)
+ 
+12:
+(right robot2 tile_3-2 tile_3-3)
+ 
+13:
+(up robot1 tile_2-2 tile_3-2)
+ 
+14:
+(paint-up robot2 tile_4-3 tile_3-3 black)
+ 
+15:
+(paint-up robot1 tile_4-2 tile_3-2 white)
+ 
+16:
+(down robot2 tile_3-3 tile_2-3)
+ 
+17:
+(right robot1 tile_3-2 tile_3-3)
+ 
+18:
+(left robot2 tile_2-3 tile_2-2)
+ 
+19:
+(down robot1 tile_3-3 tile_2-3)
+ 
+20:
+(paint-up robot1 tile_3-3 tile_2-3 white)
+ 
+21:
+(paint-up robot2 tile_3-2 tile_2-2 black)
+ 
+22:
+(down robot1 tile_2-3 tile_1-3)
+ 
+23:
+(right robot2 tile_2-2 tile_2-3)
+ 
+24:
+(left robot1 tile_1-3 tile_1-2)
+ 
+25:
+(paint-up robot1 tile_2-2 tile_1-2 white)
+ 
+26:
+(down robot1 tile_1-2 tile_0-2)
+ 
+27:
+(right robot1 tile_0-2 tile_0-3)
+ 
+28:
+(down robot2 tile_2-3 tile_1-3)
+ 
+29:
+(paint-up robot2 tile_2-3 tile_1-3 black)
+ 
+30:
+(left robot2 tile_1-3 tile_1-2)
+ 
+31:
+(paint-up robot1 tile_1-3 tile_0-3 white)
+ 
+32:
+(left robot2 tile_1-2 tile_1-1)
+ 
+33:
+(paint-up robot2 tile_2-1 tile_1-1 black)
+ 
+34:
+(right robot2 tile_1-1 tile_1-2)
+ 
+35:
+(down robot2 tile_1-2 tile_0-2)
+ 
+36:
+(paint-up robot2 tile_1-2 tile_0-2 black)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (robot-at robot1 tile_2-3)
+Deleting (clear tile_2-2)
+Adding (robot-at robot1 tile_2-2)
+Adding (clear tile_2-3)
+Updating (total-cost) (0) by 1 increase
+
+Checking next happening (time 2)
+Deleting (robot-at robot1 tile_2-2)
+Deleting (clear tile_2-1)
+Adding (robot-at robot1 tile_2-1)
+Adding (clear tile_2-2)
+Updating (total-cost) (1) by 1 increase
+
+Checking next happening (time 3)
+Plan failed because of unsatisfied precondition in:
+(paint-down robot1 tile_1-1 tile_2-1 white)
+
+
+Plan failed to execute
+
+Plan Repair Advice:
+
+(paint-down robot1 tile_1-1 tile_2-1 white) has an unsatisfied precondition at time 3
+(Set (clear tile_1-1) to true)
+
+
+Failed plans:
+ experiments/run0/plans/llm_ic_pddl/floortile/p03.pddl 

@@ -1,6 +1,4 @@
-
-
-(define (problem tireworld-3)
+(define (problem tireworld-12)
 (:domain tyreworld)
 (:objects 
 wrench jack pump - tool
@@ -10,7 +8,7 @@ nuts1 nuts2 nuts3 nuts4 nuts5 nuts6 nuts7 nuts8 nuts9 nuts10 nuts11 nuts12
 - nut
 
 boot - container
-r1 w1 r2 w2 r3 w3 r4 w4 r5 w5 r6 w6 r7 w7 r8 w8 r9 w9 r10 w10 r11 w11 r12 w12 
+r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 w1 w2 w3 w4 w5 w6 w7 w8 w9 w10 w11 w12 
 - wheel
 )
 (:init

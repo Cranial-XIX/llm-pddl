@@ -1,0 +1,376 @@
+Type-checking open
+...action passes type checking.
+Type-checking close
+...action passes type checking.
+Type-checking fetch
+...action passes type checking.
+Type-checking put-away
+...action passes type checking.
+Type-checking loosen
+...action passes type checking.
+Type-checking tighten
+...action passes type checking.
+Type-checking jack-up
+...action passes type checking.
+Type-checking jack-down
+...action passes type checking.
+Type-checking undo
+...action passes type checking.
+Type-checking do-up
+...action passes type checking.
+Type-checking remove-wheel
+...action passes type checking.
+Type-checking put-on-wheel
+...action passes type checking.
+Type-checking inflate
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/tyreworld/p01.pddl
+Object with unknown type: nuts
+
+Errors: 0, warnings: 4
+Type-checking open
+...action passes type checking.
+Type-checking close
+...action passes type checking.
+Type-checking fetch
+...action passes type checking.
+Type-checking put-away
+...action passes type checking.
+Type-checking loosen
+...action passes type checking.
+Type-checking tighten
+...action passes type checking.
+Type-checking jack-up
+...action passes type checking.
+Type-checking jack-down
+...action passes type checking.
+Type-checking undo
+...action passes type checking.
+Type-checking do-up
+...action passes type checking.
+Type-checking remove-wheel
+...action passes type checking.
+Type-checking put-on-wheel
+...action passes type checking.
+Type-checking inflate
+...action passes type checking.
+Checking plan: experiments/run0/plans/llm_ic_pddl/tyreworld/p03.pddl
+Plan to validate:
+
+Plan size: 41
+1:
+(open boot)
+ 
+2:
+(fetch wrench boot)
+ 
+3:
+(fetch jack boot)
+ 
+4:
+(loosen nuts1 the-hub1)
+ 
+5:
+(jack-up the-hub1)
+ 
+6:
+(undo nuts1 the-hub1)
+ 
+7:
+(remove-wheel w1 the-hub1)
+ 
+8:
+(fetch r1 boot)
+ 
+9:
+(put-on-wheel r1 the-hub1)
+ 
+10:
+(do-up nuts1 the-hub1)
+ 
+11:
+(fetch pump boot)
+ 
+12:
+(put-away w1 boot)
+ 
+13:
+(jack-down the-hub1)
+ 
+14:
+(tighten nuts1 the-hub1)
+ 
+15:
+(loosen nuts3 the-hub3)
+ 
+16:
+(inflate r3)
+ 
+17:
+(jack-up the-hub3)
+ 
+18:
+(undo nuts3 the-hub3)
+ 
+19:
+(remove-wheel w3 the-hub3)
+ 
+20:
+(put-away w3 boot)
+ 
+21:
+(fetch r3 boot)
+ 
+22:
+(put-on-wheel r3 the-hub3)
+ 
+23:
+(inflate r2)
+ 
+24:
+(do-up nuts3 the-hub3)
+ 
+25:
+(inflate r1)
+ 
+26:
+(put-away pump boot)
+ 
+27:
+(loosen nuts2 the-hub2)
+ 
+28:
+(jack-down the-hub3)
+ 
+29:
+(jack-up the-hub2)
+ 
+30:
+(undo nuts2 the-hub2)
+ 
+31:
+(remove-wheel w2 the-hub2)
+ 
+32:
+(fetch r2 boot)
+ 
+33:
+(put-away w2 boot)
+ 
+34:
+(tighten nuts3 the-hub3)
+ 
+35:
+(put-on-wheel r2 the-hub2)
+ 
+36:
+(do-up nuts2 the-hub2)
+ 
+37:
+(jack-down the-hub2)
+ 
+38:
+(put-away jack boot)
+ 
+39:
+(tighten nuts2 the-hub2)
+ 
+40:
+(put-away wrench boot)
+ 
+41:
+(close boot)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (closed boot)
+Adding (open boot)
+
+Checking next happening (time 2)
+Deleting (in wrench boot)
+Adding (have wrench)
+
+Checking next happening (time 3)
+Deleting (in jack boot)
+Adding (have jack)
+
+Checking next happening (time 4)
+Deleting (tight nuts1 the-hub1)
+Adding (loose nuts1 the-hub1)
+
+Checking next happening (time 5)
+Deleting (on-ground the-hub1)
+Adding (not-on-ground the-hub1)
+
+Checking next happening (time 6)
+Deleting (fastened the-hub1)
+Deleting (loose nuts1 the-hub1)
+Adding (have nuts1)
+Adding (unfastened the-hub1)
+
+Checking next happening (time 7)
+Deleting (on w1 the-hub1)
+Adding (have w1)
+Adding (free the-hub1)
+
+Checking next happening (time 8)
+Deleting (in r1 boot)
+Adding (have r1)
+
+Checking next happening (time 9)
+Deleting (free the-hub1)
+Deleting (have r1)
+Adding (on r1 the-hub1)
+
+Checking next happening (time 10)
+Deleting (unfastened the-hub1)
+Deleting (have nuts1)
+Adding (loose nuts1 the-hub1)
+Adding (fastened the-hub1)
+
+Checking next happening (time 11)
+Deleting (in pump boot)
+Adding (have pump)
+
+Checking next happening (time 12)
+Deleting (have w1)
+Adding (in w1 boot)
+
+Checking next happening (time 13)
+Deleting (not-on-ground the-hub1)
+Adding (on-ground the-hub1)
+
+Checking next happening (time 14)
+Deleting (loose nuts1 the-hub1)
+Adding (tight nuts1 the-hub1)
+
+Checking next happening (time 15)
+Deleting (tight nuts3 the-hub3)
+Adding (loose nuts3 the-hub3)
+
+Checking next happening (time 16)
+Deleting (not-inflated r3)
+Adding (inflated r3)
+
+Checking next happening (time 17)
+Deleting (on-ground the-hub3)
+Adding (not-on-ground the-hub3)
+
+Checking next happening (time 18)
+Deleting (fastened the-hub3)
+Deleting (loose nuts3 the-hub3)
+Adding (have nuts3)
+Adding (unfastened the-hub3)
+
+Checking next happening (time 19)
+Deleting (on w3 the-hub3)
+Adding (have w3)
+Adding (free the-hub3)
+
+Checking next happening (time 20)
+Deleting (have w3)
+Adding (in w3 boot)
+
+Checking next happening (time 21)
+Deleting (in r3 boot)
+Adding (have r3)
+
+Checking next happening (time 22)
+Deleting (free the-hub3)
+Deleting (have r3)
+Adding (on r3 the-hub3)
+
+Checking next happening (time 23)
+Deleting (not-inflated r2)
+Adding (inflated r2)
+
+Checking next happening (time 24)
+Deleting (unfastened the-hub3)
+Deleting (have nuts3)
+Adding (loose nuts3 the-hub3)
+Adding (fastened the-hub3)
+
+Checking next happening (time 25)
+Deleting (not-inflated r1)
+Adding (inflated r1)
+
+Checking next happening (time 26)
+Deleting (have pump)
+Adding (in pump boot)
+
+Checking next happening (time 27)
+Deleting (tight nuts2 the-hub2)
+Adding (loose nuts2 the-hub2)
+
+Checking next happening (time 28)
+Deleting (not-on-ground the-hub3)
+Adding (on-ground the-hub3)
+
+Checking next happening (time 29)
+Deleting (on-ground the-hub2)
+Adding (not-on-ground the-hub2)
+
+Checking next happening (time 30)
+Deleting (fastened the-hub2)
+Deleting (loose nuts2 the-hub2)
+Adding (have nuts2)
+Adding (unfastened the-hub2)
+
+Checking next happening (time 31)
+Deleting (on w2 the-hub2)
+Adding (have w2)
+Adding (free the-hub2)
+
+Checking next happening (time 32)
+Deleting (in r2 boot)
+Adding (have r2)
+
+Checking next happening (time 33)
+Deleting (have w2)
+Adding (in w2 boot)
+
+Checking next happening (time 34)
+Deleting (loose nuts3 the-hub3)
+Adding (tight nuts3 the-hub3)
+
+Checking next happening (time 35)
+Deleting (free the-hub2)
+Deleting (have r2)
+Adding (on r2 the-hub2)
+
+Checking next happening (time 36)
+Deleting (unfastened the-hub2)
+Deleting (have nuts2)
+Adding (loose nuts2 the-hub2)
+Adding (fastened the-hub2)
+
+Checking next happening (time 37)
+Deleting (not-on-ground the-hub2)
+Adding (on-ground the-hub2)
+
+Checking next happening (time 38)
+Deleting (have jack)
+Adding (in jack boot)
+
+Checking next happening (time 39)
+Deleting (loose nuts2 the-hub2)
+Adding (tight nuts2 the-hub2)
+
+Checking next happening (time 40)
+Deleting (have wrench)
+Adding (in wrench boot)
+
+Checking next happening (time 41)
+Deleting (open boot)
+Adding (closed boot)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 41 
+
+Successful plans:
+Value: 41
+ experiments/run0/plans/llm_ic_pddl/tyreworld/p03.pddl 41 
+
