@@ -23,7 +23,19 @@ Alternatively, you can just use:
 bash run.sh DOMAIN METHOD TASK_ID
 ```
 
-### The File Hierarchy:
+## Citations
+Please cite [this pre-print](https://arxiv.org/abs/2304.11477) if you find this repo useful.
+
+```
+@article{liu2023llmp,
+  title={LLM+P: Empowering Large Language Models with Optimal Planning Proficiency},
+  author={Liu, Bo and Jiang, Yuqian and Zhang, Xiaohan and Liu, Qiang and Zhang, Shiqi and Biswas, Joydeep and Stone, Peter},
+  journal={arXiv preprint arXiv:2304.11477},
+  year={2023}
+}
+```
+
+## The File Hierarchy:
 ```
 llm-pddl
  └─main.py                         (the main python script)
